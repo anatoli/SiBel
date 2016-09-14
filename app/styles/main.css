@@ -12,6 +12,19 @@ body {
 ul{
   padding: 0;
 }
+
+.block-default{
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.lightSlider{
+  height:180px;
+  border:1px solid red;
+}
+.default-img{
+  width: 100%;
+}
 .lang-ul{
   padding: 6% 0%;
 }
@@ -93,4 +106,16 @@ ul li {
   text-align: center;
   margin-left: 8%;
   padding:1%;
+}
+.col-project-ideas{
+  background: gainsboro;
+  height: 90px;
+  width: 100%;
+}
+.footer-block-header{
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.ul-footer li {
+  display:block;
 }
