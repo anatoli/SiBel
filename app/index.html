@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/min_768px.css">
     <link rel="stylesheet" href="styles/partials/_phoneNumber.css">
+    <link rel="stylesheet" href="styles/partials/_ideasProjects.css">
     <!-- endbuild -->
   </head>
   <body ng-app="siBelApp">
@@ -27,62 +28,27 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="padding col-xxs col-md-3 col-sm-3 col-xs-3">
-            <a class="navbar-brand" href="#/"><img src="images/firmname.png" style="height:32px; margin-top: -7%"></a>
-          </div>
-          <div class="padding col-xxs col-md-3 col-sm-3 col-xs-3">
-            <ul class="lang-ul">
-              <li class="language"><a href="#">BY</a></li>
-              <li class="language borderLeftLeng"><a href="#">RU</a></li>
-              <li class="language borderLeftLeng"><a href="#">EN</a></li>
-            </ul>
-          </div>
-          <div class="padding col-xxs col-md-3 col-sm-3 col-xs-3"><ng-include src="'/views/partials/_phoneNumber.html'"></ng-include> </div>
-          <div class="padding col-xxs col-md-3 col-sm-3 col-xs-3">
-            <button class="form-control">Связаться с нами</button>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div ui-view>
+      <header>
+        <div ui-view="header"></div>
+      </header>
+      <div class="container" ui-view="container"></div>
+      <footer id="mainFooter" ui-view="footer"></footer>
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav navbar-right nav-font">
-              <li class="active"><a href="#/">КОМПАНИЯ</a></li>
-              <li><a ng-href="#/about">РЕШЕНИЯ И УСЛУГИ</a></li>
-              <li><a ng-href="#/">ПРОЕКТЫ И ИДЕИ</a></li>
-              <li><a ng-href="#/">ПРЕИМУЩЕСТВА</a></li>
-              <li><a ng-href="#/">КОНТАКТЫ</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
+
 
     <div class="container">
     <div style="width: 100%" ng-view=""></div>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <ng-include src="'/views/partials/_footer.html'"></ng-include>
-      </div>
-    </div>
 
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <!--<script type='text/javascript'>-->
+      <!--(function(){ var widget_id = 'XPjPH6IoWh';var d=document;var w=window;function l(){-->
+        <!--var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>-->
+    <!--&lt;!&ndash; {/literal} END JIVOSITE CODE &ndash;&gt;-->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -107,13 +73,18 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/HomeCtrl.js"></script>
+        <script src="scripts/controllers/FooterCtrl.js"></script>
+        <script src="scripts/controllers/HeaderCtrl.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/TestCtrl.js"></script>
+        <?php src="send.php"?>
         <!-- endbuild -->
 </body>
 </html>

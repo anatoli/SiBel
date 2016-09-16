@@ -1,4 +1,19 @@
-
+a {
+  color: #000;
+}
+a.lang:hover{
+  color: #000000;
+  text-decoration: none;
+}
+a.press{
+  color: #000000 !important;
+  text-decoration: none;
+}
+.psevdoImg{
+ width: 170.6px;
+  margin-right: 10px;
+  background: red;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -23,6 +38,9 @@ ul{
 }
 .default-img{
   width: 100%;
+}
+.lang-ul a{
+  color: rgba(0, 0, 0, 0.36);
 }
 .lang-ul{
   padding: 6% 0%;
@@ -83,7 +101,7 @@ ul{
 
 
 .borderLeftLeng{
-  border-left: 1px solid black;
+  border-left: 1px solid #FF4500;
   padding-left: 1%;
 }
 
@@ -110,6 +128,27 @@ ul li {
   background: gainsboro;
   height: 90px;
   width: 100%;
+}
+.btn-project-ideas{
+  margin-top: 5%;
+}
+.btn-blue:hover{
+  color: #fff;
+  background: #00bfff ;
+}
+.btn-blue{
+  color: deepskyblue;
+  border: 1px solid #00bfff ;
+  border-radius: 0;
+}
+.btn-orange:hover{
+  color: #fff;
+  background: #FF4500 ;
+}
+.btn-orange{
+  color: orangered;
+  border: 1px solid #FF4500 ;
+  border-radius: 0;
 }
 .footer-block-header{
   margin-bottom: 2%;

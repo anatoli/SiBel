@@ -1,0 +1,45 @@
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="padding col-xxs col-md-3 col-sm-3 col-xs-3">
+        <ul class="lang-ul">
+          <li ng-click="Start('by')" class="language lang"><a ng-class="{'press': by }" class="lang" href="#">BY</a></li>
+          <li ng-click="Start('ru')" class="language borderLeftLeng"><a ng-class="{'press': ru}" class="lang" href="#">RU</a></li>
+          <li ng-click="Start('en')" class="language borderLeftLeng"><a ng-class="{'press': en} " class="lang" href="#">EN</a></li>
+        </ul>
+      </div>
+      <div class="padding col-xxs col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-2">
+        <a class="navbar-brand" href="#/"><img src="images/firmname.png" style="height:32px; margin-top: -7%"></a>
+      </div>
+      <!--<div class="padding col-xxs col-md-3 col-sm-3 col-xs-3"><ng-include src="'/views/partials/_phoneNumber.html'"></ng-include> </div>-->
+      <div class="padding col-xxs col-md-3 col-sm-3 col-xs-3">
+        <button class="form-control btn-orange">Связаться с нами</button>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+        <ul class="nav navbar-nav navbar-right nav-font">
+          <li class="active"><a href="#/">КОМПАНИЯ</a></li>
+          <li><a ng-href="#/about">РЕШЕНИЯ И УСЛУГИ</a></li>
+          <li><a ng-href="#/">ПРОЕКТЫ И ИДЕИ</a></li>
+          <li><a ng-href="#/">ПРЕИМУЩЕСТВА</a></li>
+          <li><a ng-href="#/">КОНТАКТЫ</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
