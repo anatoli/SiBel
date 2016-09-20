@@ -39,19 +39,25 @@ angular.module('siBelApp', [
         }
       })
 
-      // .state('root.profile.userAdd', {
-      //   url: '/usersAdd',
-      //   ncyBreadcrumb: {
-      //     label: "Добавить пользователя",
-      //     skip: true
-      //   },
-      //   views: {
-      //     'container@': {
-      //       templateUrl: '/views/userAdd.html',
-      //       controller:  'MainCtrl'
-      //     }
-      //   }
-      // })
+      .state('root.company', {
+        url: '/company',
+        views: {
+          'container@': {
+            templateUrl: '/views/company.html',
+            controller:  'CompanyCtrl'
+          }
+        }
+      })
+
+      .state('root.projects', {
+        url: '/projects',
+        views: {
+          'container@': {
+            templateUrl: '/views/projects.html',
+            controller:  'ProjectsCtrl'
+          }
+        }
+      })
       // .state('root.profile.users', {
       //   url: '/users',
       //   ncyBreadcrumb: {

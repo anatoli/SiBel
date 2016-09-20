@@ -32,8 +32,8 @@
       <header>
         <div ui-view="header"></div>
       </header>
-      <div class="container" ui-view="container"></div>
-      <footer id="mainFooter" ui-view="footer"></footer>
+      <div class="containerBlock" ui-view="container"></div>
+      <footer style="border-top: 1px silver solid;" id="mainFooter" ui-view="footer"></footer>
 
       </div>
     </div>
@@ -44,13 +44,7 @@
     </div>
 
 
-    <!-- BEGIN JIVOSITE CODE {literal} -->
-    <!--<script type='text/javascript'>-->
-      <!--(function(){ var widget_id = 'XPjPH6IoWh';var d=document;var w=window;function l(){-->
-        <!--var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>-->
-    <!--&lt;!&ndash; {/literal} END JIVOSITE CODE &ndash;&gt;-->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <!--Google Analytics: change UA-XXXXX-X to be your site's ID-->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
@@ -84,6 +78,8 @@
         <script src="scripts/controllers/HeaderCtrl.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/TestCtrl.js"></script>
+        <script src="scripts/controllers/CompanyCtrl.js"></script>
+        <script src="scripts/controllers/ProjectsCtrl.js"></script>
         <?php src="send.php"?>
         <!-- endbuild -->
 </body>
