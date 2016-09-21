@@ -1,0 +1,58 @@
+h2{
+  margin: 0;
+  color: #666;
+  padding-top: 90px;
+  font-size: 52px;
+  font-family: "trebuchet ms", sans-serif;
+}
+.item{
+  background: #333;
+  text-align: center;
+  height: 425px !important;
+}
+.carousel{
+  margin-top: 20px;
+}
+.classic li{
+  list-style: initial;
+  display: list-item;
+  text-align: left;
+}
+.slide-1{
+  text-align: left;
+}
+.slide-1 h1{
+  color: #ed5623;
+}
+.classic{
+  padding-left: 7%;;
+}
+.slide-1-block-background{
+  background: rgba( 255,255,255, 0.4);
+}
+.carousel-indicators .active {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  background-color: #00bfff;
+}
+.carousel-indicators li {
+  border-radius: 0;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image:none;
+}
+.carousel-control {
+  width: 10%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0);
+  opacity: .8;
+}

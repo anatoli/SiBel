@@ -4,10 +4,12 @@
     width: 50%;
   }
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+
+
+@media (min-width: 768px) {
+  /*.container {*/
+    /*width: 730px;*/
+  /*}*/
 
   /* Remove the padding we set earlier */
   .header,

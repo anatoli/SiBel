@@ -18,6 +18,9 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/min_768px.css">
+    <link rel="stylesheet" href="styles/partials/header.css">
+    <link rel="stylesheet" href="styles/partials/company.css">
+    <link rel="stylesheet" href="styles/partials/slider.css">
     <link rel="stylesheet" href="styles/partials/_phoneNumber.css">
     <link rel="stylesheet" href="styles/partials/_ideasProjects.css">
     <!-- endbuild -->
@@ -29,19 +32,19 @@
 
     <!-- Add your site or application content here -->
     <div ui-view>
-      <header>
+      <header class="container">
         <div ui-view="header"></div>
       </header>
-      <div class="containerBlock" ui-view="container"></div>
-      <footer style="border-top: 1px silver solid;" id="mainFooter" ui-view="footer"></footer>
+      <div class="container" ui-view="container"></div>
+      <footer class="container" style="border-top: 1px silver solid;" id="mainFooter" ui-view="footer"></footer>
 
       </div>
     </div>
 
 
-    <div class="container">
-    <div style="width: 100%" ng-view=""></div>
-    </div>
+    <!--<div class="container">-->
+    <!--<div style="width: 100%" ng-view=""></div>-->
+    <!--</div>-->
 
 
      <!--Google Analytics: change UA-XXXXX-X to be your site's ID-->

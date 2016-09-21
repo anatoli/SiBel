@@ -1,8 +1,24 @@
+@font-face {
+  font-family: Narrow; /* Гарнитура шрифта */
+  src: url(fonts/PT_Sans-Narrow-Web-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+button{
+  font-family: Narrow;
+}
+button.form-control{
+  padding: 3px 12px !important;
+  font-size: 18px !important;
+}
 body{
-  padding: 2% 0 !important; ;
+  padding: 2% 0 !important;
 }
 .containerBlock{
   padding: 0
+}
+.container{
+  width: 100% !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 footer {
   padding: 2% 4%;
@@ -18,19 +34,17 @@ a.press{
   color: #000000 !important;
   text-decoration: none;
 }
+
+.rubric{
+  margin-left: 9.2%;
+}
+.carousel{
+  margin-top: 0 !important;
+}
 .slideBackground{
   background-color: #fff;  background-size: cover;
 }
-.activeHeader > a{
-  background-color: #fff !important;
-  border-bottom: 2px solid orangered;
-  padding-bottom: 5px !important;
-}
-.navHover:hover{
-  background-color: #fff !important;
-  border-top: 2px solid orangered;
-  padding-bottom: 5px !important;
-}
+
 .psevdoImg{
  /*width: 170.6px;*/
   /*margin-right: 10px;*/
@@ -42,26 +56,19 @@ a.press{
   color: #000;
   padding: 0.2em 0;
 }
-/*.header-fixed{*/
-  /*position: fixed;*/
-  /*width: 100%;*/
-  /*max-width: 1440px;*/
-  /*min-width: 320px;*/
-  /*background: #fff;*/
-  /*z-index: 20;*/
-  /*overflow-x: hidden;*/
-/*}*/
-/*.first-fixed-block{*/
-  /*margin-top: 180px !important;*/
-/*}*/
 ul{
   padding: 0;
 }
 
 img.icons{
-  height: 75px
+  height: 94px
 }
 
+button.secondBlock{
+  margin-left: 20% !important;
+  display: block !important;
+  width: 60% !important;
+}
 .block-default{
   padding: 2%;
   margin-top: 2%;
@@ -75,15 +82,6 @@ img.icons{
   width: 100%;
 }
 
-.lang-ul a{
-  color: rgba(0, 0, 0, 0.36);
-}
-.lang-ul{
-  width: 100%;
-  /*margin-left: 5%;*/
-  margin-right: 5%;
-  margin-top: 21%;
-}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -91,24 +89,7 @@ img.icons{
   padding-left: 15px;
   padding-right: 15px;
 }
-
-/*!* Custom page header *!*/
-/*.header {*/
-  /*border-bottom: 1px solid #e5e5e5;*/
-  /*margin-bottom: 10px;*/
-/*}*/
-.navbar-default{
-  background-color: #fff;
-  border-color: #fff;
-}
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -152,12 +133,7 @@ ul li {
   height: 100%;
   padding: 2% 0;
 }
-.nav-font{
-  font-size: 1em;
-}
-.language{
-  padding: 0% 8%;
-}
+
 .col-it-inf{
   text-align: center;
   margin-left: 8%;
@@ -218,9 +194,5 @@ ul li {
 .ul-footer li {
   display:block;
 }
-.lang{
-  margin: 0.4% 1%
-}
-.btnSearch{
-  margin: 1.5% 0%
-}
+
+

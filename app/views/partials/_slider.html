@@ -1,22 +1,3 @@
-<!-- Таблица стилей CSS -->
-<style type="text/css">
-  h2{
-    margin: 0;
-    color: #666;
-    padding-top: 90px;
-    font-size: 52px;
-    font-family: "trebuchet ms", sans-serif;
-  }
-  .item{
-    background: #333;
-    text-align: center;
-    height: 300px !important;
-  }
-  .carousel{
-    margin-top: 20px;
-  }
-</style>
-
 <!-- Карусель -->
 <div id="myCarousel" class="carousel slide first-fixed-block " data-interval="3000" data-ride="carousel">
   <!-- Индикаторы для карусели -->
@@ -31,15 +12,28 @@
   <!-- Слайды карусели -->
   <div class="carousel-inner">
     <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-    <div class="active item row slideBackground" style="background-image:url(../../images/solutions_300.jpg)">
-        <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
-          <p>Программное</p>
-          <p>решение для бизнеса</p>
+    <div class="active item row slideBackground" style="background-image:url(../../images/solutions.jpg); background-size: cover">
+      <div class="col-md-6 col-sm-6 col-xs-6">
       </div>
-
-      <div class="carousel-caption">
-        <h3><a href="#/company">Заголовок 1 слайда</a></h3>
-        <p>Текст (описание) 1 слайда...</p>
+      <div class="col-md-6 col-sm-6 col-xs-6 slide-1">
+        <div class="slide-1-block-background">
+          <h1>Программное решение</h1>
+          <h1>для бизнеса</h1>
+          <ul class="classic">
+            <li>Автоматизация бизнес-процессов</li>
+            <li>Учет и контроль бизнес-решений</li>
+            <li>Актуализация информации о состоянии дел предприятия</li>
+            <li>Аналитика бизнес-данных</li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-4 ">
+            <button class=" form-control btn-full-blue">Подробнее</button>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 ">
+            <button class=" col-md-4 col-sm-4 col-xs-4 form-control btn-blue">Оставить запрос</button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Слайд №2 -->
