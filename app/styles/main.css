@@ -2,6 +2,55 @@
   font-family: Narrow; /* Гарнитура шрифта */
   src: url(fonts/PT_Sans-Narrow-Web-Regular.ttf); /* Путь к файлу со шрифтом */
 }
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+  url("fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+  url("fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "SegoeUIBold"; */
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+  url("fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+  url("fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "SegoeUIItalic"; */
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("fonts/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+  url("fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+  url("fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "SegoeUILight"; */
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("fonts/SegoeUILight/SegoeUILight.eot");
+  src: url("fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+  url("fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+  url("fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "SegoeUISemiBold"; */
+@font-face {
+  font-family: "SegoeUISemiBold";
+  src: url("fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+  src: url("fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+  url("fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+  url("fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 button{
   font-family: Narrow;
 }
@@ -11,6 +60,7 @@ button.form-control{
 }
 body{
   padding: 2% 0 !important;
+  font-family: SegoeUIRegular;
 }
 .containerBlock{
   padding: 0
@@ -71,12 +121,12 @@ button.secondBlock{
 }
 .block-default{
   padding: 2%;
-  margin-top: 2%;
+  /*margin-top: 2%;*/
 }
 .vendor-img{
   margin-left: 34%;
-  height: 56px;
-  width: 56px;
+  height: 96px;
+  width: 96px;
 }
 .default-img{
   width: 100%;
@@ -92,8 +142,9 @@ button.secondBlock{
 /* Make the masthead heading the same height as the navigation */
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
+  /*padding-top: 19px;*/
+  /*color: #777;*/
+  margin-left: 3%;
   /*border-top: 1px solid #e5e5e5;*/
 }
 
@@ -121,7 +172,7 @@ button.secondBlock{
 
 
 .borderLeftLeng{
-  border-left: 1px solid #FF4500;
+  border-left: 1px solid #ed5623;
   padding-left: 1%;
 }
 
@@ -149,43 +200,43 @@ ul li {
 }
 .btn-blue:hover{
   color: #fff;
-  background: #00bfff ;
+  background: #398be3 ;
 }
 .btn-blue{
-  color: deepskyblue;
-  border: 1px solid #00bfff ;
+  color: #398be3;
+  border: 1px solid #398be3 ;
   border-radius: 0;
 }
 .btn-full-blue:hover{
-  color: deepskyblue;
-  border: 1px solid #00bfff ;
+  color: #398be3;
+  border: 1px solid #398be3 ;
   border-radius: 0;
   background: #fff ;
 }
 .btn-full-blue{
   color: #fff;
   border-radius: 0;
-  background: #00bfff ;
+  background: #398be3 ;
 }
 .btn-orange:hover{
   color: #fff;
-  background: #FF4500 ;
+  background: #ed5623 ;
 }
 .btn-orange{
-  color: orangered;
-  border: 1px solid #FF4500 ;
+  color: #ed5623;
+  border: 1px solid #ed5623 ;
   border-radius: 0;
 }
 .btn-full-orange:hover{
   background: #fff;
-  color: orangered;
-  border: 1px solid #FF4500 ;
+  color: #ed5623;
+  border: 1px solid #ed5623 ;
   border-radius: 0;
 }
 .btn-full-orange{
   color: #fff;
   border-radius: 0;
-  background: #FF4500 ;
+  background: #ed5623 ;
 }
 .footer-block-header{
   margin-bottom: 2%;
@@ -194,5 +245,20 @@ ul li {
 .ul-footer li {
   display:block;
 }
+.col-footer{
+  padding-top: 5.6%;
+  padding-left: 4%;
 
-
+}
+.footer h6{
+  text-align: center !important;
+}
+.partnerList h3{
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.partnerList{
+  background: #e6e3e3;
+  padding-bottom: 4%;
+}

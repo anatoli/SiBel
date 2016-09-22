@@ -1,0 +1,19 @@
+.questions h2{
+  padding-top: 20px !important;
+  font-size: 30px !important;
+  text-align:center;
+  color: #ed5623 ;
+}
+.questions h3{
+ line-height: inherit;
+}
+.phone-margin .phone{
+  margin-left: 32%;
+}
+.questions .call{
+  margin-left: 30%;
+}
+.questions button{
+  margin-top: 4%;
+}
+

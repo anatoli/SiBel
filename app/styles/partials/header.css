@@ -1,5 +1,7 @@
 header{
   font-size: 18px !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .header h3 {
   margin-top: 0;
@@ -25,12 +27,12 @@ header{
 }
 .activeHeader > a{
   background-color: #fff !important;
-  border-bottom: 2px solid orangered;
+  border-bottom: 2px solid #ed5623;
   /*padding-bottom: 5px !important;*/
 }
 .navHover:hover{
   background-color: #fff !important;
-  border-bottom: 2px solid orangered;
+  border-bottom: 2px solid #ed5623;
   /*padding-bottom: 5px !important;*/
 }
 .lang-ul a{

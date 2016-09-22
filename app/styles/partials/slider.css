@@ -5,15 +5,21 @@ h2{
   font-size: 52px;
   font-family: "trebuchet ms", sans-serif;
 }
+.margin-slide{
+  margin-top: 6%;
+}
 .item{
+  background-size: cover;
   background: #333;
   text-align: center;
   height: 425px !important;
 }
+
 .carousel{
   margin-top: 20px;
 }
 .classic li{
+  font-size: 16.5px;
   list-style: initial;
   display: list-item;
   text-align: left;
@@ -34,7 +40,7 @@ h2{
   width: 14px;
   height: 14px;
   margin: 0;
-  background-color: #00bfff;
+  background-color: #0681bf;
 }
 .carousel-indicators li {
   border-radius: 0;
@@ -47,6 +53,11 @@ h2{
   left: auto;
   background-image:none;
 }
+.carousel-control.left {
+  left: 0;
+  right: auto;
+  background-image:none;
+}
 .carousel-control {
   width: 10%;
   font-size: 20px;
@@ -56,3 +67,32 @@ h2{
   background-color: rgba(0, 0, 0, 0);
   opacity: .8;
 }
+/***********************/
+@media screen and (min-width: 768px){
+  .carousel-control .glyphicon-menu-right, .carousel-control .icon-next {
+    margin-right: -10px;
+  }
+}
+  @media screen and (min-width: 768px){
+    .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+      width: 34px;
+      height: 34px;
+      margin-top: -10px;
+      font-size: 34px;
+    }
+    .carousel-control .icon-next, .carousel-control .glyphicon-menu-right {
+      right: 50%;
+      margin-right: -10px;
+    }
+    .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right {
+      position: absolute;
+
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+      margin-top: -10px;
+    }
+}
+
+
+/***********************/
