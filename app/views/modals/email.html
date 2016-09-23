@@ -1,0 +1,63 @@
+<form  name="form" >
+  <div class="modal-fonts">
+    <div class="">
+      <div class="modal-title float-left left-header-div">
+        Запрос
+      </div>
+      <div class="pull-right">
+        <button type="button " ng-click="cancel()" class="btn btn-full-orange btn-radius glyphicon glyphicon-remove btn-top">
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <h4 ng-if="mod=='summary'">Хотите присоедениться к команде "СиБел"? </br> Заполните форму, пришлите резюме, </br> и мы свяжемся с вами </h4>
+      <h4  ng-if="mod=='query'"> Заполните форму, отправьте, </br> и мы свяжемся с вами для консультации</h4>
+
+    <input class="form-control font-modal-input" placeholder="Имя, фамилия*">
+    <input class="form-control font-modal-input" placeholder="E-mail*">
+    <input class="form-control font-modal-input" placeholder="Телефон">
+    <input class="form-control font-modal-input" placeholder="Организация, должность" ng-if="mod=='query'">
+    <select class="form-control font-modal-input" ng-if="mod=='summary'">
+      <option value="" disabled selected>-Выберите, направление-</option>
+      <option value="null">-</option>
+      <option value="null">-</option>
+      <option value="null">-</option>
+      </select>
+
+      <!--<select class="form-control"-->
+              <!--ng-model="directory.record.created.memberType"-->
+              <!--ng-options="memberType.name for memberType in directory.memberTypes track by memberType.id">-->
+        <!--<option value="null">-</option>-->
+      <!--</select>-->
+
+
+    <textarea class="form-control font-modal-input" placeholder="Интересующее решение или услуга"></textarea>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <input class="form-control font-modal-input" placeholder="Введите код">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <input class="form-control font-modal-input" placeholder="">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12 font-modal-input">
+          <button type="button " class="btn btn-blue btn-radius file">Прикрепить файл
+          </button>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 font-modal-input">
+         <p>Размер файла не должен превышать 5 Мб</p>
+         <p>* - поля, обязательные для заполнения</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button " class="btn btn-full-blue btn-radius">Отправить
+      </button>
+    </div>
+  </div>
+
+</form>

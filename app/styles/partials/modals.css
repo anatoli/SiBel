@@ -1,0 +1,40 @@
+.cancel{
+  width: 30px;
+  height: 30px;
+}
+.btn-top{
+  top: 0;
+}
+.modal-fonts{
+  font-family: Narrow;
+}
+.modal-content{
+  border-radius: 0;
+}
+.left-header-div{
+  padding: 0.85%;
+  display: inline-block;
+  width: 25%;
+  background: #8f8f8f;
+  text-align: center;
+  color: #fff;
+}
+.modal-footer >.btn-full-blue{
+  width: 23%;
+}
+.modal-footer{
+  text-align: center;
+   border-top: none;
+}
+.font-modal-input{
+  font-family: SegoeUIItalic;
+  margin-top: 30px;
+}
+.modal-body h4{
+  font-size: 25px;
+  color: #398be3;
+  text-align: center;
+}
+.file{
+  width: 70%;
+}

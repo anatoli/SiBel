@@ -93,6 +93,23 @@ h2{
       margin-top: -10px;
     }
 }
+.item img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.carousel-inner>.item>img{
+  display: block;
+  line-height: 1;
+}
+.captions{
+  position: absolute;
+  right: 0;
+  bottom: 22%;
+  left: -4px;
+  /* padding: 54px; */
+}
 
 
 /***********************/
