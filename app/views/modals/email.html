@@ -11,7 +11,7 @@
     </div>
 
     <div class="modal-body">
-      <h4 ng-if="mod=='summary'">Хотите присоедениться к команде "СиБел"? </br> Заполните форму, пришлите резюме, </br> и мы свяжемся с вами </h4>
+      <h4 ng-if="mod=='summary'">Хотите присоединиться к команде &#171СиБел&#187 ? </br> Заполните форму, пришлите резюме, </br> и мы свяжемся с вами </h4>
       <h4  ng-if="mod=='query'"> Заполните форму, отправьте, </br> и мы свяжемся с вами для консультации</h4>
 
     <input class="form-control font-modal-input" placeholder="Имя, фамилия*">
@@ -20,9 +20,8 @@
     <input class="form-control font-modal-input" placeholder="Организация, должность" ng-if="mod=='query'">
     <select class="form-control font-modal-input" ng-if="mod=='summary'">
       <option value="" disabled selected>-Выберите, направление-</option>
-      <option value="null">-</option>
-      <option value="null">-</option>
-      <option value="null">-</option>
+      <option value="mobile">Разработка мобильных приложений</option>
+      <option value="">Исследования в области матанализа</option>
       </select>
 
       <!--<select class="form-control"-->
@@ -49,7 +48,7 @@
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 font-modal-input">
          <p>Размер файла не должен превышать 5 Мб</p>
-         <p>* - поля, обязательные для заполнения</p>
+         <p>* &#151 поля, обязательные для заполнения</p>
         </div>
 
       </div>
