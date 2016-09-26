@@ -2,6 +2,20 @@
   width: 30px;
   height: 30px;
 }
+.modal-body input::-webkit-input-placeholder {color:#04314D;}
+.modal-body input::-moz-placeholder          {color: #04314d;}/* Firefox 19+ */
+.modal-body input:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
+.modal-body input:-ms-input-placeholder      {color:#04314D;}
+
+.modal-body textarea::-webkit-input-placeholder {color:#04314D;}
+.modal-body textarea::-moz-placeholder          {color:#04314D;}/* Firefox 19+ */
+.modal-body textarea:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
+.modal-body textarea:-ms-input-placeholder      {color:#04314D;}
+
+.modal-body{
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .btn-top{
   top: 0;
 }
@@ -18,13 +32,18 @@
   background: #8f8f8f;
   text-align: center;
   color: #fff;
+  font-size: 15px;
 }
 .modal-footer >.btn-full-blue{
-  width: 23%;
+  width: 30%;
 }
 .modal-footer{
   text-align: center;
    border-top: none;
+}
+.font-modal-input p {
+  font-size: 12px;
+  line-height: 1;
 }
 .font-modal-input{
   font-family: SegoeUIItalic;
@@ -37,4 +56,9 @@
 }
 .file{
   width: 70%;
+}
+.btn-modal{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
