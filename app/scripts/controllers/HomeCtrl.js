@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('siBelApp')
-  .controller('HomeCtrl',[ '$scope', '$uibModal', function ($scope, $uibModal) {
+  .controller('HomeCtrl',[ '$scope', '$uibModal', '$state', function ($scope, $uibModal, $state) {
 
     $scope.by=false;
     $scope.ru=false;
@@ -28,5 +28,9 @@ angular.module('siBelApp')
 
     $scope.Active = function(data){
       console.log(data);
+    }
+    $scope.openDetails =function () {
+      window.scrollTo(0, 0);
+      $state.go('root.404')
     }
   }]);

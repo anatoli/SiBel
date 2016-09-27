@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="styles/partials/modals.css">
     <link rel="stylesheet" href="styles/partials/company.css">
     <link rel="stylesheet" href="styles/partials/slider.css">
+    <link rel="stylesheet" href="styles/partials/footer.css">
     <link rel="stylesheet" href="styles/partials/questions.css">
+    <link rel="stylesheet" href="styles/partials/error.css">
     <link rel="stylesheet" href="styles/partials/_phoneNumber.css">
     <link rel="stylesheet" href="styles/partials/_ideasProjects.css">
     <!-- endbuild -->
@@ -39,8 +41,8 @@
       <header class="container-fluid">
         <div ui-view="header"></div>
       </header>
-      <div class="container-fluid" ui-view="container"></div>
-      <footer class="container-fluid" style="border-top: 1px silver solid;" id="mainFooter" ui-view="footer"></footer>
+      <div class="" ui-view="container"></div>
+      <footer class="container-fluid" id="mainFooter" ui-view="footer"></footer>
 
       </div>
     </div>
@@ -90,6 +92,7 @@
         <script src="scripts/controllers/TestCtrl.js"></script>
         <script src="scripts/controllers/CompanyCtrl.js"></script>
         <script src="scripts/controllers/ProjectsCtrl.js"></script>
+        <script src="scripts/controllers/ErrorCtrl.js"></script>
         <?php src="send.php"?>
         <!-- endbuild -->
 </body>

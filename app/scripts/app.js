@@ -30,6 +30,15 @@ angular.module('siBelApp', [
       })
 
 
+      .state('root.404',{
+        url: '/sorry',
+        views: {
+          'container@': {
+            templateUrl: 'views/404.html',
+            controller: 'ErrorCtrl'
+          }
+        }
+      })
       .state('root.main',{
         url: '/',
         views: {

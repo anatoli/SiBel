@@ -11,12 +11,13 @@
     </div>
 
     <div class="modal-body">
+      <h4 ng-if="mod=='call'">Заполните форму, отправьте, </br> и мы свяжемся в удобное для вас время </h4>
       <h4 ng-if="mod=='summary'">Хотите присоединиться к команде &#171СиБел&#187 ? </br> Заполните форму, пришлите резюме, </br> и мы свяжемся с вами </h4>
       <h4  ng-if="mod=='query'"> Заполните форму, отправьте, </br> и мы свяжемся с вами для консультации</h4>
 
     <input class="form-control font-modal-input" placeholder="Имя, фамилия*">
     <input class="form-control font-modal-input" placeholder="E-mail*" ng-if="mod!='call'">
-    <input class="form-control font-modal-input" placeholder="Телефон">
+    <input class="form-control font-modal-input" placeholder="Телефон*">
     <input class="form-control font-modal-input" placeholder="Время и дата" ng-if="mod=='call'">
     <input class="form-control font-modal-input" placeholder="Организация, должность" ng-if="mod=='query'">
     <select class="form-control font-modal-input" ng-if="mod=='summary'">
@@ -34,18 +35,18 @@
 
     <textarea class="form-control font-modal-input" placeholder="Интересующее решение или услуга"></textarea>
       <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <form>
-            <div class="g-recaptcha" data-sitekey="6LcNtgcUAAAAANdJRQs7oHSZAYHRjTkJBqZt0a96"></div>
-          </form>
+        <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
+          <!--<form>-->
+            <!--<div class="g-recaptcha" data-sitekey="6LcNtgcUAAAAANdJRQs7oHSZAYHRjTkJBqZt0a96"></div>-->
+          <!--</form>-->
           <!--<input class="form-control font-modal-input" placeholder="Введите код">-->
         <!--</div>-->
         <!--<div class="col-md-6 col-sm-6 col-xs-12">-->
           <!--<input class="form-control font-modal-input" placeholder="">-->
         <!--</div>-->
 
-      </div>
-      <div class="row">
+      <!--</div>-->
+      <!--<div class="row">-->
         <div class="col-md-6 col-sm-6 col-xs-12 font-modal-input">
           <button type="button " class="btn btn-blue btn-radius file">Прикрепить файл
           </button>
@@ -55,12 +56,13 @@
          <p>* &#151 поля, обязательные для заполнения</p>
         </div>
 
-      </div>
+      <!--</div>-->
     </div>
     <div class="modal-footer">
       <button type="button " class="btn btn-full-blue btn-radius btn-modal">Отправить
       </button>
     </div>
+  </div>
   </div>
 
 </form>
