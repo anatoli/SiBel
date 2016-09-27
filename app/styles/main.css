@@ -94,6 +94,9 @@ a.press{
   color: #000000 !important;
   text-decoration: none;
 }
+textarea {
+  resize: vertical;
+}
 
 .rubric{
   margin-left: 9.2%;
@@ -215,8 +218,9 @@ ul li {
   margin-top: 5%;
 }
 .btn-blue:hover{
-  color: #fff;
-  background: #398be3 ;
+  /*color: #fff;*/
+  /*background: #398be3 ;*/
+  box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
 }
 .btn-blue{
   color: #398be3;
@@ -228,8 +232,7 @@ ul li {
   /*color: #398be3;*/
   /*border: 1px solid #398be3 ;*/
   border-radius: 0;
-  font-weight: 100;
-  box-shadow: 0px 2px rgba(6,129,191,0.2);
+  box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
   padding-top: 2px !important;
   /*background: #fff ;*/
 }
@@ -239,8 +242,9 @@ ul li {
   background: #398be3 ;
 }
 .btn-orange:hover{
-  color: #fff;
-  background: #ed5623 ;
+  /*color: #fff;*/
+  /*background: #ed5623 ;*/
+  box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
 }
 .btn-orange{
   color: #ed5623;
@@ -248,10 +252,11 @@ ul li {
   border-radius: 0;
 }
 .btn-full-orange:hover{
-  background: #fff;
-  color: #ed5623;
-  border: 1px solid #ed5623 ;
+  /*background: #fff;*/
+  /*color: #ed5623;*/
+  /*border: 1px solid #ed5623 ;*/
   border-radius: 0;
+  box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
 }
 .btn-full-orange{
   color: #fff;
@@ -300,4 +305,5 @@ ul li {
 }
 .lSAction>a {
   background-image: url(../images/icons/arow-slide.png);
+  opacity: 1;
 }

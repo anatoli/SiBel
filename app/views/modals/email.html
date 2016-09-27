@@ -15,8 +15,9 @@
       <h4  ng-if="mod=='query'"> Заполните форму, отправьте, </br> и мы свяжемся с вами для консультации</h4>
 
     <input class="form-control font-modal-input" placeholder="Имя, фамилия*">
-    <input class="form-control font-modal-input" placeholder="E-mail*">
+    <input class="form-control font-modal-input" placeholder="E-mail*" ng-if="mod!='call'">
     <input class="form-control font-modal-input" placeholder="Телефон">
+    <input class="form-control font-modal-input" placeholder="Время и дата" ng-if="mod=='call'">
     <input class="form-control font-modal-input" placeholder="Организация, должность" ng-if="mod=='query'">
     <select class="form-control font-modal-input" ng-if="mod=='summary'">
       <option value="" disabled selected>-Выберите, направление-</option>
@@ -33,12 +34,15 @@
 
     <textarea class="form-control font-modal-input" placeholder="Интересующее решение или услуга"></textarea>
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <input class="form-control font-modal-input" placeholder="Введите код">
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <input class="form-control font-modal-input" placeholder="">
-        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <form>
+            <div class="g-recaptcha" data-sitekey="6LcNtgcUAAAAANdJRQs7oHSZAYHRjTkJBqZt0a96"></div>
+          </form>
+          <!--<input class="form-control font-modal-input" placeholder="Введите код">-->
+        <!--</div>-->
+        <!--<div class="col-md-6 col-sm-6 col-xs-12">-->
+          <!--<input class="form-control font-modal-input" placeholder="">-->
+        <!--</div>-->
 
       </div>
       <div class="row">
