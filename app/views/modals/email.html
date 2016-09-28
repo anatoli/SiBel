@@ -1,8 +1,14 @@
 <form  name="form" >
   <div class="modal-fonts">
     <div class="">
-      <div class="modal-title float-left left-header-div">
+      <div class="modal-title float-left left-header-div" ng-if="mod=='query'">
         Запрос
+      </div>
+      <div class="modal-title float-left left-header-div" ng-if="mod=='summary'">
+        Резюме
+      </div>
+      <div class="modal-title float-left left-header-div" ng-if="mod=='call'">
+        Заказать звонок
       </div>
       <div class="pull-right">
         <button type="button " ng-click="cancel()" class="btn btn-full-orange btn-radius glyphicon glyphicon-remove btn-top">
