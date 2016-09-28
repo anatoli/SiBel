@@ -7,6 +7,9 @@
 .questions h3{
  line-height: inherit;
 }
+.phone-margin .phone-img{
+  padding: 2% 0;
+}
 .phone-margin .phone{
   margin-left: 32%;
 }

@@ -1,6 +1,8 @@
 .company{
-  height: 425px;
-  .
+  height: 480px;
+}
+.company p{
+  font-size: 16px;
 }
 .company-blocks{
   margin-top: 2%;

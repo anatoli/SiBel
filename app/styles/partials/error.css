@@ -52,3 +52,12 @@
 .dop-margin-email{
   margin-left: 20%;
 }
+.phone-404 .number p{
+  font-size: 14px;
+}
+.phone-404 .number{
+  padding-left: 6%;
+}
+.phone-404 .phone{
+  padding-left: 22%;
+}
