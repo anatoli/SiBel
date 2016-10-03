@@ -8,9 +8,9 @@ angular.module('siBelApp', [
     'ui.bootstrap',
     'pascalprecht.translate'
   ])
-  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+  .config(function ($stateProvider, $urlRouterProvider) {
     "use strict";
-    $urlRouterProvider.otherwise('/')
+    $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('root',{
         url: '',
@@ -154,31 +154,12 @@ angular.module('siBelApp', [
 
 
   })
- // /**/ .config(['$translateProvider', function ($translateProvider) {
- //    "use strict";
- //    $translateProvider.translations('en', {
- //      TITLE: 'Hello',
- //      FOO: 'This is a paragraph.',
- //      BUTTON_LANG_EN: 'english',
- //      BUTTON_LANG_ru: 'russian'
- //    });
- //    $translateProvider.translations('ru', {
- //      TITLE: 'Привет',
- //      FOO: 'Это текущий параграф',
- //      BUTTON_LANG_EN: 'Английсский',
- //      BUTTON_LANG_ru: 'Русский'
- //    });
- //    $translateProvider.translations('by', {
- //      TITLE: 'Дароу',
- //      FOO: 'Гэта тякушчый параграф',
- //      BUTTON_LANG_EN: 'Английски',
- //      BUTTON_LANG_ru: 'Руский'
- //    });
- //    $translateProvider.preferredLanguage('ru');
- //  }]);
   .config(function ($translateProvider) {
 
-
+    "use strict";
+  // $translateProvider.preferredLanguage('ru');
+    $translateProvider.fallbackLanguage('ru');
+    $translateProvider.determinePreferredLanguage();
   $translateProvider.translations('ru', {
     HOME:{
      TITLE:'ИТ — наше  призвание',
@@ -222,7 +203,8 @@ angular.module('siBelApp', [
     Company:{
       TITLE:'Наша компания',
       Name:'Евгений Петрушин',
-      Name_description:'Директор по системной интеграции',
+      Name_description_1:'Директор по ',
+      Name_description_2:'системной интеграции',
       Comments:"Компания «СиБел» входит в структуру многопрофильного холдинга «БелХард» и за 10 лет успешной деятельности в сфере системной интеграции достигла признания среди клиентов, вендеров и коллег.  Наши стремления в продвижении собственных ИТ-решений и услуг для белорусского бизнеса...",
       Btn_1:'Подробнее',
       Btn_2:'Приглашаем в команду'
@@ -237,7 +219,7 @@ angular.module('siBelApp', [
       Btn_2:'Показать все',
     },
     Vendors:{
-      Title:'Наши вендоры'
+      Title:'Наши вендеры'
     },
     Questions:{
       Title:'Остались вопросы?',
@@ -246,6 +228,46 @@ angular.module('siBelApp', [
       Row_2_Title:'Или позвоните нам',
       Btn_1:'Отправить запрос',
       Btn_2:'Заказать звонок'
+    },
+    Error:{
+      Title_1:'Мы работаем над новой версией сайта.',
+      Title_2:'Вы увидите его совсем скоро. Приносим свои извинения.',
+      Title_Color:'Уведомление об открытии',
+      Descriptions_1:'Хотите узнать о публикации сайта? Укажите ваш e-mail,',
+      Descriptions_2:'и мы обязательно сообщим вам. Мы меняемся для вас!',
+      Btn:'Получить уведомление'
+    },
+    Modal:{
+      Header:{
+        1:'Запрос',
+        2:'Резюме',
+        3:'Заказать звонок'
+      },
+      Title:{
+        11:'Заполните форму, отправьте, ',
+        12:'и мы свяжемся в удобное для вас время ',
+        21:'Хотите присоединиться к команде «СиБел&» ? ',
+        22:'Заполните форму, пришлите резюме,',
+        23:'и мы свяжемся с вами',
+        31:'Заполните форму, отправьте, ',
+        32:'и мы свяжемся с вами для консультации'
+      },
+      Btn_file:'Прикрепить файл',
+      Btn_push:'Отправить',
+      Description_1:'Размер файла не должен превышать 5 Мб',
+      Description_2:"* — поля, обязательные для заполнения",
+      Name_plh:"Имя, фамилия*",
+      Phone_plh:"Телефон*",
+      Datetime_plh:"Время и дата",
+      Company_plh:"Организация, должность",
+      Area_plh:"Интересующее решение или услуга",
+      Select:{
+        Title:"-Выберите, направление-",
+        1:"Разработка мобильных приложений",
+        2:"Исследования в области матанализа",
+      },
+
+
     }
   });
     $translateProvider.translations('by', {
@@ -290,7 +312,8 @@ angular.module('siBelApp', [
       Company:{
         TITLE:'Наша кампанія',
         Name:'Яўген Пятрушын',
-        Name_description:'Дырэктар па сістэмнай інтэграцыі',
+        Name_description_1:'Дырэктар па',
+        Name_description_2:'сістэмнай інтэграцыі',
         Comments:'«СіБел» уваходзіць у групу кампаній «БелХард» і за 10 год паспяховай дзейнасці ў сферы сістэмнай інтэграцыі дасягнула прызнання сярод кліентаў, вендараў і калег. Нашыя імкненні ў стварэнні ўласных ІТ-рашэнняў і паслуг для беларускага бізнесу…',
         Btn_1:'Падрабязней ',
         Btn_2:'Запрашаем у каманду'
@@ -314,22 +337,61 @@ angular.module('siBelApp', [
         Row_2_Title:'Альбо патэлефануйце нам',
         Btn_1:'Адправіць запрос',
         Btn_2:'Заказаць званок'
+      },
+      Error:{
+        Title_1:'Выбачайце, але мы працуем над новай версіяй сайта.',
+        Title_2:'Вы ўбачыце яго ў хуткім часе. ',
+        Title_Color:'Паведамленне аб адкрыцці',
+        Descriptions_1:'Жадаеце атрымаць паведамленне аб адкрыцці сайта? Пазначце ваш e-mail,',
+        Descriptions_2:' і мы абавязкова праінфарміруем. Нашыя змены для вас!',
+        Btn:'Атрымаць паведамленне'
+      },
+      Modal:{
+        Header:{
+          1:'Запрос',
+          2:'Рэзюмэ',
+          3:'Заказаць званок'
+        },
+        Title:{
+          11:'Запоўніце форму, адпраўце, ',
+          12:'і мы звязуемся з вамі для кансультацыі',
+          21:"Жадаеце далучыцца да каманды «СіБел»?",
+          22:"Запоўніце форму, дашліце рэзюмэ,",
+          23:" і мы звязуемся з вамі",
+          31:'Запоўніце форму, адпраўце, ',
+          32:"і мы звязуемся з вамі ў зручны для вас час"
+        },
+        Btn_file:'Дадаць файл',
+        Btn_push:'Адправіць',
+        Description_1:'Памер файла не павінен перебольшваць 5 Мб',
+        Description_2:"* — палі, абавязковыя для запаўнення",
+        Name_plh:"Імя, прозвішча*",
+        Phone_plh:"Тэлефон*",
+        Datetime_plh:"Час і дата",
+        Company_plh:"Кампанія, пасада",
+        Area_plh:"Рашэнне ці паслуга, якія цікавяць",
+        Select:{
+          Title:"-Адзначце накірунак-",
+          1:"Распрацоўка мабільных прыкладанняў",
+          2:"Даследаванні ў галіне матанализа",
+        }
+
       }
     });
-  $translateProvider.preferredLanguage('ru');
 })
-  // .config(['$translateProvider', '$translatePartialLoaderProvider', function ($translateProvider, $translatePartialLoaderProvider) {
-  //   $translatePartialLoaderProvider.addPart('one');
-  //   $translateProvider.useLoader('$translatePartialLoader', {
-  //     urlTemplate: '{lang}-{part}.json'
-  //   });
-  //   $translateProvider.preferredLanguage('en');
-  // }])
-  // .run(['$translatePartialLoader', '$translate', function ($translatePartialLoader, $translate){
-  //   $translatePartialLoader.addPart('two');
-  //   $translate.refresh();
-  // }])
-  // .controller('MainCtrl', function($scope) {
-  //   $scope.name = 'World';
-  // })
+/////**********************//// Заюзать для выгрузки словарей в файлах
+//   .config(['$translateProvider', '$translatePartialLoaderProvider', function ($translateProvider, $translatePartialLoaderProvider) {
+//     $translatePartialLoaderProvider.addPart('ru');
+//     $translateProvider.useLoader('$translatePartialLoader', {
+//       urlTemplate: '../styles/i18/ru.json'
+//     });
+//     $translateProvider.preferredLanguage('en');
+//   }])
+//   .run(['$translatePartialLoader', '$translate', function ($translatePartialLoader, $translate){
+//     // $translatePartialLoader.addPart('two');
+//     $translate.use('ru');
+//     // $translate.refresh();
+//   }])
+
+/*************/
 

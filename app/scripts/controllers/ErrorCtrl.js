@@ -6,10 +6,26 @@
  * Created by Anatoli on 16.09.2016.
  */
 angular.module('siBelApp')
-  .controller('ErrorCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('ErrorCtrl',[ '$scope', '$rootScope', '$translate', function ($scope, $rootScope, $translate) {
+    $rootScope.$on('$translateChangeSuccess', function () {
+      $translate('Error.Title_1').then(function (translation) {
+        $scope.Error_Title_1 = translation;
+      });
+      $translate('Error.Title_2').then(function (translation) {
+        $scope.Error_Title_2 = translation;
+      });
+      $translate('Error.Title_Color').then(function (translation) {
+        $scope.Error_Title_Color = translation;
+      });
+      $translate('Error.Descriptions_1').then(function (translation) {
+        $scope.Error_Descriptions_1 = translation;
+      });
+      $translate('Error.Descriptions_2').then(function (translation) {
+        $scope.Error_Descriptions_2 = translation;
+      });
+      $translate('Error.Btn').then(function (translation) {
+        $scope.Error_Btn = translation;
+      });
+    });
+    $translate.use('ru').then(function () {});
+  }]);

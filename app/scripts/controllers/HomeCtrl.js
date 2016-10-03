@@ -10,6 +10,8 @@ angular.module('siBelApp')
     $scope.apcSrc = "../../images/vendors/apc_white.png";
     $scope.ciscoSrc = "../../images/vendors/cisco_white.png";
 
+    // $translate.proposedLanguage('ru');
+
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('HOME.TITLE').then(function (translation) {
         $scope.HOME_TITLE = translation;
@@ -104,8 +106,11 @@ angular.module('siBelApp')
       $translate('Company.Name').then(function (translation) {
         $scope.Company_Name = translation;
       });
-      $translate('Company.Name_description').then(function (translation) {
-        $scope.Company_Name_description = translation;
+      $translate('Company.Name_description_1').then(function (translation) {
+        $scope.Company_Name_description_1 = translation;
+      });
+      $translate('Company.Name_description_2').then(function (translation) {
+        $scope.Company_Name_description_2 = translation;
       });
       $translate('Company.Comments').then(function (translation) {
         $scope.Company_Comments = translation;
@@ -163,7 +168,7 @@ angular.module('siBelApp')
 
 
     });
-
+    $translate.use('ru').then(function () {});
 
     setTimeout(function () {
       $scope.iconFirs = true;
@@ -193,7 +198,7 @@ angular.module('siBelApp')
           dataModal: function () {
             return {
               data: data,
-              typeCase: null
+              lang: $translate.proposedLanguage()
             };
           }
         },
@@ -207,7 +212,7 @@ angular.module('siBelApp')
     $scope.openDetails =function () {
       window.scrollTo(0, 0);
       $state.go('root.404');
-    }
+    };
     $scope.hpLeave=function () {
       $scope.hpSrc = "../../images/vendors/hp_white.png";
     };
