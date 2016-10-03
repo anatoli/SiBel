@@ -2,24 +2,24 @@
 <ng-include src="'/views/partials/_slider.html'"></ng-include>
 
 <div class="row block-default">
-  <h4 class="rubric it-title">ИТ — наше  призвание</h4>
+  <h4 class="rubric it-title">{{HOME_TITLE | translate}}</h4>
   <div ng-click="openDetails()" class="col-it-inf col-md-3 col-sm-3 col-xs-3">
     <img id="first-icon" class="icons animated" src='../../images/icons/cogwheel.png'>
-    <h4><b>Решения для бизнеса</b></h4>
-    <p>Эффективное управление и минимизация человеческого фактора</p>
-    <button  class="form-control btn-blue secondBlock">Подробнее</button>
+    <h4><b>{{HOME_ROW_1_TITLE | translate}}</b></h4>
+    <p>{{HOME_ROW_1 | translate}}</p>
+    <button  class="form-control btn-blue secondBlock">{{HOME_ROW_1_BTN | translate}}</button>
   </div>
   <div ng-click="openDetails()" class="col-it-inf col-md-3 col-sm-3 col-xs-3  ">
     <img id="second-icon" class="icons animated" src='../../images/icons/networking.png'>
-    <h4><b>Телекомммуникации</b></h4>
-    <p>Внедрение и разработка ПО для операторов мобильной связи</p>
-    <button  class="form-control btn-blue secondBlock">Ознакомиться</button>
+    <h4><b>{{HOME_ROW_2_TITLE | translate}}</b></h4>
+    <p>{{HOME_ROW_2 | translate}}</p>
+    <button  class="form-control btn-blue secondBlock">{{HOME_ROW_2_BTN | translate}}</button>
   </div>
   <div ng-click="openDetails()" class="col-it-inf col-md-3 col-sm-3 col-xs-3">
     <img id="third-icon" class="icons animated" src='../../images/icons/analysis.png'>
-    <h4><b>ИТ-услуги</b></h4>
-    <p>ИТ-инфраструктура: модернизация и обслуживание в режиме 24/7</p>
-    <button class="form-control btn-blue secondBlock">Узнать детали</button>
+    <h4><b>{{HOME_ROW_3_TITLE | translate}}</b></h4>
+    <p>{{HOME_ROW_3 | translate}}</p>
+    <button class="form-control btn-blue secondBlock">{{HOME_ROW_3_BTN | translate}}</button>
   </div>
 </div>
   <ng-include src="'/views/partials/_aboutCompany.html'"></ng-include>
