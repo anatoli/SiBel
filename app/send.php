@@ -95,6 +95,6 @@
 //		echo "<p style="font: 13px Verdana;"><font color="#FF3333"><strong>Ошибка !</strong></font></p><ul style="list-style: none; font: 11px Verdana; color:#000; border:1px solid #c00; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; background-color:#fff; padding:5px; margin:5px 10px;">".$log."</ul><br>"; //Нельзя отправлять пустые сообщения
 //
 //}
-<? php
-mail("info@toto.by", "My Subject", "Line 1\nLine 2\nLine 3");
-?>
+//<? php
+//mail("info@toto.by", "My Subject", "Line 1\nLine 2\nLine 3");
+//?>

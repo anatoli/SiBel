@@ -1,3 +1,4 @@
+"use strict";
 angular.module('siBelApp', [
     'ngAnimate',
     'ngCookies',
@@ -5,10 +6,11 @@ angular.module('siBelApp', [
     'ui.router',
     'ngSanitize',
     'ngTouch',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'gettext'
   ])
-  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    $urlRouterProvider.otherwise('/')
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('root',{
         url: '',
@@ -28,7 +30,6 @@ angular.module('siBelApp', [
           // }
         }
       })
-
 
       .state('root.404',{
         url: '/sorry',
@@ -67,7 +68,7 @@ angular.module('siBelApp', [
             controller:  'ProjectsCtrl'
           }
         }
-      })
+      });
       // .state('root.profile.users', {
       //   url: '/users',
       //   ncyBreadcrumb: {

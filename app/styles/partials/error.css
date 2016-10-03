@@ -54,7 +54,7 @@
   margin-top: 3%;
 }
 .dop-margin-email{
-  margin-left: 20%;
+  margin-left: 18%;
 }
 .phone-404 .number p{
   font-size: 14px;
@@ -105,5 +105,8 @@ video{
   font-size: 32px;
 }
 .message-block{
-  margin-left: 8%;
+  margin-left: 14%;
+}
+.footer-404-margin-img img{
+ margin-right: 5%;
 }

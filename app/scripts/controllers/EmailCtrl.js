@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Created by Anatoli on 23.09.2016.
  */
@@ -9,7 +10,7 @@ angular.module('siBelApp')
 
     console.log(dataModal);
     if(dataModal.data){
-      $scope.mod = dataModal.data
+      $scope.mod = dataModal.data;
     }
 
     $scope.cancel = function () {
