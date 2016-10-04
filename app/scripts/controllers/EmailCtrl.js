@@ -17,7 +17,7 @@ angular.module('siBelApp')
     $scope.cancel = function () {
       $uibModalInstance.dismiss('cancel');
     };
-    $rootScope.$on('$translateChangeSuccess', function (data) {
+    $rootScope.$on('$translateChangeSuccess', function () {
       $translate('Modal.Header.1').then(function (translation) {
         $scope.Modal_Header_1 = translation;
       });

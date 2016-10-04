@@ -495,7 +495,7 @@ angular.module('siBelApp', [
 
 
   });
-})
+  });
 /////**********************//// Заюзать для выгрузки словарей в файлах
 //   .config(['$translateProvider', '$translatePartialLoaderProvider', function ($translateProvider, $translatePartialLoaderProvider) {
 //     $translatePartialLoaderProvider.addPart('ru');

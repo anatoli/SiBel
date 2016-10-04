@@ -9,7 +9,6 @@ angular.module('siBelApp')
     $scope.en=false;
     $scope.tabActive = $state.current.name;
     $translate.use('ru');
-    console.log($translate)
 
     $scope.changeLanguage = function (key) {
       if(key === 'by'){
@@ -26,7 +25,7 @@ angular.module('siBelApp')
         $scope.by=false;
         $scope.ru=false;
         $scope.en=true;
-      };
+      }
       $translate.use(key);
     };
 

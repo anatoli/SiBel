@@ -1,14 +1,13 @@
 'use strict';
-
 angular.module('siBelApp')
-  .controller('HomeCtrl',[ '$scope', '$uibModal', '$state', '$translate', '$rootScope', function ($scope, $uibModal, $state, $translate, $rootScope) {
+  .controller('HomeCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$', function ($scope, $uibModal, $state, $translate, $rootScope, $) {
 
-    $scope.hpSrc = "../../images/vendors/hp_white.png";
-    $scope.oracleSrc = "../../images/vendors/oracle_white.png";
+    $scope.hpSrc = "images/vendors/hp_white.png";
+    $scope.oracleSrc = "images/vendors/oracle_white.png";
 
-    $scope.schneiderSrc = "../../images/vendors/schneider_white.png";
-    $scope.apcSrc = "../../images/vendors/apc_white.png";
-    $scope.ciscoSrc = "../../images/vendors/cisco_white.png";
+    $scope.schneiderSrc = "images/vendors/schneider_white.png";
+    $scope.apcSrc = "images/vendors/apc_white.png";
+    $scope.ciscoSrc = "images/vendors/cisco_white.png";
 
     // $translate.proposedLanguage('ru');
 
@@ -214,36 +213,36 @@ angular.module('siBelApp')
       $state.go('root.404');
     };
     $scope.hpLeave=function () {
-      $scope.hpSrc = "../../images/vendors/hp_white.png";
+      $scope.hpSrc = '../../images/vendors/hp_white.png';
     };
     $scope.hpMove=function () {
-      $scope.hpSrc = "../../images/vendors/hp.png";
+      $scope.hpSrc = '../../images/vendors/hp.png';
     };
 
     $scope.oracleLeave=function () {
-      $scope.oracleSrc = "../../images/vendors/oracle_white.png";
+      $scope.oracleSrc = '../../images/vendors/oracle_white.png';
     };
     $scope.oracleMove=function () {
-      $scope.oracleSrc = "../../images/vendors/oracle.png";
+      $scope.oracleSrc = '../../images/vendors/oracle.png';
     };
 
     $scope.ciscoLeave=function () {
-      $scope.ciscoSrc = "../../images/vendors/cisco_white.png";
+      $scope.ciscoSrc = '../../images/vendors/cisco_white.png';
     };
     $scope.ciscoMove=function () {
-      $scope.ciscoSrc = "../../images/vendors/cisco.png";
+      $scope.ciscoSrc = '../../images/vendors/cisco.png';
     };
     $scope.apcLeave=function () {
-      $scope.apcSrc = "../../images/vendors/apc_white.png";
+      $scope.apcSrc = '../../images/vendors/apc_white.png';
     };
     $scope.apcMove=function () {
-      $scope.apcSrc = "../../images/vendors/apc.png";
+      $scope.apcSrc = '../../images/vendors/apc.png';
     };
 
     $scope.schneiderLeave=function () {
-      $scope.schneiderSrc = "../../images/vendors/schneider_white.png";
+      $scope.schneiderSrc = '../../images/vendors/schneider_white.png';
     };
     $scope.schneiderMove=function () {
-      $scope.schneiderSrc = "../../images/vendors/schneider.png";
+      $scope.schneiderSrc = '../../images/vendors/schneider.png';
     };
   }]);
