@@ -58,9 +58,9 @@ angular.module('siBelApp')
       $translate('SLIDER.Slide_1_li.1').then(function (translation) {
         $scope.SLIDER_Slide_1_li_1 = translation;
       });
-      $translate('SLIDER.Slide_1_li.2').then(function (translation) {
-        $scope.SLIDER_Slide_1_li_2 = translation;
-      });
+      // $translate('SLIDER.Slide_1_li.2').then(function (translation) {
+      //   $scope.SLIDER_Slide_1_li_2 = translation;
+      // });
       $translate('SLIDER.Slide_1_li.3').then(function (translation) {
         $scope.SLIDER_Slide_1_li_3 = translation;
       });

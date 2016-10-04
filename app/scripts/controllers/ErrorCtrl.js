@@ -26,6 +26,12 @@ angular.module('siBelApp')
       $translate('Error.Btn').then(function (translation) {
         $scope.Error_Btn = translation;
       });
+      $translate('Error.Address_1').then(function (translation) {
+        $scope.Error_Address_1 = translation;
+      });
+      $translate('Error.Address_2').then(function (translation) {
+        $scope.Error_Address_2 = translation;
+      });
     });
     $translate.use('ru').then(function () {});
   }]);

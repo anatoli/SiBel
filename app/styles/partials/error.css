@@ -69,8 +69,8 @@
 video{
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index: -100;
   /*transform: translateX(-50%) translateY(-50%);*/
   background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
@@ -83,7 +83,7 @@ video{
   z-index: 1;
   top: 0;
   width: 100%;
-  height: 99%;
+  height: 99.5%;
   bottom: 0;
   left: 0;
   opacity: .7;

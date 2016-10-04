@@ -180,7 +180,6 @@ angular.module('siBelApp', [
       Slide_1_Title_2:'для бизнеса',
       Slide_1_li:{
         1:"Автоматизация бизнес-процессов",
-        2:"Учет и контроль бизнес-решений",
         3:"Актуализация информации о состоянии  дел предприятия",
         4:"Аналитика бизнес-данных",
       },
@@ -205,7 +204,7 @@ angular.module('siBelApp', [
       Name:'Евгений Петрушин',
       Name_description_1:'Директор по ',
       Name_description_2:'системной интеграции',
-      Comments:"Компания «СиБел» входит в структуру многопрофильного холдинга «БелХард» и за 10 лет успешной деятельности в сфере системной интеграции достигла признания среди клиентов, вендеров и коллег.  Наши стремления в продвижении собственных ИТ-решений и услуг для белорусского бизнеса...",
+      Comments:"Компания «СиБел» входит в структуру многопрофильного холдинга «БелХард» и за 10 лет успешной деятельности в сфере системной интеграции достигла признания среди клиентов, вендоров и коллег.  Наши стремления в продвижении собственных ИТ-решений и услуг для белорусского бизнеса...",
       Btn_1:'Подробнее',
       Btn_2:'Приглашаем в команду'
     },
@@ -219,7 +218,7 @@ angular.module('siBelApp', [
       Btn_2:'Показать все',
     },
     Vendors:{
-      Title:'Наши вендеры'
+      Title:'Наши вендоры'
     },
     Questions:{
       Title:'Остались вопросы?',
@@ -235,7 +234,10 @@ angular.module('siBelApp', [
       Title_Color:'Уведомление об открытии',
       Descriptions_1:'Хотите узнать о публикации сайта? Укажите ваш e-mail,',
       Descriptions_2:'и мы обязательно сообщим вам. Мы меняемся для вас!',
-      Btn:'Получить уведомление'
+      Btn:'Получить уведомление',
+      Address_1:'БЦ «Фаренгейт», 4-й этаж',
+      Address_2:'Ул. Притыцкого, 79, 220140, Минск, Беларусь'
+
     },
     Modal:{
       Header:{
@@ -290,7 +292,6 @@ angular.module('siBelApp', [
         Slide_1_Title_2:'для бізнесу',
         Slide_1_li:{
           1:"Аўтаматызацыя бізнес-працэсаў",
-          2:"Улік і кантроль бізнес-рашэнняў",
           3:"Актуальная інфармацыя пра становішча спраў прадпрыемства",
           4:"Анілітыка бізнес-данных",
         },
@@ -333,7 +334,7 @@ angular.module('siBelApp', [
       Questions:{
         Title:'Ёсць пытанні?',
         Row_1_Title_1:'Напішыце нам,',
-        Row_1_Title_2:'і мы абавязкова звяжамся з вамі',
+        Row_1_Title_2:'і мы абавязкова адкажам вам',
         Row_2_Title:'Альбо патэлефануйце нам',
         Btn_1:'Адправіць запрос',
         Btn_2:'Заказаць званок'
@@ -344,7 +345,9 @@ angular.module('siBelApp', [
         Title_Color:'Паведамленне аб адкрыцці',
         Descriptions_1:'Жадаеце атрымаць паведамленне аб адкрыцці сайта? Пазначце ваш e-mail,',
         Descriptions_2:' і мы абавязкова праінфарміруем. Нашыя змены для вас!',
-        Btn:'Атрымаць паведамленне'
+        Btn:'Атрымаць паведамленне',
+        Address_1:'БЦ «Фаренгейт», 4-ы паверх',
+        Address_2:'Вул. Прытыцкага, 79, 220140, Мінск, Беларусь'
       },
       Modal:{
         Header:{
@@ -378,6 +381,120 @@ angular.module('siBelApp', [
 
       }
     });
+    $translateProvider.translations('en',{
+      HOME:{
+        TITLE:'IT - our vocation',
+        ROW_1_TITLE:'Business solutions',
+        ROW_1:'Effective data management and M2M approach',
+        ROW_1_BTN:'More',
+        ROW_2_TITLE:'Telecommunications',
+        ROW_2:'Software development and implementation for telecom operators',
+        ROW_2_BTN:'Introduce',
+        ROW_3_TITLE:'IT Services',
+        ROW_3:'IT infrastructure implementation and 24/7 support',
+        ROW_3_BTN:'Learn more',
+      },
+      SLIDER:{
+        BTN_1:'More ',
+        BTN_2:'Leave request',
+        Slide_1_Title_1:'Software solutions',
+        Slide_1_Title_2:' for business',
+        Slide_1_li:{
+          1:"Business process Automation",
+          3:"Real-time dashboards",
+          4:"Big data analysis",
+        },
+        Slide_2_Title_1:'Telecom software ',
+        Slide_2_Title_2:'solutions',
+        Slide_2_li:{
+          1:"Mediation platform",
+          2:"Anti-fraud system",
+          3:"Service provisioning",
+        },
+        Slide_3_Title_1:'Managed Services',
+        Slide_3_li:{
+          1:"IT Audit",
+          2:"Maintenance and Support",
+          3:"Enterprise IT systems",
+          4:"24/7 Proactive Monitoring",
+        }
+
+      },
+      Company:{
+        TITLE:'About us',
+        Name:'Eugene Piatrushin',
+        Name_description_1:'Systems integration  ',
+        Name_description_2:'Director',
+        Comments:"\"SiBEL\" is a group of companies \"BelHard\" and for 10 years of successful activity in the field of system integration has achieved acknowledgment among clients, vendors and colleagues. Our commitment in advancing their own IT solutions and services for the Belarusian business ...",
+        Btn_1:'More ',
+        Btn_2:'Join the team'
+      },
+      Ideas:{
+        imgHeader_1:'Software development',
+        imgHeader_2:'Business Automation for Notary',
+        Title:'Completed projects and innovative ideas speak for us',
+        Description_1:'The company "Sibel" specializes in providing application services in the sphere of high technologies.',
+        Description_2:'Informational system “Notary Belarus” developed to automate the activities of the notary (receipt, transfer, collection, processing, accumulation, storage, dissemination of information)…',
+        Btn_1:'More ',
+        Btn_2:'See all',
+      },
+      Vendors:{
+        Title:'Our vendors'
+      },
+      Questions:{
+        Title:'Have questions?',
+        Row_1_Title_1:'Write to us ',
+        Row_1_Title_2:'and we will contact you',
+        Row_2_Title:'Call us',
+        Btn_1:'Send inquiry',
+        Btn_2:'Request a call'
+      },
+      Error:{
+        Title_1:'Sorry, we are working on a new version of the site.',
+        Title_2:' You\'ll see it soon',
+        Title_Color:'Notification of opening',
+      Descriptions_1:'Want to learn about publishing site? Enter your e-mail ',
+      Descriptions_2:'and we\'ll let you know. We change for you!',
+    Btn:'Get notified',
+      Address_1:'Business Center "Fahrenheit" 4th floor',
+      Address_2:'Pritytsky Str., 79, 220140, Minsk, Belarus'
+
+  },
+    Modal:{
+      Header:{
+        1:'Information Request',
+          2:'Resume',
+          3:'Request a call'
+      },
+      Title:{
+        11:'Fill in the form and send it ',
+          12:'and we\'ll get back at a convenient time for you ',
+        21:'Want to join "Sibel" team? ',
+          22:'Fill in the form, please send a CV ',
+          23:'and we will contact you ',
+          31:'Fill in the form and send it  ',
+          32:'and we will contact you for a consultation'
+      },
+      Btn_file:'Attach file',
+        Btn_push:'Send',
+        Description_1:'File size should not exceed 5 MB ',
+        Description_2:"* — Fields are required",
+        Name_plh:"First Name, Last Name*",
+        Phone_plh:"Phone number*",
+        Datetime_plh:"Time and date",
+        Company_plh:"Organization, position",
+        Area_plh:"Interested in the solution or service",
+        Select:{
+        Title:"-Select direction-",
+          1:"Developing Mobile Applications",
+          2:"Research in the field of mathematical analysis",
+      },
+
+
+    }
+
+
+  });
 })
 /////**********************//// Заюзать для выгрузки словарей в файлах
 //   .config(['$translateProvider', '$translatePartialLoaderProvider', function ($translateProvider, $translatePartialLoaderProvider) {

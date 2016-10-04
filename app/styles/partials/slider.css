@@ -5,12 +5,16 @@ h2{
   font-size: 52px;
   font-family: "trebuchet ms", sans-serif;
 }
+.none-max-width{
+  max-width: none !important;
+  display: inline-block !important;
+}
 .margin-slide{
   margin-top: 4%;
 }
 .item{
   background-size: cover;
-  background: #333;
+  background: #fff;
   text-align: center;
   height: 425px !important;
 }
@@ -52,18 +56,21 @@ h2{
   right: 0;
   left: auto;
   background-image:none;
+  text-shadow: -2px -2px 5px rgba(0, 0, 0, .6);
 }
 .carousel-control.left {
   left: 0;
   right: auto;
   background-image:none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+
 }
 .carousel-control {
   width: 10%;
   font-size: 20px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+
   background-color: rgba(0, 0, 0, 0);
   opacity: .8;
 }
@@ -113,3 +120,19 @@ h2{
 
 
 /***********************/
+.background-slide{
+  background-size: contain;
+  height: 100%;
+  width: 100%
+}
+
+
+.background-slide-3{
+  background-image: url(../../images/services.png);
+}
+.background-slide-2{
+  background-image: url(../../images/solutions.jpg);
+}
+.background-slide-1{
+  background-image: url(../../images/telecom.jpg);
+}

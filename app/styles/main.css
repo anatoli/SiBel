@@ -58,14 +58,22 @@
 }
 button{
   font-family: Narrow;
+  overflow: hidden;
 }
 button.form-control{
   padding: 3px 12px !important;
   font-size: 18px !important;
 }
+@media screen and (min-width: 1441px){
+  body{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 body{
   padding: 2% 0 !important;
   font-family: SegoeUIRegular;
+  max-width: 1440px;
 }
 .containerBlock{
   padding: 0
