@@ -274,3 +274,6 @@ ul li {
   background-image: url(../images/icons/arow-slide.png);
   opacity: 1;
 }
+.pointer{
+  cursor: pointer;
+}

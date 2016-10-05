@@ -33,5 +33,5 @@ angular.module('siBelApp')
         $scope.Error_Address_2 = translation;
       });
     });
-    $translate.use('ru').then(function () {});
+    $translate.use($translate.proposedLanguage()).then(function () {});
   }]);

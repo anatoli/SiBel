@@ -3,14 +3,31 @@
   .col-xxs{
     width: 50%;
   }
+  .mobile-style-block{
+    margin-left: 9.2%;
+  }
 }
 
 
+@media (max-width: 768px) {
+  .media-block{
+    display:none;
+  }
+  .first button{
+    margin-left: 0;
+  }
+  .questions .call{
+    margin-left: 0;
+  }
+
+}
 @media (min-width: 768px) {
   /*.container {*/
     /*width: 730px;*/
   /*}*/
-
+  .media-block-up{
+    display:block;
+  }
   /* Remove the padding we set earlier */
   .header,
   .marketing,

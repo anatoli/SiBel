@@ -27,12 +27,12 @@
 
 .about-first-btn{
   float: left;
-  width: 15%;
+  /*width: 15%;*/
 }
 .about-second-btn{
   margin-left:20px;
   float: left;
-  width: 28%;
+  /*width: 28%;*/
 }
 .avatar img{
   border: 3px solid #fff;

@@ -22,17 +22,18 @@
 <script type="text/javascript">
   $(function() {
     $('#lightSlider').lightSlider({
-      item:3,
+      item:4,
       loop:true,
       slideMove:2,
       easing: 'cubic-bezier(0.30, 0, 0.30, 1)',
       speed:600,
       pager: false,
+      enableTouch:true,
       responsive : [
         {
           breakpoint:800,
           settings: {
-            item:2,
+            item:3,
             slideMove:1,
             slideMargin:6,
           }
@@ -40,8 +41,16 @@
         {
           breakpoint:480,
           settings: {
-            item:1,
+            item:2,
             slideMove:1
+          }
+        },
+        {
+          breakpoint:380,
+          settings: {
+            item:1,
+            slideMove:1,
+            slideMargin:6,
           }
         }
       ]

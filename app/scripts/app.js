@@ -180,7 +180,8 @@ angular.module('siBelApp', [
       Slide_1_Title_2:'для бизнеса',
       Slide_1_li:{
         1:"Автоматизация бизнес-процессов",
-        3:"Актуализация информации о состоянии  дел предприятия",
+        31:"Актуализация информации",
+        32:"о состоянии  дел предприятия",
         4:"Аналитика бизнес-данных",
       },
       Slide_2_Title_1:'ПО для мобильных',
@@ -248,7 +249,7 @@ angular.module('siBelApp', [
       Title:{
         11:'Заполните форму, отправьте, ',
         12:'и мы свяжемся в удобное для вас время ',
-        21:'Хотите присоединиться к команде «СиБел&» ? ',
+        21:'Хотите присоединиться к команде «СиБел»? ',
         22:'Заполните форму, пришлите резюме,',
         23:'и мы свяжемся с вами',
         31:'Заполните форму, отправьте, ',
@@ -260,7 +261,7 @@ angular.module('siBelApp', [
       Description_2:"* — поля, обязательные для заполнения",
       Name_plh:"Имя, фамилия*",
       Phone_plh:"Телефон*",
-      Datetime_plh:"Время и дата",
+      Datetime_plh:"Время и дата*",
       Company_plh:"Организация, должность",
       Area_plh:"Интересующее решение или услуга",
       Select:{
@@ -274,7 +275,7 @@ angular.module('siBelApp', [
   });
     $translateProvider.translations('by', {
       HOME:{
-        TITLE:'ІТ - наша прызванне',
+        TITLE:'ІТ — наша прызванне',
         ROW_1_TITLE:'Рашэнні для бізнесу',
         ROW_1:'Эфектыўнае кіраванне бізнес-працэсамі і мінімізацыя чалавечага фактару',
         ROW_1_BTN:'Падрабязней',
@@ -292,8 +293,9 @@ angular.module('siBelApp', [
         Slide_1_Title_2:'для бізнесу',
         Slide_1_li:{
           1:"Аўтаматызацыя бізнес-працэсаў",
-          3:"Актуальная інфармацыя пра становішча спраў прадпрыемства",
-          4:"Анілітыка бізнес-данных",
+          31:"Актуальная інфармацыя",
+          32:"пра становішча спраў прадпрыемства",
+          4:"Аналітыка бізнес-дадзеных",
         },
         Slide_2_Title_1:'ПЗ для аператараў',
         Slide_2_Title_2:'мабільнай сувязі',
@@ -320,7 +322,7 @@ angular.module('siBelApp', [
         Btn_2:'Запрашаем у каманду'
       },
       Ideas:{
-        imgHeader_1:'Распрацоука',
+        imgHeader_1:'Распрацоўка',
         imgHeader_2:'Сістэмнае рашэнне для натарыята',
         Title:'Рэалізаваныя праекты і перадавыя ідэі гавораць за нас',
         Description_1:'Спецыялізацыя кампаніі «СіБел» у пашырэнні прыкладных паслуг сферы высокіх тэхналогій.',
@@ -346,7 +348,7 @@ angular.module('siBelApp', [
         Descriptions_1:'Жадаеце атрымаць паведамленне аб адкрыцці сайта? Пазначце ваш e-mail,',
         Descriptions_2:' і мы абавязкова праінфарміруем. Нашыя змены для вас!',
         Btn:'Атрымаць паведамленне',
-        Address_1:'БЦ «Фаренгейт», 4-ы паверх',
+        Address_1:'БЦ «Фарэнгейт», 4-ы паверх',
         Address_2:'Вул. Прытыцкага, 79, 220140, Мінск, Беларусь'
       },
       Modal:{
@@ -370,7 +372,7 @@ angular.module('siBelApp', [
         Description_2:"* — палі, абавязковыя для запаўнення",
         Name_plh:"Імя, прозвішча*",
         Phone_plh:"Тэлефон*",
-        Datetime_plh:"Час і дата",
+        Datetime_plh:"Час і дата*",
         Company_plh:"Кампанія, пасада",
         Area_plh:"Рашэнне ці паслуга, якія цікавяць",
         Select:{
@@ -401,7 +403,8 @@ angular.module('siBelApp', [
         Slide_1_Title_2:' for business',
         Slide_1_li:{
           1:"Business process Automation",
-          3:"Real-time dashboards",
+          31:"Real-time dashboards",
+          32:"",
           4:"Big data analysis",
         },
         Slide_2_Title_1:'Telecom software ',
@@ -481,7 +484,7 @@ angular.module('siBelApp', [
         Description_2:"* — Fields are required",
         Name_plh:"First Name, Last Name*",
         Phone_plh:"Phone number*",
-        Datetime_plh:"Time and date",
+        Datetime_plh:"Time and date*",
         Company_plh:"Organization, position",
         Area_plh:"Interested in the solution or service",
         Select:{

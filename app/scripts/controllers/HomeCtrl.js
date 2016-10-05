@@ -1,13 +1,13 @@
 'use strict';
 angular.module('siBelApp')
-  .controller('HomeCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$', function ($scope, $uibModal, $state, $translate, $rootScope, $) {
+  .controller('HomeCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', function ($scope, $uibModal, $state, $translate, $rootScope) {
 
-    $scope.hpSrc = "images/vendors/hp_white.png";
-    $scope.oracleSrc = "images/vendors/oracle_white.png";
+    $scope.hpSrc = "../../images/vendors/HP_white.png";
+    $scope.oracleSrc = "../../images/vendors/Oracle_white.png";
 
-    $scope.schneiderSrc = "images/vendors/schneider_white.png";
-    $scope.apcSrc = "images/vendors/apc_white.png";
-    $scope.ciscoSrc = "images/vendors/cisco_white.png";
+    $scope.schneiderSrc = "../../images/vendors/Schneider_white.png";
+    $scope.apcSrc = "../../images/vendors/APC_white.png";
+    $scope.ciscoSrc = "../../images/vendors/Cisco_white.png";
 
     // $translate.proposedLanguage('ru');
 
@@ -60,8 +60,11 @@ angular.module('siBelApp')
       // $translate('SLIDER.Slide_1_li.2').then(function (translation) {
       //   $scope.SLIDER_Slide_1_li_2 = translation;
       // });
-      $translate('SLIDER.Slide_1_li.3').then(function (translation) {
-        $scope.SLIDER_Slide_1_li_3 = translation;
+      $translate('SLIDER.Slide_1_li.31').then(function (translation) {
+        $scope.SLIDER_Slide_1_li_3_1 = translation;
+      });
+      $translate('SLIDER.Slide_1_li.32').then(function (translation) {
+        $scope.SLIDER_Slide_1_li_3_2 = translation;
       });
       $translate('SLIDER.Slide_1_li.4').then(function (translation) {
         $scope.SLIDER_Slide_1_li_4 = translation;
@@ -167,13 +170,14 @@ angular.module('siBelApp')
 
 
     });
-    $translate.use('ru').then(function () {});
+    $translate.use($translate.proposedLanguage()).then(function () {});
 
     setTimeout(function () {
       $scope.iconFirs = true;
       $('#first-icon').addClass('flip');
     }, 2000);
     setTimeout(function () {
+
       $scope.iconFirs = true;
       $('#second-icon').addClass('flip');
     }, 3000);
@@ -211,38 +215,39 @@ angular.module('siBelApp')
     $scope.openDetails =function () {
       window.scrollTo(0, 0);
       $state.go('root.404');
+      $translate.refresh();
     };
     $scope.hpLeave=function () {
-      $scope.hpSrc = '../../images/vendors/hp_white.png';
+      $scope.hpSrc = '../../images/vendors/HP_white.png';
     };
     $scope.hpMove=function () {
-      $scope.hpSrc = '../../images/vendors/hp.png';
+      $scope.hpSrc = '../images/vendors/HP.png';
     };
 
     $scope.oracleLeave=function () {
-      $scope.oracleSrc = '../../images/vendors/oracle_white.png';
+      $scope.oracleSrc = '../../images/vendors/Oracle_white.png';
     };
     $scope.oracleMove=function () {
-      $scope.oracleSrc = '../../images/vendors/oracle.png';
+      $scope.oracleSrc = '../../images/vendors/Oracle.png';
     };
 
     $scope.ciscoLeave=function () {
-      $scope.ciscoSrc = '../../images/vendors/cisco_white.png';
+      $scope.ciscoSrc = '../../images/vendors/Cisco_white.png';
     };
     $scope.ciscoMove=function () {
-      $scope.ciscoSrc = '../../images/vendors/cisco.png';
+      $scope.ciscoSrc = '../../images/vendors/Cisco.png';
     };
     $scope.apcLeave=function () {
-      $scope.apcSrc = '../../images/vendors/apc_white.png';
+      $scope.apcSrc = '../../images/vendors/APC_white.png';
     };
     $scope.apcMove=function () {
-      $scope.apcSrc = '../../images/vendors/apc.png';
+      $scope.apcSrc = '../../images/vendors/APC.png';
     };
 
     $scope.schneiderLeave=function () {
-      $scope.schneiderSrc = '../../images/vendors/schneider_white.png';
+      $scope.schneiderSrc = '../../images/vendors/Schneider_white.png';
     };
     $scope.schneiderMove=function () {
-      $scope.schneiderSrc = '../../images/vendors/schneider.png';
+      $scope.schneiderSrc = '../../images/vendors/Schneider.png';
     };
   }]);
