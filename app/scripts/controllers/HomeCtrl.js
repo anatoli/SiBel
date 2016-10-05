@@ -2,15 +2,6 @@
 angular.module('siBelApp')
   .controller('HomeCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', function ($scope, $uibModal, $state, $translate, $rootScope) {
 
-    $scope.hpSrc = "../../images/vendors/HP_white.png";
-    $scope.oracleSrc = "../../images/vendors/Oracle_white.png";
-
-    $scope.schneiderSrc = "../../images/vendors/Schneider_white.png";
-    $scope.apcSrc = "../../images/vendors/APC_white.png";
-    $scope.ciscoSrc = "../../images/vendors/Cisco_white.png";
-
-    // $translate.proposedLanguage('ru');
-
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('HOME.TITLE').then(function (translation) {
         $scope.HOME_TITLE = translation;
@@ -186,10 +177,6 @@ angular.module('siBelApp')
       $('#third-icon').addClass('flip');
     }, 4000);
 
-    // $scope.by=false;
-    // $scope.ru=false;
-    // $scope.en=false;
-
     $scope.openModal = function (data) {
       $uibModal.open({
         backdropClass: 'backdrop',
@@ -215,39 +202,5 @@ angular.module('siBelApp')
     $scope.openDetails =function () {
       window.scrollTo(0, 0);
       $state.go('root.404');
-      $translate.refresh();
-    };
-    $scope.hpLeave=function () {
-      $scope.hpSrc = '../../images/vendors/HP_white.png';
-    };
-    $scope.hpMove=function () {
-      $scope.hpSrc = '../images/vendors/HP.png';
-    };
-
-    $scope.oracleLeave=function () {
-      $scope.oracleSrc = '../../images/vendors/Oracle_white.png';
-    };
-    $scope.oracleMove=function () {
-      $scope.oracleSrc = '../../images/vendors/Oracle.png';
-    };
-
-    $scope.ciscoLeave=function () {
-      $scope.ciscoSrc = '../../images/vendors/Cisco_white.png';
-    };
-    $scope.ciscoMove=function () {
-      $scope.ciscoSrc = '../../images/vendors/Cisco.png';
-    };
-    $scope.apcLeave=function () {
-      $scope.apcSrc = '../../images/vendors/APC_white.png';
-    };
-    $scope.apcMove=function () {
-      $scope.apcSrc = '../../images/vendors/APC.png';
-    };
-
-    $scope.schneiderLeave=function () {
-      $scope.schneiderSrc = '../../images/vendors/Schneider_white.png';
-    };
-    $scope.schneiderMove=function () {
-      $scope.schneiderSrc = '../../images/vendors/Schneider.png';
     };
   }]);
