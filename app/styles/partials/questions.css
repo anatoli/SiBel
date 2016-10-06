@@ -23,3 +23,10 @@
 .first button{
   margin-left: 15%;
 }
+.questions-2{
+  display: none;
+}
+.display-none{
+  display: block;
+}
+

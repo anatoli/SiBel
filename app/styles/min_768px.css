@@ -19,7 +19,22 @@
   .questions .call{
     margin-left: 0;
   }
-
+  .carousel-indicators .active {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 4px !important;
+  }
+  .carousel-indicators li {
+    width: 19px !important;
+    height: 19px !important;
+    margin-left: 4px !important;
+  }
+  .questions-2{
+    display: block!important;
+  }
+  .display-none{
+    display: none !important;
+  }
 }
 @media (min-width: 768px) {
   /*.container {*/

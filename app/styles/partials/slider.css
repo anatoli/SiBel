@@ -79,6 +79,9 @@ h2{
   .carousel-control .glyphicon-menu-right, .carousel-control .icon-next {
     margin-right: -10px;
   }
+
+
+
 }
   @media screen and (min-width: 768px){
     .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right, .carousel-control .icon-prev, .carousel-control .icon-next {
