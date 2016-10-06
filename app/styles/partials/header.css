@@ -21,6 +21,19 @@ header{
 .fontCustoms{
   font-family: Narrow;
 }
+.navbar-header{
+ float: left;
+}
+@media screen and (max-width: 426px){
+  .navbar-header img{
+    height: 40px !important;
+  }
+}
+@media screen and (max-width: 376px){
+  .navbar-header img{
+    height: 34px !important;
+  }
+}
 .navbar-default{
   background-color: #fff;
   border-color: #fff;
