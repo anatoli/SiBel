@@ -35,11 +35,13 @@
   font-size: 15px;
 }
 .modal-footer >.btn-full-blue{
-  width: 30%;
+ margin-left: 2%;
+
 }
 .modal-footer{
   text-align: center;
    border-top: none;
+  display: flex;
 }
 .font-modal-input p {
   font-size: 12px;
@@ -57,6 +59,9 @@
 .file{
   width: 70%;
   font-size: 15px;
+}
+.div-file{
+  padding-left: 15px !important;
 }
 .btn-modal{
   font-size: 15px;

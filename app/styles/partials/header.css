@@ -22,17 +22,25 @@ header{
   font-family: Narrow;
 }
 .navbar-header{
- float: left;
+ /*float: left;*/
 }
-@media screen and (max-width: 426px){
+/*@media screen and (max-width: 426px){*/
+  /*.navbar-header img{*/
+    /*height: 40px !important;*/
+  /*}*/
+/*}*/
+@media screen and (max-width: 328px){
   .navbar-header img{
     height: 40px !important;
   }
 }
-@media screen and (max-width: 376px){
-  .navbar-header img{
-    height: 34px !important;
-  }
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  border-radius: 1px;
+  margin-top: 1px;
+  background: silver;
 }
 .navbar-default{
   background-color: #fff;
@@ -42,6 +50,13 @@ header{
   background-color: #fff !important;
   border-bottom: 2px solid #ed5623;
   /*padding-bottom: 5px !important;*/
+}
+.navbar-toggle {
+  font-size: 25px;
+  margin-top: -8px;
+
+
+
 }
 .navHover:hover{
   background-color: #fff !important;
@@ -73,4 +88,8 @@ header{
 .borderLeftLeng{
   border-left: 2px solid #398be3;
   padding-left: 6%;
+}
+.navbar-collapse {
+   overflow-x: hidden;
+  /*background: #d6d6d6;*/
 }

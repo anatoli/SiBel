@@ -1,6 +1,6 @@
 <div class="row none-row block-default questions" style="background-image:url(../../images/questions.jpg); background-size: cover " >
 
-  <h2>{{Questions_Title|translate}}</h2>
+  <h2 class="text-left-mobile">{{Questions_Title|translate}}</h2>
   <div class="row display-none">
     <div class="col-md-6 col-sm-6 col-xs-6">
       <h3 style="text-align: center">{{Questions_Row_1_Title_1|translate}}</br>{{Questions_Row_1_Title_2|translate}} </h3>
@@ -13,20 +13,27 @@
     </div>
   </div>
 
-  <div class="row questions-2">
-    <div class="col-md-6 col-sm-6 col-xs-6">
-      <p>t3456435345345345</p>
-      <p>t3456435345345345</p>
-      <p>t3456435345345345</p>
-      <p>t3456435345345345</p>
-
+  <div class="questions-2">
+    <h4 class=' media-fonts-350 segoe-regular mobile-line-height dark-blue-color'><b>Напишите нам, и мы обязательно</br>свяжемся с вами. Или позвоните нам</b></h4>
+    <div class="row">
+      <div class="col-xs-6" style="text-align: center">
+        <h4 class="media-fonts-350"><b>+375 (29) 133 33 45</b></b></h4>
+      </div>
+      <div class="col-xs-6">
+        <h4 class="media-fonts-350"><b>+375 (29) 769 29 96</b></h4>
+      </div>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-6">
-
+    <div class="row mobile-style-block">
+      <div class="col-xs-5">
+        <button class="form-control btn-full-blue none-margin-top"  ng-click="openModal('query')">{{Questions_Btn_1|translate}}</button>
+      </div>
+      <div class="col-xs-5">
+        <button class="form-control btn-blue none-margin-top" ng-click="openModal('call')">{{Questions_Btn_2|translate}}</button>
+      </div>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row display-none">
     <div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3 col-xs-3 col-xs-offset-1 first">
       <button class="form-control btn-full-blue"  ng-click="openModal('query')">{{Questions_Btn_1|translate}}</button>
   </div>
