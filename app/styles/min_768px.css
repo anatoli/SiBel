@@ -18,11 +18,18 @@
   .media-block{
     display:none;
   }
+  .media-block-up{
+    display:block;
+  }
+
   .first button{
     margin-left: 0;
   }
   .questions .call{
     margin-left: 0;
+  }
+  .font-size-32 {
+    font-size: 25px !important;
   }
   .carousel-indicators .active {
     width: 20px !important;
@@ -57,13 +64,53 @@
   .slide-1-block-background h1{
     font-size: 28px !important;
   }
+  .col-it-inf {
+    margin-top: 14%;
+  }
+  .text-error h4.segoe-regular{
+    font-size: 12px;
+  }
+  .text-error h3.segoe-regular{
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 3%;
+  }
+  .text-error h3 h4{
+    margin-top: 5% !important;
+    margin-bottom: 1% !important;
+  }
+  .text-error {
+    margin-left: 2% !important;
+    margin-top: 0 !important;
+  }
+  .bold{
+    font-weight: normal !important;
+  }
+  .message-block {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+  }
+  .footer-error {
+    top: -180px !important;
+  }
+  .img-height{
+    height: 365px;
+  }
+  .dop-margin-email {
+    margin-left: 5% !important;
+  }
+  .error-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 768px) {
   /*.container {*/
     /*width: 730px;*/
   /*}*/
+
   .media-block-up{
-    display:block;
+    display:none;
   }
   /* Remove the padding we set earlier */
   .header,

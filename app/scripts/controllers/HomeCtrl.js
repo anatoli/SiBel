@@ -6,6 +6,7 @@ angular.module('siBelApp')
       $translate('HOME.TITLE').then(function (translation) {
         $scope.HOME_TITLE = translation;
       });
+
       $translate('HOME.ROW_1').then(function (translation) {
         $scope.HOME_ROW_1 = translation;
       });
@@ -157,6 +158,12 @@ angular.module('siBelApp')
       });
       $translate('Questions.Btn_2').then(function (translation) {
         $scope.Questions_Btn_2= translation;
+      });
+      $translate('Questions.Min_Row_1_1').then(function (translation) {
+        $scope.Questions_Min_Row_1_1= translation;
+      });
+      $translate('Questions.Min_Row_1_2').then(function (translation) {
+        $scope.Questions_Min_Row_1_2= translation;
       });
 
 

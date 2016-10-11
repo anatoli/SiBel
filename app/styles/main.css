@@ -205,8 +205,14 @@ ul li {
   font-size: 24px;
   color:#04314D;
 }
+.col-it-inf h4{
+  font-size: 21px !important;
+}
+.col-it-inf img{
+  margin-bottom: 10px;
+}
 .col-it-inf button{
-  margin-top: 25px;
+  margin-top: 18px;
 }
 .col-it-inf{
   text-align: center;

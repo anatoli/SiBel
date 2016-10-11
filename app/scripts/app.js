@@ -227,7 +227,9 @@ angular.module('siBelApp', [
       Row_1_Title_2:'и мы обязательно свяжемся с вами',
       Row_2_Title:'Или позвоните нам',
       Btn_1:'Отправить запрос',
-      Btn_2:'Заказать звонок'
+      Btn_2:'Заказать звонок',
+      Min_Row_1_1:'Напишите нам, и мы обязательно',
+      Min_Row_1_2:'свяжемся с вами. Или позвоните нам'
     },
     Error:{
       Title_1:'Мы работаем над новой версией сайта.',
@@ -339,7 +341,9 @@ angular.module('siBelApp', [
         Row_1_Title_2:'і мы абавязкова адкажам вам',
         Row_2_Title:'Альбо патэлефануйце нам',
         Btn_1:'Адправіць запрос',
-        Btn_2:'Заказаць званок'
+        Btn_2:'Заказаць званок',
+        Min_Row_1_1:'Напішыце нам, і мы абавязкова',
+        Min_Row_1_2:'адкажам вам. Альбо патэлефануйце нам'
       },
       Error:{
         Title_1:'Выбачайце, але мы працуем над новай версіяй сайта.',
@@ -450,7 +454,9 @@ angular.module('siBelApp', [
         Row_1_Title_2:'and we will contact you',
         Row_2_Title:'Call us',
         Btn_1:'Send inquiry',
-        Btn_2:'Request a call'
+        Btn_2:'Request a call',
+        Min_Row_1_1:'Write to us, and we will contact you',
+        Min_Row_1_2:'адкажам вам. Call us'
       },
       Error:{
         Title_1:'Sorry, we are working on a new version of the site.',
