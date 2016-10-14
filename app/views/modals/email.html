@@ -1,4 +1,4 @@
-<form  name="form" >
+<form name="form" action="../../send.php" method="post" >
   <div class="modal-fonts">
     <div class="">
       <div class="modal-title float-left left-header-div" ng-if="mod=='query'">
@@ -21,8 +21,8 @@
       <h4 ng-if="mod=='summary'">{{Modal_Title_21 |translate}}</br>{{Modal_Title_22 |translate}}</br>{{Modal_Title_23 |translate}} </h4>
       <h4  ng-if="mod=='query'">{{Modal_Title_31 |translate}}</br>{{Modal_Title_32 |translate}} </h4>
 
-    <input class="form-control font-modal-input" placeholder="{{Modal_Name_plh |translate}}">
-    <input class="form-control font-modal-input" placeholder="E-mail*" ng-if="mod!='call'">
+    <input type= "text" name= "name" ng-model="name" class="form-control font-modal-input" placeholder="{{Modal_Name_plh |translate}}">
+    <input type= "text" name= "email" ng-model="email" class="form-control font-modal-input" placeholder="E-mail*" ng-if="mod!='call'">
     <input class="form-control font-modal-input" placeholder="{{Modal_Phone_plh |translate}}">
     <input class="form-control font-modal-input" placeholder="{{Modal_Datetime_plh |translate}}" ng-if="mod=='call'">
     <input class="form-control font-modal-input" placeholder="{{Modal_Company_plh |translate}}" ng-if="mod=='query'">
@@ -39,7 +39,7 @@
       <!--</select>-->
 
 
-    <textarea class="form-control font-modal-input" placeholder="{{Modal_Area_plh |translate}}"></textarea>
+    <textarea class="form-control font-modal-input" name="message" ng-model="message" placeholder="{{Modal_Area_plh |translate}}"></textarea>
       <div class="row">
         <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
           <!--<form>-->
@@ -66,7 +66,7 @@
     </div>
     <div class=" row modal-footer">
       <div class="col-lg-4 col-md-4 col-sm-7 col-xs-10 center-block text-center">
-        <button type="button " class="center-block  form-control btn-full-blue btn-radius btn-modal">{{Modal_Btn_push |translate}}   </button>
+        <button ng-click="PushEmail()" class="center-block  form-control btn-full-blue btn-radius btn-modal">{{Modal_Btn_push |translate}}   </button>
       </div>
     </div>
   </div>

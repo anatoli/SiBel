@@ -1,100 +1,64 @@
-//header("Content-type: text/html; charset=utf-8");
-////**********************************************
-//if(empty($_POST['js'])){
-//
-//$log =="";
-//$error="no"; //флаг наличия ошибки
-//
-//		$posName = addslashes($_POST['posName']);
-//		$posName = htmlspecialchars($posName);
-//		$posName = stripslashes($posName);
-//		$posName = trim($posName);
-//
-//		$posEmail = addslashes($_POST['posEmail']);
-//		$posEmail = htmlspecialchars($posEmail);
-//		$posEmail = stripslashes($posEmail);
-//		$posEmail = trim($posEmail);
-//
-//		$posText = addslashes($_POST['posText']);
-//		$posText = htmlspecialchars($posText);
-//		$posText = stripslashes($posText);
-//		$posText = trim($posText);
+<?php
+$req = json_decode( file_get_contents('php://input'), true );
 
-////Проверка правильность имени
-//if(!$posName || strlen($posName)>20 || strlen($posName)<3) {
-//$log.="<li>Неправильно заполнено поле \"Ваше имя\" (3-15 символов)!</li>"; $error="yes"; }
+////подключаем класс для работы с email
 //
-////Проверка email адреса
-//function isEmail($posEmail)
-//            {
-//                return(preg_match("/^[-_.[:alnum:]]+@((([[:alnum:]]|[[:alnum:]][[:alnum:]-]*[[:alnum:]])\.)+(ad|ae|aero|af|ag|ai|al|am|an|ao|aq|ar|arpa|as|at|au|aw|az|ba|bb|bd|be|bf|bg|bh|bi|biz|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|com|coop|cr|cs|cu|cv|cx|cy|cz|de|dj|dk|dm|do|dz|ec|edu|ee|eg|eh|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gh|gi|gl|gm|gn|gov|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|in|info|int|io|iq|ir|is|it|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|mg|mh|mil|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|museum|mv|mw|mx|my|mz|na|name|nc|ne|net|nf|ng|ni|nl|no|np|nr|nt|nu|nz|om|org|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|pro|ps|pt|pw|py|qa|re|ro|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|st|su|sv|sy|sz|tc|td|tf|tg|th|tj|tk|tm|tn|to|tp|tr|tt|tv|tw|tz|ua|ug|uk|um|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|yu|za|zm|zw)$|(([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5])\.){3}([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5]))$/i"
-//                        ,$posEmail));
-//            }
+//require ('php/class.simple_mail.php');
 //
-//if($posEmail == '')
-//                {
-//	$log .= "<li>Пожалуйста, введите Ваш email!</li>";
-//	$error = "yes";
-//
-//                }
-//
-//else if(!isEmail($posEmail))
-//                {
-//
-//	$log .= "<li>Вы ввели неправильный e-mail. Пожалуйста, исправьте его!</li>";
-//	$error = "yes";
-//                }
-//
-////Проверка наличия введенного текста комментария
-//if (empty($posText))
-//{
-//	$log .= "<li>Необходимо указать текст сообщения!</li>";
-//	$error = "yes";
-//}
-//
-////Проверка длины текста комментария
-//if(strlen($posText)>1010)
-//{
-//	$log .= "<li>Слишком длинный текст, в вашем распоряжении 1000 символов!</li>";
-//	$error = "yes";
-//}
-//
-////Проверка на наличие длинных слов
-//$mas = preg_split("/[\s]+/",$posText);
-//foreach($mas as $index => $val)
-//{
-//  if (strlen($val)>60)
-//  {
-//	$log .= "<li>Слишком длинные слова (более 60 символов) в тексте записи!</li>";
-//	$error = "yes";
-//	break;
-//  }
-//}
-//sleep(2);
-//
-////Если нет ошибок отправляем email
-//if($error=="no")
+//if ( $req ) {
+    //отправляем данные с помощью функции mail
 
-//Отправка письма админу о новом комментарии
-//$to = "info@toto.by";//Ваш e-mail адрес
-//$mes = "Человек по имени $posName отправил Вам сообщение из формы обратной связи Вашего сайта: \n\n$posText";
+
+//    if (!empty($req['name']) && !empty($req['message']) && !empty($req['email'])) {
+//    $to = 'info@toto.by';
 //
-//$from = $posEmail;
-//$sub = '=?utf-8?B?';
-//$headers = 'From: '.$from'
-//';
-//$headers .= 'MIME-Version: 1.0
-//';
-//$headers .= 'Content-type: text/plain; charset=utf-8
-//';
-//mail($to, $sub, $mes, $headers);
-//echo "1"; //Всё Ok!
-//}
-//else//если ошибки есть
-//{
-//		echo "<p style="font: 13px Verdana;"><font color="#FF3333"><strong>Ошибка !</strong></font></p><ul style="list-style: none; font: 11px Verdana; color:#000; border:1px solid #c00; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; background-color:#fff; padding:5px; margin:5px 10px;">".$log."</ul><br>"; //Нельзя отправлять пустые сообщения
+   $subject = 'Website Change Request';
+
+   $headers = "From: " . strip_tags($req['email']) . "\r\n";
+   $headers .= "Reply-To: ". strip_tags($req['email']) . "\r\n";
+
+   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 //
+//    $message = '<html><body>';
+//    $message .= '<img src="//css-tricks.com/examples/WebsiteChangeRequestForm/images/wcrf-header.png" alt="Website Change Request" />';
+//    $message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+//    $message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
+//    $message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($req['email']) . "</td></tr>";
+//    $message .= "<tr><td><strong>Type of Change:</strong> </td><td>" . strip_tags($_POST['typeOfChange']) . "</td></tr>";
+//    $message .= "<tr><td><strong>Urgency:</strong> </td><td>" . strip_tags($_POST['urgency']) . "</td></tr>";
+//    $message .= "<tr><td><strong>URL To Change (main):</strong> </td><td>" . $_POST['URL-main'] . "</td></tr>";
+//    $addURLS = $_POST['addURLS'];
+//    if (($addURLS) != '') {
+//        $message .= "<tr><td><strong>URL To Change (additional):</strong> </td><td>" . strip_tags($addURLS) . "</td></tr>";
+//    }
+//    $curText = htmlentities($_POST['curText']);
+//    if (($curText) != '') {
+//        $message .= "<tr><td><strong>CURRENT Content:</strong> </td><td>" . $curText . "</td></tr>";
+//    }
+//    $message .= "<tr><td><strong>NEW Content:</strong> </td><td>" . htmlentities($_POST['message']) . "</td></tr>";
+//    $message .= "</table>";
+//    $message .= "</body></html>";
+
+$message = '<html><body>';
+$message .= '<h1>Hello, '. strip_tags($req['name']) .'! </h1>';
+$message .= '</body></html>';
+
+////    mail('anatoliy.arinovich@sibel.by', 'My Subject', $message );
+//    var_dump(mail('info@toto.by', 'My Subject', $message ));
+//////
+//    }else{
+//        //поля не заполнены
+//        $res = array( 'res'=>false, 'msg'=>'Заполните все поля.' );
+//        echo json_encode($res);
+//    }
+//} else {
+//    $res = array( 'res'=>false, 'msg'=>'Заполните все поля.' );
 //}
-//<? php
-//mail("info@toto.by", "My Subject", "Line 1\nLine 2\nLine 3");
-//?>
+
+var_dump(mail('info@toto.by', $subject, $message, $headers ));
+exit;
+
+
+
+
+?>

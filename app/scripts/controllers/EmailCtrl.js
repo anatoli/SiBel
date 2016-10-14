@@ -6,10 +6,34 @@
  * Created by Anatoli on 16.09.2016.
  */
 angular.module('siBelApp')
-  .controller('EmailCtrl',[ '$scope', '$uibModalInstance', 'dataModal', '$rootScope','$translate', function ($scope, $uibModalInstance, dataModal, $rootScope, $translate) {
+  .controller('EmailCtrl',[ '$scope', '$uibModalInstance', 'dataModal', '$rootScope','$translate', '$http', function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http) {
 
     console.log('dataModal.lang');
     console.log(dataModal.lang);
+    $scope.user = {};
+    $scope.PushEmail = function () {
+      if ( $scope.form.$valid ) {
+        $http({
+          method: 'POST',
+          url:'send.php',
+          data: {name:$scope.name, email:$scope.email,message:$scope.message},
+          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).success(function( res ){
+          if ( res.res=='ok') {
+            $scope.user = {};
+            $scope.form.$setPristine();
+            alert('Сообщение отправлено');
+          } else {
+            alert('Возникла ошибка');
+          }
+        }).error(function(err){
+          alert(err);
+        });
+      }
+
+      }
+
+
     if(dataModal.data){
       $scope.mod = dataModal.data;
     }
