@@ -7,25 +7,23 @@
  */
 angular.module('siBelApp')
   .controller('EmailCtrl',[ '$scope', '$uibModalInstance', 'dataModal', '$rootScope','$translate', '$http', function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http) {
-
-    console.log('dataModal.lang');
-    console.log(dataModal.lang);
+    $scope.m = '';
     $scope.user = {};
     $scope.PushEmail = function () {
+      console.log({name:$scope.name,  email:$scope.email,  message: $scope.message, phone:$scope.phone})
       if ( $scope.form.$valid ) {
         $http({
           method: 'POST',
           url:'send.php',
-          data: {name:$scope.name, email:$scope.email,message:$scope.message},
+          data: {name:$scope.name, message: $scope.message, email:$scope.email, phone:$scope.phone},
           headers : {'Content-Type': 'application/x-www-form-urlencoded'}
-        }).success(function( res ){
-          if ( res.res=='ok') {
-            $scope.user = {};
-            $scope.form.$setPristine();
-            alert('Сообщение отправлено');
-          } else {
-            alert('Возникла ошибка');
-          }
+        }).success(function( res ) {
+          $scope.phone = '',
+          $scope.name = '';
+          $scope.message = '';
+          $scope.email = '';
+          // $scope.form.$setPristine();
+          alert('Сообщение отправлено');
         }).error(function(err){
           alert(err);
         });
