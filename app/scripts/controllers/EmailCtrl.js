@@ -9,21 +9,25 @@ angular.module('siBelApp')
   .controller('EmailCtrl',[ '$scope', '$uibModalInstance', 'dataModal', '$rootScope','$translate', '$http', function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http) {
     $scope.m = '';
     $scope.user = {};
-    $scope.PushEmail = function () {
-      console.log({name:$scope.name,  email:$scope.email,  message: $scope.message, phone:$scope.phone})
+    $scope.PushEmail = function (data) {
       if ( $scope.form.$valid ) {
         $http({
           method: 'POST',
-          url:'send.php',
-          data: {name:$scope.name, message: $scope.message, email:$scope.email, phone:$scope.phone},
+          url: data+'.php',
+          data: {name:$scope.name, message: $scope.message, email:$scope.email, phone:$scope.phone, dateTime:$scope.dateTime, company:$scope.company, selectVok:$scope.selectVok},
           headers : {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function( res ) {
           $scope.phone = '',
           $scope.name = '';
           $scope.message = '';
           $scope.email = '';
+
+          $scope.dateTime = '';
+          $scope.company = '';
+          $scope.selectVok = '';
           // $scope.form.$setPristine();
           alert('Сообщение отправлено');
+          $scope.cancel();
         }).error(function(err){
           alert(err);
         });

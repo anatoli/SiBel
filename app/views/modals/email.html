@@ -26,12 +26,12 @@
     <input  ng-model="email" class="form-control font-modal-input" placeholder="E-mail*" ng-show="mod!=='call'">
 
     <input ng-model="phone" class="form-control font-modal-input" placeholder="{{Modal_Phone_plh |translate}}">
-    <input class="form-control font-modal-input" placeholder="{{Modal_Datetime_plh |translate}}" ng-show="mod=='call'">
-    <input class="form-control font-modal-input" placeholder="{{Modal_Company_plh |translate}}" ng-show="mod=='query'">
-    <select class="form-control font-modal-input" ng-show="mod=='summary'">
+    <input ng-model="dateTime" class="form-control font-modal-input" placeholder="{{Modal_Datetime_plh |translate}}" ng-show="mod=='call'">
+    <input ng-model="company"class="form-control font-modal-input" placeholder="{{Modal_Company_plh |translate}}" ng-show="mod=='query'">
+    <select ng-model="selectVok" class="form-control font-modal-input" ng-show="mod=='summary'">
       <option value="" disabled selected>{{Modal_Select_Title |translate}}</option>
-      <option value="mobile">{{Modal_Select_1 |translate}}</option>
-      <option value="">{{Modal_Select_2 |translate}}</option>
+      <option value="Мобильные приложения">{{Modal_Select_1 |translate}}</option>
+      <option value="Мат. анализ">{{Modal_Select_2 |translate}}</option>
       </select>
 
       <!--<select class="form-control"-->
@@ -68,7 +68,7 @@
     </div>
     <div class=" row modal-footer">
       <div class="col-lg-4 col-md-4 col-sm-7 col-xs-10 center-block text-center">
-        <button ng-click="PushEmail()" class="center-block  form-control btn-full-blue btn-radius btn-modal">{{Modal_Btn_push |translate}}   </button>
+        <button ng-click="PushEmail(mod)" class="center-block  form-control btn-full-blue btn-radius btn-modal">{{Modal_Btn_push |translate}}   </button>
       </div>
     </div>
   </div>

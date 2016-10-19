@@ -123,18 +123,8 @@ h2{
 
 /***********************/
 .background-slide{
-  background-size: contain;
-  height: 100%;
-  width: 100%
+  display: none;
 }
-
-
-.background-slide-3{
-  background-image: url(../../images/services.png);
-}
-.background-slide-2{
-  background-image: url(../../images/solutions.jpg);
-}
-.background-slide-1{
-  background-image: url(../../images/telecom.jpg);
+.n-bg-sl{
+  display: block;
 }

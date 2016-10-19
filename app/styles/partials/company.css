@@ -20,7 +20,7 @@
   font-style: italic;
 }
 .company h2{
-  padding-top: 20px !important;
+  /*padding-top: 20px !important;*/
   font-size: 30px !important;
 }
 .company-descriptions{
@@ -39,4 +39,8 @@
 .avatar img{
   border: 3px solid #fff;
   border-radius: 6px;
+}
+.background-company{
+  background-image: url(../../images/company.jpg);
+  background-size: cover;
 }

@@ -9,9 +9,27 @@
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
+
+  .background-company{
+    /* background-size: cover; */
+    background-repeat: no-repeat !important;
+    /* background-attachment: fixed; */
+    background-position: 58% 78px!important;
+  }
+}
+@media (max-width: 360px) {
   .media-fonts-350{
     font-size: 14px !important;
+  }
+
+}
+@media(max-width: 768px) and (min-width: 451px){
+  .background-company{
+    /* background-size: cover; */
+    background-repeat: no-repeat !important;
+    /* background-attachment: fixed; */
+    background-position: 48% ;
   }
 }
 @media (max-width: 768px) {
@@ -112,6 +130,28 @@
   .video-bg {
     opacity: 0.3 !important;
   }
+  .n-bg-sl{
+    display: none;
+  }
+  .background-slide{
+    display: block !important;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%
+  }
+
+
+  .background-slide-3{
+    background-image: url(../images/services.png);
+  }
+  .background-slide-1{
+    background-image: url(../images/solutions.jpg);
+  }
+  .background-slide-2{
+    background-image: url(../images/telecom.jpg);
+  }
+
 }
 @media (min-width: 768px) {
   /*.container {*/

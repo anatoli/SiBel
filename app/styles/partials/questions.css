@@ -29,4 +29,8 @@
 .display-none{
   display: block;
 }
-
+.background-questions{
+  background-image:url(../../images/questions.jpg); background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
