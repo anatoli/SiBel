@@ -109,3 +109,9 @@
   height: 30px;
   z-index:20;
 }
+td .clip{
+  text-align: left !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
