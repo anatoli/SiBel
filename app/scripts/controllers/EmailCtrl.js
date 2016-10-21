@@ -6,15 +6,29 @@
  * Created by Anatoli on 16.09.2016.
  */
 angular.module('siBelApp')
-  .controller('EmailCtrl',[ '$scope', '$uibModalInstance', 'dataModal', '$rootScope','$translate', '$http', function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http) {
+  .controller('EmailCtrl',[ '$scope', '$uibModalInstance', 'dataModal', '$rootScope','$translate', '$http', 'FileUploader',
+    function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http, FileUploader) {
     $scope.m = '';
+    $scope.href= undefined;
     $scope.user = {};
     $scope.PushEmail = function (data) {
+      console.log($scope.files)
       if ( $scope.form.$valid ) {
         $http({
           method: 'POST',
           url: data+'.php',
-          data: {name:$scope.name, message: $scope.message, email:$scope.email, phone:$scope.phone, dateTime:$scope.dateTime, company:$scope.company, selectVok:$scope.selectVok},
+          data: {
+            name:$scope.name,
+            message: $scope.message,
+            email:$scope.email,
+            phone:$scope.phone,
+            dateTime:$scope.dateTime,
+            company:$scope.company,
+            selectVok:$scope.selectVok,
+            href:$scope.href,
+            fileName:$scope.fileName,
+            fileType:$scope.fileType
+          },
           headers : {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function( res ) {
           $scope.phone = '',
@@ -34,7 +48,6 @@ angular.module('siBelApp')
       }
 
       }
-
 
     if(dataModal.data){
       $scope.mod = dataModal.data;
@@ -113,5 +126,76 @@ angular.module('siBelApp')
       });
     });
     $translate.use(dataModal.lang).then(function () {});
+
+
+
+
+////////////////////
+
+      var uploader = $scope.uploader = new FileUploader({
+        url: '/upload.php'
+      });
+
+      // FILTERS
+
+      uploader.filters.push({
+        name: 'customFilter',
+        fn: function(item /*{File|FileLikeObject}*/, options) {
+          return this.queue.length < 10;
+        }
+      });
+
+      // CALLBACKS
+
+      uploader.onWhenAddingFileFailed = function(item /*{File|FileLikeObject}*/, filter, options) {
+        console.info('onWhenAddingFileFailed', item, filter, options);
+
+      };
+      uploader.onAfterAddingFile = function(fileItem) {
+        console.info('onAfterAddingFile', fileItem);
+
+      };
+      uploader.onAfterAddingAll = function(addedFileItems) {
+        console.info('onAfterAddingAll', addedFileItems);
+      };
+      uploader.onBeforeUploadItem = function(item) {
+        console.info('onBeforeUploadItem', item);
+      };
+      uploader.onProgressItem = function(fileItem, progress) {
+        console.info('onProgressItem', fileItem, progress);
+        $scope.bar = true;
+      };
+      uploader.onProgressAll = function(progress) {
+        console.info('onProgressAll', progress);
+      };
+      uploader.onSuccessItem = function(fileItem, response, status, headers) {
+        console.info('onSuccessItem', fileItem, response, status, headers);
+      };
+      uploader.onErrorItem = function(fileItem, response, status, headers) {
+        console.info('onErrorItem', fileItem, response, status, headers);
+        $scope.bar=false;
+      };
+      uploader.onCancelItem = function(fileItem, response, status, headers) {
+        console.info('onCancelItem', fileItem, response, status, headers);
+      };
+      uploader.onCompleteItem = function(fileItem, response, status, headers) {
+        console.info('onCompleteItem', fileItem, response, status, headers);
+        console.log('response');
+        console.log(response);
+        $scope.href = response.href;
+        $scope.fileName = response.name;
+        $scope.fileType = response.type;
+      };
+      uploader.onCompleteAll = function() {
+        console.info('onCompleteAll');
+        $scope.bar=false;
+      };
+
+      console.info('upload', uploader);
+
+////////////////////
+
+
+
 
   }]);

@@ -76,6 +76,9 @@ body{
   font-family: SegoeUIRegular;
   max-width: 1440px;
 }
+.form-control:focus {
+ border-color: RGBA(255,255,255,0.4) ;
+}
 .dark-blue-color{
   color:rgb(4,49,77)
 }
@@ -227,7 +230,7 @@ ul li {
 .btn-project-ideas{
   margin-top: 5%;
 }
-.btn-blue:hover{
+.btn-blue:hover, .btn-blue:focus{
   /*color: #fff;*/
   /*background: #398be3 ;*/
   box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
@@ -238,7 +241,7 @@ ul li {
   border-radius: 0;
   background-color: #fff;
 }
-.btn-full-blue:hover{
+.btn-full-blue:hover, .btn-full-blue:focus{
   /*color: #398be3;*/
   /*border: 1px solid #398be3 ;*/
   border-radius: 0;
@@ -251,8 +254,8 @@ ul li {
   border-radius: 0;
   background: #398be3 ;
 }
-.btn-orange:hover{
-  color: #ed5623;;
+.btn-orange:hover, .btn-orange:focus{
+  color: #ed5623;
   /*background: #ed5623 ;*/
   box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
 }
@@ -261,7 +264,7 @@ ul li {
   border: 1px solid #ed5623 ;
   border-radius: 0;
 }
-.btn-full-orange:hover{
+.btn-full-orange:hover, .btn-full-orange:focus{
   color: #fff;
   /*background: #fff;*/
   /*color: #ed5623;*/

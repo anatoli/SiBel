@@ -37,6 +37,7 @@ module.exports = function(config) {
       'app/components/bower_components/angular-translate-loader-url/angular-translate-loader-url.js',
       'app/components/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js',
       'app/components/bower_components/bootstrap-carousel-swipe/carousel-swipe.js',
+      'app/components/bower_components/angular-file-upload/dist/angular-file-upload.min.js',
       'app/components/bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

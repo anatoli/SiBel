@@ -6,7 +6,9 @@ angular.module('siBelApp', [
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'angularFileUpload',
+    'file-model'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     "use strict";

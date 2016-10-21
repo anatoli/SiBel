@@ -19,7 +19,8 @@
     "angular-translate": "^2.12.1",
     "angular-translate-loader-url": "^2.12.1",
     "angular-translate-loader-partial": "^2.12.1",
-    "bootstrap-carousel-swipe": "*"
+    "bootstrap-carousel-swipe": "*",
+    "angular-file-upload": "^2.3.4"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0",
