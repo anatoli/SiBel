@@ -121,8 +121,27 @@ angular.module('siBelApp')
       });
       $translate('Modal.Select.1').then(function (translation) {
         $scope.Modal_Select_1 = translation;
-      });$translate('Modal.Select.2').then(function (translation) {
+      });
+      $translate('Modal.Select.2').then(function (translation) {
         $scope.Modal_Select_2 = translation;
+      });
+      $translate('Modal.UploaderBtn_1').then(function (translation) {
+        $scope.Modal_UploaderBtn_1 = translation;
+      });
+      $translate('Modal.UploaderBtn_2').then(function (translation) {
+        $scope.Modal_UploaderBtn_2 = translation;
+      });
+      $translate('Modal.TableHeader.Name').then(function (translation) {
+        $scope.Modal_TableHeader_Name = translation;
+      });
+      $translate('Modal.TableHeader.Size').then(function (translation) {
+        $scope.Modal_TableHeader_Size = translation;
+      });
+      $translate('Modal.TableHeader.Status').then(function (translation) {
+        $scope.Modal_TableHeader_Status = translation;
+      });
+      $translate('Modal.TableHeader.Actions').then(function (translation) {
+        $scope.Modal_TableHeader_Actions = translation;
       });
     });
     $translate.use(dataModal.lang).then(function () {});
@@ -131,7 +150,6 @@ angular.module('siBelApp')
 
 
 ////////////////////
-
       var uploader = $scope.uploader = new FileUploader({
         url: '/upload.php'
       });
@@ -149,6 +167,8 @@ angular.module('siBelApp')
 
       uploader.onWhenAddingFileFailed = function(item /*{File|FileLikeObject}*/, filter, options) {
         console.info('onWhenAddingFileFailed', item, filter, options);
+        console.log('item');
+        console.log(item);
 
       };
       uploader.onAfterAddingFile = function(fileItem) {
@@ -189,6 +209,7 @@ angular.module('siBelApp')
       uploader.onCompleteAll = function() {
         console.info('onCompleteAll');
         $scope.bar=false;
+
       };
 
       console.info('upload', uploader);

@@ -7,6 +7,11 @@
 .modal-body input:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
 .modal-body input:-ms-input-placeholder      {color:#04314D;}
 
+.modal-body select::-webkit-input-placeholder {color:#04314D;}
+.modal-body select::-moz-placeholder          {color: #04314d;}/* Firefox 19+ */
+.modal-body select:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
+.modal-body select:-ms-input-placeholder      {color:#04314D;}
+
 .modal-body textarea::-webkit-input-placeholder {color:#04314D;}
 .modal-body textarea::-moz-placeholder          {color:#04314D;}/* Firefox 19+ */
 .modal-body textarea:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
@@ -114,4 +119,13 @@ td .clip{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; /* Добавляем многоточие */
+}
+.uploadTable th{
+  text-align: center;
+}
+.uploadTable{
+  margin-top: 20px;
+}
+.headerUploader{
+  color: #04314D;
 }

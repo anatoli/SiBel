@@ -273,6 +273,14 @@ angular.module('siBelApp', [
         1:"Разработка мобильных приложений",
         2:"Исследования в области матанализа",
       },
+      UploaderBtn_1 :'Загрузить',
+      UploaderBtn_2 :'Удалить',
+      TableHeader:{
+        Name: 'Имя',
+        Size: 'Размер',
+        Status: 'Статус',
+        Actions: 'Действия',
+      }
 
 
     }
@@ -385,6 +393,14 @@ angular.module('siBelApp', [
           Title:"-Адзначце накірунак-",
           1:"Распрацоўка мабільных прыкладанняў",
           2:"Даследаванні ў галіне матанализа",
+        },
+        UploaderBtn_1 :'Загрузіць',
+        UploaderBtn_2 :'Удаліць',
+        TableHeader:{
+          Name: 'Імя',
+          Size: 'Памер',
+          Status: 'Статус',
+          Actions: 'Дзеянне',
         }
 
       }
@@ -487,19 +503,27 @@ angular.module('siBelApp', [
           32:'and we will contact you for a consultation'
       },
       Btn_file:'Attach file',
-        Btn_push:'Send',
-        Description_1:'File size should not exceed 5 MB ',
-        Description_2:"* — Fields are required",
-        Name_plh:"First Name, Last Name*",
-        Phone_plh:"Phone number*",
-        Datetime_plh:"Time and date*",
-        Company_plh:"Organization, position",
-        Area_plh:"Interested in the solution or service",
-        Select:{
-        Title:"-Select direction-",
-          1:"Developing Mobile Applications",
-          2:"Research in the field of mathematical analysis",
-      },
+      Btn_push:'Send',
+      Description_1:'File size should not exceed 5 MB ',
+      Description_2:"* — Fields are required",
+      Name_plh:"First Name, Last Name*",
+      Phone_plh:"Phone number*",
+      Datetime_plh:"Time and date*",
+      Company_plh:"Organization, position",
+      Area_plh:"Interested in the solution or service",
+      Select:{
+      Title:"-Select direction-",
+        1:"Developing Mobile Applications",
+        2:"Research in the field of mathematical analysis",
+    },
+      UploaderBtn_1 :'Upload',
+      UploaderBtn_2 :'Remove',
+      TableHeader:{
+        Name: 'Name',
+        Size: 'Size',
+        Status: 'Status',
+        Actions: 'Actions',
+      }
 
 
     }
