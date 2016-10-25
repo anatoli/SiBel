@@ -17,7 +17,7 @@ $message .= " <title>info Sibel.by portal</title>";
 $message .= "</body></html>";
 
   $r = sendMailAttachment($mailTo, $from, $subject, $message, $file); // отправка письма c вложением
-  echo ($r)?'Письмо отправлено':'Ошибка. Письмо не отправлено!';
+  echo ($r)? json_encode(array( 'response' => 'true')): json_encode(array( 'response' => 'false'));
 //}else{
 //  $r = sendMailAttachment($mailTo, $from, $subject, $message); // отправка письма без вложения
 //  echo ($r)?'Письмо отправлено':'Ошибка. Письмо не отправлено!';

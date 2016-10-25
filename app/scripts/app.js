@@ -280,7 +280,9 @@ angular.module('siBelApp', [
         Size: 'Размер',
         Status: 'Статус',
         Actions: 'Действия',
-      }
+      },
+      Alert_True:"Сообщение передано",
+      Alert_Error:"Ошибка передачи. Повторите позже."
 
 
     }
@@ -401,7 +403,9 @@ angular.module('siBelApp', [
           Size: 'Памер',
           Status: 'Статус',
           Actions: 'Дзеянне',
-        }
+        },
+        Alert_True:"Паведамленне адпраўлена",
+        Alert_Error:"Памылка передачы. Паўтарыце пазней."
 
       }
     });
@@ -523,7 +527,9 @@ angular.module('siBelApp', [
         Size: 'Size',
         Status: 'Status',
         Actions: 'Actions',
-      }
+      },
+      Alert_True:"Message Sent",
+      Alert_Error:"Transmission error. Repeat later."
 
 
     }

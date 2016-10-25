@@ -2,17 +2,21 @@
 /**
  * Created by Anatoli on 23.09.2016.
  */
-/**
- * Created by Anatoli on 16.09.2016.
- */
 angular.module('siBelApp')
-  .controller('EmailCtrl',[ '$scope', '$uibModalInstance', 'dataModal', '$rootScope','$translate', '$http', 'FileUploader',
-    function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http, FileUploader) {
+  .controller('EmailCtrl',[
+    '$scope',
+    '$uibModalInstance',
+    'dataModal',
+    '$rootScope',
+    '$translate',
+    '$http',
+    'FileUploader',
+    '$uibModal',
+    function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http, FileUploader, $uibModal) {
     $scope.m = '';
     $scope.href= undefined;
     $scope.user = {};
     $scope.PushEmail = function (data) {
-      console.log($scope.files)
       if ( $scope.form.$valid ) {
         $http({
           method: 'POST',
@@ -40,13 +44,32 @@ angular.module('siBelApp')
           $scope.company = '';
           $scope.selectVok = '';
           // $scope.form.$setPristine();
-          alert('Сообщение отправлено');
+          openModal(res);
+          // alert('Сообщение отправлено');
           $scope.cancel();
         }).error(function(err){
-          alert(err);
+          openModal(err.error)
         });
       }
 
+      }
+      function openModal (data) {
+        $uibModal.open({
+          backdropClass: 'backdrop',
+          backdrop: 'static',
+          animation: false,
+          size: 'dialog',
+          templateUrl: 'views/modals/emailPush.html',
+          resolve: {
+            dataModal: function () {
+              return {
+                data: data,
+                lang: $translate.proposedLanguage()
+              };
+            }
+          },
+          controller: 'EmailPushCtrl'
+        });
       }
 
     if(dataModal.data){
