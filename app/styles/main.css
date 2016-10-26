@@ -305,3 +305,18 @@ ul li {
   margin-left: 0;
   margin-right: 0;
 }
+/*////padding-none////*/
+
+.npt{
+  padding-top: 0;
+}
+.none-padding-right{
+  padding-right: 0!important;
+}
+.none-padding-left{
+  padding-left: 0 !important;
+}
+.none-padding{
+  padding: 0!important;
+}
+/*////padding-none////*/
