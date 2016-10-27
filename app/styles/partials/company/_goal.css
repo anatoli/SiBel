@@ -48,3 +48,35 @@ ul.orange-marker li{
 .comment-white-btn{
   padding-top: 2%
 }
+.grey-footer{
+  text-align: center;
+  width: 100%;
+  background-color: gray;
+  padding: 2%;
+  color: #fff;
+}
+.overflov-h{
+  overflow: hidden;
+}
+.blue:hover{
+  opacity: 1;
+}
+.blue h3{
+  font-weight: bold;
+}
+.blue p{
+  margin-top: 5%;
+  font-size: 17px;
+}
+.blue{
+  text-align: center;
+  background: #398be3;
+  position: absolute;
+  width: 94%;
+  height: 239px;
+  opacity: 0;
+  color: #fff;
+}
+.grey{
+  height: 200px;
+}

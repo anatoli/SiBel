@@ -61,6 +61,33 @@ angular.module('siBelApp', [
           }
         }
       })
+      .state('root.company.about', {
+        url: '/about',
+        views: {
+          'company@root.company': {
+            templateUrl: '/views/partials/company/_about.html',
+            controller:  'CompanyAboutCtrl'
+          }
+        }
+      })
+      .state('root.company.value', {
+        url: '/value',
+        views: {
+          'company@root.company': {
+            templateUrl: '/views/partials/company/_value.html',
+            controller:  'CompanyValueCtrl'
+          }
+        }
+      })
+      .state('root.company.time', {
+        url: '/time',
+        views: {
+          'company@root.company': {
+            templateUrl: '/views/partials/company/_time.html',
+            controller:  'CompanyTimeCtrl'
+          }
+        }
+      })
 
       .state('root.projects', {
         url: '/projects',

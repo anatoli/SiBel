@@ -264,6 +264,17 @@ ul li {
   border: 1px solid #ed5623 ;
   border-radius: 0;
 }
+.btn-orange-ico{
+  color: #ed5623;
+  border: 1px solid #ed5623 ;
+  border-radius: 0;
+}
+.btn-orange-ico:hover, .btn-orange-ico:focus {
+  color: #fff;
+  border-radius: 0;
+  background: #ed5623 ;
+}
+
 .btn-full-orange:hover, .btn-full-orange:focus{
   color: #fff;
   /*background: #fff;*/
@@ -320,3 +331,8 @@ ul li {
   padding: 0!important;
 }
 /*////padding-none////*/
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
