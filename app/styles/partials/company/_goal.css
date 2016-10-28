@@ -54,10 +54,12 @@ ul.orange-marker li{
   background-color: gray;
   padding: 2%;
   color: #fff;
+  font-size: 18px;
 }
 .overflov-h{
   overflow: hidden;
 }
+
 .blue:hover{
   opacity: 1;
 }
@@ -67,16 +69,62 @@ ul.orange-marker li{
 .blue p{
   margin-top: 5%;
   font-size: 17px;
+  line-height: 1.1;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .blue{
   text-align: center;
-  background: #398be3;
+  background-image: url(../../../images/company/blue.png);
   position: absolute;
-  width: 94%;
-  height: 239px;
+  width: 96%;
+  height: 244.6px;
   opacity: 0;
   color: #fff;
 }
 .grey{
   height: 200px;
 }
+.slide-1-block-background-company{
+  margin-bottom: 3%;
+}
+.slide-1-block-background-company p{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/*/*/
+
+.generatecssdotcom_arrow {
+  position:relative;
+}
+.act>.generatecssdotcom_arrow:after, .active>.generatecssdotcom_arrow:before /*.generatecssdotcom_arrow:focus:after, .generatecssdotcom_arrow:focus:before */{
+  top:100%;
+  left:50%;
+  border:solid transparent;
+  content:" ";
+  height:0;
+  width:0;
+  position:absolute;
+  pointer-events:none;
+}
+.act>.generatecssdotcom_arrow:after/*,.generatecssdotcom_arrow:focus:after */{
+  border-top-color:#ed5623;
+  border-width:12px;
+  margin-left:-12px;
+}
+.act>.generatecssdotcom_arrow:before/*,.generatecssdotcom_arrow:focus:before*/ {
+  border-top-color:#ed5623;
+  border-width:12px;
+  margin-left:-12px;
+}
+.act>.btn-orange-ico {
+  color: #fff;
+  border-radius: 0;
+  background: #ed5623 ;
+}
+
+/*/*/
