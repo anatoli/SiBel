@@ -336,3 +336,6 @@ ul li {
   margin-right: auto;
   display: block;
 }
+.text-center{
+  text-align: center;
+}
