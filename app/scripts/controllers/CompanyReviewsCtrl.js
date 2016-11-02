@@ -6,23 +6,44 @@
  * Created by Anatoli on 16.09.2016.
  */
 angular.module('siBelApp')
-  .controller('CompanyCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$location',
+  .controller('CompanyReviewsCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$location',
     function ($scope, $uibModal, $state, $translate, $rootScope, $location) {
 
-      var arr = $location.$$path.split('/');
-      var n = arr.length-1;
-      if(arr[n]== 'company'){
-        $state.go('root.company.about');
-        $scope.state='.about'
-      }else {
-        $scope.state = "."+arr[n];
-      }
 
 
     $scope.Go = function (data) {
       $state.go('root.company'+data);
       $scope.state = data;
     }
+
+     $scope.DetailsOpen = function (data) {
+       if(data=='first'){
+         $scope.first= !$scope.first;
+       }else if(data=='second'){
+         $scope.second= !$scope.second;
+       }else if(data=='third') {
+         $scope.third = !$scope.third;
+       }
+     }
+
+      $scope.openModal = function (data) {
+        $uibModal.open({
+          backdropClass: 'backdrop',
+          backdrop: 'static',
+          animation: false,
+          size: 'dialog',
+          templateUrl: 'views/modals/email.html',
+          resolve: {
+            dataModal: function () {
+              return {
+                data: data,
+                lang: $translate.proposedLanguage()
+              };
+            }
+          },
+          controller: 'EmailCtrl'
+        });
+      };
 
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('SecondPage.Slider.Title').then(function (translation) {
@@ -87,25 +108,6 @@ angular.module('siBelApp')
     });
 
     $translate.use($translate.proposedLanguage()).then(function () {});
-
-      $scope.openModal = function (data) {
-        $uibModal.open({
-          backdropClass: 'backdrop',
-          backdrop: 'static',
-          animation: false,
-          size: 'dialog',
-          templateUrl: 'views/modals/email.html',
-          resolve: {
-            dataModal: function () {
-              return {
-                data: data,
-                lang: $translate.proposedLanguage()
-              };
-            }
-          },
-          controller: 'EmailCtrl'
-        });
-      };
 
 
   }]);

@@ -88,7 +88,25 @@ angular.module('siBelApp', [
           }
         }
       })
+      .state('root.company.reviews', {
+        url: '/reviews',
+        views: {
+          'container@': {
+            templateUrl: '/views/partials/company/_reviews.html',
+            controller:  'CompanyReviewsCtrl'
+          }
+        }
+      })
 
+      .state('root.contacts', {
+        url: '/contacts',
+        views: {
+          'container@': {
+            templateUrl: '/views/contacts.html',
+            controller:  'ContactsCtrl'
+          }
+        }
+      })
       .state('root.projects', {
         url: '/projects',
         views: {
@@ -275,7 +293,8 @@ angular.module('siBelApp', [
       Header:{
         1:'Запрос',
         2:'Резюме',
-        3:'Заказать звонок'
+        3:'Заказать звонок',
+        4:'Отзыв'
       },
       Title:{
         11:'Заполните форму, отправьте, ',
@@ -284,7 +303,9 @@ angular.module('siBelApp', [
         22:'Заполните форму, пришлите резюме,',
         23:'и мы свяжемся с вами',
         31:'Заполните форму, отправьте, ',
-        32:'и мы свяжемся с вами для консультации'
+        32:'и мы свяжемся с вами для консультации',
+        41:'Заполните форму, чтобы оставить отзыв о «СиБел».',
+        42:'Мы очень ценим ваше мнение. Спасибо за участие!'
       },
       Btn_file:'Прикрепить файл',
       Btn_push:'Отправить',
@@ -470,7 +491,8 @@ angular.module('siBelApp', [
         Header:{
           1:'Запрос',
           2:'Рэзюмэ',
-          3:'Заказаць званок'
+          3:'Заказаць званок',
+          4:'Водгук'
         },
         Title:{
           11:'Запоўніце форму, адпраўце, ',
@@ -479,7 +501,9 @@ angular.module('siBelApp', [
           22:"Запоўніце форму, дашліце рэзюмэ,",
           23:" і мы звязуемся з вамі",
           31:'Запоўніце форму, адпраўце, ',
-          32:"і мы звязуемся з вамі ў зручны для вас час"
+          32:"і мы звязуемся з вамі ў зручны для вас час",
+          41:'Запоўніце форму, каб пакінуць водгук пра «СиБел».',
+          42:'Мы вельмі цэнім ваша меркаванне. Дзякуй за ўдзел!'
         },
         Btn_file:'Дадаць файл',
         Btn_push:'Адправіць',
@@ -593,8 +617,9 @@ angular.module('siBelApp', [
     Modal:{
       Header:{
         1:'Information Request',
-          2:'Resume',
-          3:'Request a call'
+        2:'Resume',
+        3:'Request a call',
+        4:'Comments',
       },
       Title:{
         11:'Fill in the form and send it ',
@@ -602,8 +627,10 @@ angular.module('siBelApp', [
         21:'Want to join "Sibel" team? ',
           22:'Fill in the form, please send a CV ',
           23:'and we will contact you ',
-          31:'Fill in the form and send it  ',
-          32:'and we will contact you for a consultation'
+        31:'Fill in the form and send it  ',
+          32:'and we will contact you for a consultation',
+        41:'Fill in the form to leave a review of "Sibel".',
+        42:'We really appreciate your feedback. Thank you for participating!'
       },
       Btn_file:'Attach file',
       Btn_push:'Send',

@@ -210,4 +210,7 @@ angular.module('siBelApp')
       window.scrollTo(0, 0);
       $state.go('root.404');
     };
+    $scope.OpenState = function (data) {
+      $state.go('root'+data);
+    }
   }]);

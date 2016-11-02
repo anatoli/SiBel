@@ -1,0 +1,43 @@
+.contacts-bg{
+  color: #fff;
+  background:#398be3;
+}
+.contacts-bg h1{
+  margin: 8% 12% 0;
+  font-size: 48px;
+}
+.contacts {
+  margin: 4% 0;
+  color: #fff;
+  font-size: 18px !important;
+}
+.contacts img{
+  width: 50px !important;
+  height: 50px!important;
+  margin: 5px;
+  float: left;
+}
+.contacts .number {
+  padding-left: 6%;
+}
+@media  (min-width: 992px) {
+  .contacts-map{
+    width: 100%;
+  }
+}
+.contacts-map{
+  background-image: url("../../images/solutions.jpg");
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  top: 0px;
+  z-index: 1026;
+  width: 50%;padding-left: 0;
+
+}
+
+.contacts-btn{
+  padding-top: 45%;
+  padding-left: 10%;
+}

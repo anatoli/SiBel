@@ -48,6 +48,9 @@ ul.orange-marker li{
 .comment-white-btn{
   padding-top: 2%
 }
+.comment-white-details{
+  margin-right: 7.2%;
+}
 .grey-footer{
   text-align: center;
   width: 100%;
@@ -134,3 +137,40 @@ ul.orange-marker li{
 }
 
 /*/*/
+.box {
+  overflow: hidden;
+  height: 100px;
+  line-height: 25px;
+}
+
+.box:before {
+  content: "";
+  float: left;
+  width: 5px;
+  height: 200px;
+}
+
+.box > *:first-child {
+  float: right;
+  width: 100%;
+  margin-left: -5px;
+}
+
+.box:after {
+  content: "\02026";
+  box-sizing: border-box;
+  float: right;
+  position: relative;
+  top: 75px;
+  left: 100%;
+  width: 2em;
+  margin-left: -2em;
+  padding-right: 5px;
+  text-align: center;
+  background-size: 100% 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), white 100%, white);
+  font-size: 26px;
+}
+.full-size{
+ height: auto;
+}

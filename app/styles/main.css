@@ -257,6 +257,7 @@ ul li {
 .btn-orange:hover, .btn-orange:focus{
   color: #ed5623;
   /*background: #ed5623 ;*/
+  border: 1px solid #ed5623 ;
   box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
 }
 .btn-orange{
