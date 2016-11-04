@@ -95,8 +95,29 @@ angular.module('siBelApp')
       $translate('SecondPage.Comments.Descriptions').then(function (translation) {
         $scope.SecondPage_Comments_Descriptions = translation;
       });
-      $translate('SecondPage.Comments.Text').then(function (translation) {
-        $scope.SecondPage_Comments_Text = translation;
+      $translate('SecondPage.Comments.Text_11').then(function (translation) {
+        $scope.SecondPage_Comments_Text_11 = translation;
+      });
+      $translate('SecondPage.Comments.Text_12').then(function (translation) {
+        $scope.SecondPage_Comments_Text_12 = translation;
+      });
+      $translate('SecondPage.Comments.Text_13').then(function (translation) {
+        $scope.SecondPage_Comments_Text_13 = translation;
+      });
+      $translate('SecondPage.Comments.Title_2').then(function (translation) {
+        $scope.SecondPage_Comments_Title_2 = translation;
+      });
+      $translate('SecondPage.Comments.Descriptions_2').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_2 = translation;
+      });
+      $translate('SecondPage.Comments.Text_21').then(function (translation) {
+        $scope.SecondPage_Comments_Text_21 = translation;
+      });
+      $translate('SecondPage.Comments.Text_22').then(function (translation) {
+        $scope.SecondPage_Comments_Text_22 = translation;
+      });
+      $translate('SecondPage.Comments.Text_23').then(function (translation) {
+        $scope.SecondPage_Comments_Text_23 = translation;
       });
       $translate('SecondPage.Comments.Btn_1').then(function (translation) {
         $scope.SecondPage_Comments_Btn_1 = translation;

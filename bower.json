@@ -20,7 +20,9 @@
     "angular-translate-loader-url": "^2.12.1",
     "angular-translate-loader-partial": "^2.12.1",
     "bootstrap-carousel-swipe": "*",
-    "angular-file-upload": "^2.3.4"
+    "angular-file-upload": "^2.3.4",
+    "leaflet": "leaflet-dist#^0.7.2",
+    "angular-leaflet-directive": "^0.10.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0",

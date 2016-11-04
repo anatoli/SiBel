@@ -35,6 +35,41 @@ angular.module('siBelApp')
       //   });
       // };
 
+      var mainMarker = {
+        lat: 53.905902508833165,
+        lng: 27.456910014152527,
+        focus: false,
+        message: "SiBEL",
+        draggable: false
+      };
+
+      angular.extend($scope, {
+        center: {
+          lat:53.905902508833165,
+          lng:27.456910014152527,
+          zoom:17
+        },
+        markers: {
+          mainMarker: angular.copy(mainMarker)
+        },
+        events: { // or just {} //all events
+          markers:{
+            enable: [ 'dragend' ]
+            //logic: 'emit'
+          }
+        },
+        controls: {
+          custom: new L.Control.Fullscreen()
+        },
+        tiles: {
+          name: 'Mapbox Comic',
+        },
+      });
+
+      $scope.mapVisible = function () {
+        $scope.map=true;
+      }
+
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('SecondPage.Slider.Title').then(function (translation) {
         $scope.SecondPage_Slider_Title = translation;
@@ -93,6 +128,12 @@ angular.module('siBelApp')
       });
       $translate('SecondPage.Comments.Btn_2').then(function (translation) {
         $scope.SecondPage_Comments_Btn_2 = translation;
+      });
+      $translate('Error.Address_1').then(function (translation) {
+        $scope.Error_Address_1 = translation;
+      });
+      $translate('Error.Address_2').then(function (translation) {
+        $scope.Error_Address_2 = translation;
       });
 
     });

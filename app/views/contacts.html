@@ -1,5 +1,5 @@
 <div class="row" style="position:relative; height: auto">
-  <div class="col-md-6 col-sm-12 contacts-bg ">
+  <div class="col-md-6 col-sm-6 contacts-bg ">
     <h1 class="rubric">Контакты</h1>
     <div class="row  contacts">
       <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 footer-404-margin-img">
@@ -27,15 +27,19 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6 col-sm-12 contacts-map "  >
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uwalcZZ4mxRSeH9_vkYE2kBSXjJUzkHa&amp;width=100%&amp;height=347&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-      <!--<div class="row contacts-btn" >-->
-        <!--<div class="col-md-4">-->
-          <!--<button class="form-control btn-full-orange">На карте</button>-->
-        <!--</div>-->
-        <!--<div class="col-md-4">-->
-          <!--<button class="form-control btn-orange">Оставить запрос</button>-->
-        <!--</div>-->
+  <div class="col-md-6 col-sm-6 contacts-map "  >
+    <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uwalcZZ4mxRSeH9_vkYE2kBSXjJUzkHa&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uwalcZZ4mxRSeH9_vkYE2kBSXjJUzkHa&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>-->
+
+    <leaflet ng-if="map" lf-center="center" controls="controls" event-broadcast="events" markers="markers" height="100%" width="100%"></leaflet>
+    <div class="row contacts-btn" ng-init="!map"  ng-if="!map"  >
+      <div class="col-md-6">
+        <button class="form-control btn-full-orange" ng-click="mapVisible()">На карте</button>
+      </div>
+      <!--<div class="col-md-4">-->
+        <!--<button class="form-control btn-orange">Оставить запрос</button>-->
       <!--</div>-->
+    </div>
   </div>
+
 </div>

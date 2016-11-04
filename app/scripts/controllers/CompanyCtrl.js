@@ -9,6 +9,8 @@ angular.module('siBelApp')
   .controller('CompanyCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$location',
     function ($scope, $uibModal, $state, $translate, $rootScope, $location) {
 
+      $scope.dateStart=1950;
+
       var arr = $location.$$path.split('/');
       var n = arr.length-1;
       if(arr[n]== 'company'){
@@ -18,13 +20,20 @@ angular.module('siBelApp')
         $scope.state = "."+arr[n];
       }
 
+      setInterval(function () {
+        if ($scope.dateStart<2006){
+          $scope.dateStart++;
+          console.log( $scope.dateStart);
+        }
+      },500)
 
-    $scope.Go = function (data) {
-      $state.go('root.company'+data);
-      $scope.state = data;
-    }
 
-    $rootScope.$on('$translateChangeSuccess', function () {
+      $scope.Go = function (data) {
+        $state.go('root.company'+data);
+        $scope.state = data;
+      }
+
+     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('SecondPage.Slider.Title').then(function (translation) {
         $scope.SecondPage_Slider_Title = translation;
       });
@@ -74,8 +83,8 @@ angular.module('siBelApp')
       $translate('SecondPage.Comments.Descriptions').then(function (translation) {
         $scope.SecondPage_Comments_Descriptions = translation;
       });
-      $translate('SecondPage.Comments.Text').then(function (translation) {
-        $scope.SecondPage_Comments_Text = translation;
+      $translate('SecondPage.Comments.Text_11').then(function (translation) {
+        $scope.SecondPage_Comments_Text_11 = translation;
       });
       $translate('SecondPage.Comments.Btn_1').then(function (translation) {
         $scope.SecondPage_Comments_Btn_1 = translation;
@@ -86,7 +95,7 @@ angular.module('siBelApp')
 
     });
 
-    $translate.use($translate.proposedLanguage()).then(function () {});
+      $translate.use($translate.proposedLanguage()).then(function () {});
 
       $scope.openModal = function (data) {
         $uibModal.open({

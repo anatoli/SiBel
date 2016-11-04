@@ -1,8 +1,14 @@
 .contacts-bg{
   color: #fff;
   background:#398be3;
+  position: relative;
+  height: 100%;
+  left: 0;
+  z-index: 1026;
+  width: 50%;
 }
 .contacts-bg h1{
+  margin-top: 0 !important;
   margin: 8% 12% 0;
   font-size: 48px;
 }
@@ -33,11 +39,12 @@
   left: 50%;
   top: 0px;
   z-index: 1026;
-  width: 50%;padding-left: 0;
+  width: 50%;
+  padding-left: 0;
 
 }
 
 .contacts-btn{
-  padding-top: 45%;
+  padding-top: 33%;
   padding-left: 10%;
 }
