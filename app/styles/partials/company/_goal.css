@@ -72,7 +72,7 @@ ul.orange-marker li{
 .blue p{
   margin-top: 5%;
   font-size: 17px;
-  line-height: 1.1;
+  line-height: 1.3;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -96,7 +96,7 @@ ul.orange-marker li{
   margin-right: 10%;
   padding-bottom: 15px;
   font-size: 18px;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
 }
 
 /*/*/
@@ -139,7 +139,8 @@ ul.orange-marker li{
 /*/*/
 .box {
   overflow: hidden;
-  height: 100px;
+  height: 130px;
+  /*padding-top: 15px;*/
   line-height: 25px;
 }
 
@@ -173,4 +174,23 @@ ul.orange-marker li{
 }
 .full-size{
  height: auto;
+}
+.block-comment{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+  padding-bottom: 3em;
+}
+.img-relative{
+  position: absolute;
+  /*z-index: -1;*/
+  left: 3px;
+  top: -6px;
+  width: auto !important;
+  opacity: 0.3;
+}
+.padding-top-30{
+  padding-top: 30px;
+}
+.padding-tl-30{
+  padding-top: 30px;
+  padding-left: 30px;
 }

@@ -80,8 +80,11 @@ angular.module('siBelApp')
       $translate('SecondPage.Comments.Title').then(function (translation) {
         $scope.SecondPage_Comments_Title = translation;
       });
-      $translate('SecondPage.Comments.Descriptions').then(function (translation) {
-        $scope.SecondPage_Comments_Descriptions = translation;
+      $translate('SecondPage.Comments.Descriptions_11').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_11 = translation;
+      });
+       $translate('SecondPage.Comments.Descriptions_12').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_12 = translation;
       });
       $translate('SecondPage.Comments.Text_11').then(function (translation) {
         $scope.SecondPage_Comments_Text_11 = translation;
@@ -91,6 +94,9 @@ angular.module('siBelApp')
       });
       $translate('SecondPage.Comments.Btn_2').then(function (translation) {
         $scope.SecondPage_Comments_Btn_2 = translation;
+      });
+       $translate('SecondPage.Comments.Btn_3').then(function (translation) {
+        $scope.SecondPage_Comments_Btn_3 = translation;
       });
 
     });

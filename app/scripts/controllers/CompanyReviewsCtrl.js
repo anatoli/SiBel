@@ -17,6 +17,9 @@ angular.module('siBelApp')
     }
 
      $scope.DetailsOpen = function (data) {
+       $scope.first= false;
+       $scope.second= false;
+       $scope.third = false;
        if(data=='first'){
          $scope.first= !$scope.first;
        }else if(data=='second'){
@@ -46,11 +49,14 @@ angular.module('siBelApp')
       };
 
     $rootScope.$on('$translateChangeSuccess', function () {
-      $translate('SecondPage.Slider.Title').then(function (translation) {
-        $scope.SecondPage_Slider_Title = translation;
+      $translate('SecondPage.Comments.Global_Title').then(function (translation) {
+        $scope.SecondPage_Comments_Global_Title = translation;
       });
-      $translate('SecondPage.Slider.Text').then(function (translation) {
-        $scope.SecondPage_Slider_Text = translation;
+      $translate('SecondPage.Comments.Global_description_1').then(function (translation) {
+        $scope.SecondPage_Comments_Global_description_1 = translation;
+      });
+      $translate('SecondPage.Comments.Global_description_2').then(function (translation) {
+        $scope.SecondPage_Comments_Global_description_2 = translation;
       });
       $translate('SecondPage.Slider.Btn_1').then(function (translation) {
         $scope.SecondPage_Slider_Btn_1 = translation;
@@ -92,8 +98,11 @@ angular.module('siBelApp')
       $translate('SecondPage.Comments.Title').then(function (translation) {
         $scope.SecondPage_Comments_Title = translation;
       });
-      $translate('SecondPage.Comments.Descriptions').then(function (translation) {
-        $scope.SecondPage_Comments_Descriptions = translation;
+      $translate('SecondPage.Comments.Descriptions_11').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_11 = translation;
+      });
+      $translate('SecondPage.Comments.Descriptions_12').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_12 = translation;
       });
       $translate('SecondPage.Comments.Text_11').then(function (translation) {
         $scope.SecondPage_Comments_Text_11 = translation;
@@ -107,8 +116,11 @@ angular.module('siBelApp')
       $translate('SecondPage.Comments.Title_2').then(function (translation) {
         $scope.SecondPage_Comments_Title_2 = translation;
       });
-      $translate('SecondPage.Comments.Descriptions_2').then(function (translation) {
-        $scope.SecondPage_Comments_Descriptions_2 = translation;
+      $translate('SecondPage.Comments.Descriptions_21').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_21 = translation;
+      });
+      $translate('SecondPage.Comments.Descriptions_22').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_22 = translation;
       });
       $translate('SecondPage.Comments.Text_21').then(function (translation) {
         $scope.SecondPage_Comments_Text_21 = translation;

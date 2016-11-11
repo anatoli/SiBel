@@ -231,7 +231,8 @@ ul li {
 .btn-project-ideas{
   margin-top: 5%;
 }
-.btn-blue:hover, .btn-blue:focus{
+/*btn-blue*/
+.btn-blue:hover{
   /*color: #fff;*/
   /*background: #398be3 ;*/
   box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
@@ -242,7 +243,16 @@ ul li {
   border-radius: 0;
   background-color: #fff;
 }
-.btn-full-blue:hover, .btn-full-blue:focus{
+.btn-blue:focus{
+  color: #398be3;
+  border: 1px solid #398be3 ;
+  border-radius: 0;
+  background-color: #fff;
+}
+/*btn-blue*/
+/*btn-full-blue*/
+
+.btn-full-blue:hover{
   /*color: #398be3;*/
   /*border: 1px solid #398be3 ;*/
   border-radius: 0;
@@ -250,17 +260,31 @@ ul li {
   padding-top: 2px !important;
   /*background: #fff ;*/
 }
+.btn-full-blue:focus{
+  color: #398be3;
+  border: 1px solid #398be3 ;
+  border-radius: 0;
+  background-color: #fff;
+  padding-top: 2px !important;
+}
 .btn-full-blue{
   color: #fff;
   border-radius: 0;
   background: #398be3 ;
 }
-.btn-orange:hover, .btn-orange:focus{
+.btn-orange:hover{
   color: #ed5623;
   /*background: #ed5623 ;*/
   border: 1px solid #ed5623 ;
   box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
 }
+
+.btn-orange:focus{
+  color: #ed5623;
+  /*background: #ed5623 ;*/
+  border: 1px solid #ed5623 ;
+}
+
 .btn-orange{
   color: #ed5623;
   border: 1px solid #ed5623 ;

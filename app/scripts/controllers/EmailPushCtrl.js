@@ -29,5 +29,5 @@ angular.module('siBelApp')
       $translate.use(dataModal.lang).then(function () {});
     setTimeout(function () {
       $uibModalInstance.dismiss('cancel');
-    }, 2000)
+    }, 2500)
     }])

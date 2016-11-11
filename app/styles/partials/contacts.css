@@ -1,8 +1,10 @@
 .contacts-bg{
+  padding-top: 2%;
   color: #fff;
   background:#398be3;
   position: relative;
   height: 100%;
+  min-height: 350px;
   left: 0;
   z-index: 1026;
   width: 50%;
@@ -32,7 +34,7 @@
   }
 }
 .contacts-map{
-  background-image: url("../../images/solutions.jpg");
+  background-image: url("../../images/cityMorning.png");
   background-size: cover;
   position: absolute;
   height: 100%;
@@ -45,6 +47,6 @@
 }
 
 .contacts-btn{
-  padding-top: 33%;
+  padding-top: 40%;
   padding-left: 10%;
 }
