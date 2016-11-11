@@ -9,38 +9,45 @@ angular.module('siBelApp')
   .controller('ContactsCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$location',
     function ($scope, $uibModal, $state, $translate, $rootScope, $location) {
 
-
-
     $scope.Go = function (data) {
       $state.go('root.company'+data);
       $scope.state = data;
     }
 
-      // $scope.openModal = function (data) {
-      //   $uibModal.open({
-      //     backdropClass: 'backdrop',
-      //     backdrop: 'static',
-      //     animation: false,
-      //     size: 'dialog',
-      //     templateUrl: 'views/modals/email.html',
-      //     resolve: {
-      //       dataModal: function () {
-      //         return {
-      //           data: data,
-      //           lang: $translate.proposedLanguage()
-      //         };
-      //       }
-      //     },
-      //     controller: 'EmailCtrl'
-      //   });
-      // };
+      $scope.openModal = function (data) {
+        $uibModal.open({
+          backdropClass: 'backdrop',
+          backdrop: 'static',
+          animation: false,
+          size: 'dialog',
+          templateUrl: 'views/modals/email.html',
+          resolve: {
+            dataModal: function () {
+              return {
+                data: data,
+                lang: $translate.proposedLanguage()
+              };
+            }
+          },
+          controller: 'EmailCtrl'
+        });
+      };
+
+      var templateMarker = {
+        sibel_icon:{
+          iconUrl: '../images/icons/marker_b100.png',
+          iconSize:     [136, 70],
+          iconAnchor:   [54, 74],
+
+        }
+      }
 
       var mainMarker = {
         lat: 53.905902508833165,
         lng: 27.456910014152527,
         focus: false,
-        message: "SiBEL",
-        draggable: false
+        draggable: false,
+        icon:templateMarker.sibel_icon
       };
 
       angular.extend($scope, {
@@ -67,7 +74,7 @@ angular.module('siBelApp')
       });
 
       $scope.mapVisible = function () {
-        $scope.map=true;
+        $scope.map=!$scope.map;
       }
 
     $rootScope.$on('$translateChangeSuccess', function () {

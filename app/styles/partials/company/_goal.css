@@ -90,6 +90,7 @@ ul.orange-marker li{
 }
 .slide-1-block-background-company{
   margin-bottom: 3%;
+  background: rgba( 255,255,255, 0.8);
 }
 .slide-1-block-background-company p{
   margin-left: 6%;
@@ -139,7 +140,7 @@ ul.orange-marker li{
 /*/*/
 .box {
   overflow: hidden;
-  height: 130px;
+  height: 135px;
   /*padding-top: 15px;*/
   line-height: 25px;
 }

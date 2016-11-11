@@ -1,11 +1,41 @@
 <div class="row" style="position:relative; height: auto">
-  <div class="col-md-6 col-sm-6 contacts-bg ">
+  <div class="col-md-6 col-sm-6 contacts-bg  ">
     <h1 class="rubric">Контакты</h1>
-    <div class="row  contacts">
-      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 footer-404-margin-img">
+    <div class="row  contacts contactsForm">
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block ">
+        <div class="row dop-margin-email">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
+            <img src="../images/404/map-mark-symbol-of-ios-7_wh.png" style="margin: 0;" >
+          </div>
+          <div class="col-md-10 col-sm-10 col-xs-10 number">
+            <p>{{Error_Address_1 |translate}}</br> {{Error_Address_2 |translate}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block ">
+        <div class="row dop-margin-email footer-404-margin-img">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
+            <img src="../images/404/small-mail-envelope_wh.png " class="icon" >
+          </div>
+          <div class="col-md-10 col-sm-10 col-xs-10 number">
+            <p class="center-line">e-mail: <a  ng-click="openModal('query')" href="" style="color:#fff;"> info@sibel.by</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block ">
+        <div class="row dop-margin-email footer-404-margin-img">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
+            <img src="../images/404/worldwide.png" class="icon" >
+          </div>
+          <div class="col-md-10 col-sm-10 col-xs-10 number">
+            <p class="center-line"><a style="color:#fff;" href="#/">www.sibel.by</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block  footer-404-margin-img">
         <div class="row dop-margin-email phone">
           <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
-            <img src="../images/404/touch-screen-mobile-device_wh.png">
+            <img src="../images/404/touch-screen-mobile-device_wh.png" class="icon" >
           </div>
           <div class="col-md-10 col-sm-10 col-xs-10 number" >
             <p>+375 (29) 133 31 45</p>
@@ -13,18 +43,9 @@
           </div>
         </div>
       </div>
-      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="row dop-margin-email footer-404-margin-img">
-          <img src="../images/404/small-mail-envelope_wh.png" >
-          <p>e-mail: info@sibel.by</p>
-        </div>
-      </div>
-      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="row dop-margin-email">
-          <img src="../images/404/map-mark-symbol-of-ios-7_wh.png" >
-          <p>{{Error_Address_1 |translate}}</br> {{Error_Address_2 |translate}}</p>
-        </div>
-      </div>
+    </div>
+    <div class="col-md-1 col-sm-1 col-xs-1 pull-right btn-back">
+      <i title="Скрыть карту" ng-show="map" ng-click="mapVisible()" class="glyphicon glyphicon-arrow-left"><span class="narrow">Назад</span></i>
     </div>
   </div>
   <div class="col-md-6 col-sm-6 contacts-map "  >
@@ -33,12 +54,12 @@
 
     <leaflet ng-if="map" lf-center="center" controls="controls" event-broadcast="events" markers="markers" height="100%" width="100%"></leaflet>
     <div class="row contacts-btn" ng-init="!map"  ng-if="!map"  >
-      <div class="col-md-6">
+      <div class="col-md-5 col-sm-5 col-xs-5">
         <button class="form-control btn-full-orange" ng-click="mapVisible()">На карте</button>
       </div>
-      <!--<div class="col-md-4">-->
-        <!--<button class="form-control btn-orange">Оставить запрос</button>-->
-      <!--</div>-->
+      <div class="col-md-5 col-sm-5 col-xs-5">
+        <button class="form-control btn-orange" ng-click="openModal('query')">Оставить запрос</button>
+      </div>
     </div>
   </div>
 
