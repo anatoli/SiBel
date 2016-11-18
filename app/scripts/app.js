@@ -98,6 +98,120 @@ angular.module('siBelApp', [
           }
         }
       })
+      .state('root.service', {
+        url: '/service',
+        views: {
+          'container@': {
+            templateUrl: '/views/partials/service/service.html',
+            controller:  'ServiceCtrl'
+          }
+        }
+      })
+      .state('root.service.business', {
+        url: '/business',
+        views: {
+          'service@root.service': {
+            templateUrl: '/views/partials/service/business.html',
+            controller:  'SoftForBusinessCtrl'
+          }
+        }
+      })
+      .state('root.service.mobile', {
+        url: '/mobile',
+        views: {
+          'service@root.service': {
+            templateUrl: '/views/partials/service/mobile.html',
+            controller:  'SoftForMobileCtrl'
+          }
+        }
+      })
+      .state('root.service.it', {
+        url: '/it',
+        views: {
+          'service@root.service': {
+            templateUrl: '/views/partials/service/it.html',
+            controller:  'ItServicesCtrl'
+          }
+        }
+      })
+
+      .state('root.cases', {
+        url: '/cases',
+        views: {
+          'container@': {
+            templateUrl: '/views/partials/cases/cases.html',
+            controller:  'CasesCtrl'
+          }
+        }
+      })
+      .state('root.cases.project', {
+        url: '/business',
+        views: {
+          'cases@root.cases': {
+            templateUrl: '/views/partials/cases/project.html',
+            controller:  'ProjectCtrl'
+          }
+        }
+      })
+      .state('root.cases.ideas', {
+        url: '/mobile',
+        views: {
+          'cases@root.cases': {
+            templateUrl: '/views/partials/cases/ideas.html',
+            controller:  'IdeasCtrl'
+          }
+        }
+      })
+
+      .state('root.benefits', {
+        url: '/benefits',
+        views: {
+          'container@': {
+            templateUrl: '/views/partials/benefits/benefits.html',
+            controller:  'BenefitsCtrl'
+          }
+        }
+      })
+      .state('root.benefits.employees', {
+        url: '/employees',
+        views: {
+          'benefits@root.benefits': {
+            templateUrl: '/views/partials/benefits/employees.html',
+            controller:  'EmployeesCtrl'
+          }
+        }
+      })
+      .state('root.benefits.innovations', {
+        url: '/innovations',
+        views: {
+          'benefits@root.benefits': {
+            templateUrl: '/views/partials/benefits/innovations.html',
+            controller:  'InnovationsCtrl'
+          }
+        }
+      })
+      .state('root.benefits.standards', {
+        url: '/standards',
+        views: {
+          'benefits@root.benefits': {
+            templateUrl: '/views/partials/benefits/standards.html',
+            controller:  'StandardsCtrl'
+          }
+        }
+      })
+      .state('root.benefits.guarantees', {
+        url: '/guarantees',
+        views: {
+          'benefits@root.benefits': {
+            templateUrl: '/views/partials/benefits/guarantees.html',
+            controller:  'GuaranteesCtrl'
+          }
+        }
+      })
+
+
+
+
 
       .state('root.contacts', {
         url: '/contacts',
@@ -418,6 +532,13 @@ angular.module('siBelApp', [
         Btn_3:'Все отзывы'
       }
 
+    },
+    Contacts:{
+      Title:'Контакты',
+      Btn_1: 'На карте',
+      Btn_2: 'Оставить запрос',
+      Back: 'Назад',
+      Tooltip:'Скрыть карту'
     }
   });
     $translateProvider.translations('by', {
@@ -625,6 +746,13 @@ angular.module('siBelApp', [
           Btn_2:'Пакінуць водгук',
           Btn_3:'Усе водгукі'
         }
+      },
+      Contacts:{
+        Title:'Кантакты',
+        Btn_1: 'На карце',
+        Btn_2: 'Пакінуць  запрос',
+        Back: 'Назад',
+        Tooltip:'Схаваць карту',
       }
 
     });
@@ -710,7 +838,7 @@ angular.module('siBelApp', [
       Address_2:'Pritytsky Str., 79, 220140, Minsk, Belarus'
 
   },
-    Modal:{
+      Modal:{
       Header:{
         1:'Information Request',
         2:'Resume',
@@ -754,7 +882,15 @@ angular.module('siBelApp', [
       Alert_Error:"Transmission error. Repeat later."
 
 
-    }
+    },
+
+      Contacts:{
+        Title:'Сontacts',
+        Btn_1: 'Map',
+        Btn_2: 'Leave request',
+        Back: 'Back',
+        Tooltip:'Hide map'
+      }
 
 
   });

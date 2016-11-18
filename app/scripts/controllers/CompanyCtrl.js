@@ -11,21 +11,31 @@ angular.module('siBelApp')
 
       $scope.dateStart=1950;
 
-      var arr = $location.$$path.split('/');
-      var n = arr.length-1;
-      if(arr[n]== 'company'){
-        $state.go('root.company.about');
-        $scope.state='.about'
-      }else {
-        $scope.state = "."+arr[n];
+      function iconActive() {
+        var arr = $location.$$path.split('/');
+        var n = arr.length-1;
+        if(arr[n]== 'company'){
+          $state.go('root.company.about');
+          $scope.state='.about'
+        }else {
+          $scope.state = "."+arr[n];
+        }
       }
 
-      setInterval(function () {
-        if ($scope.dateStart<2006){
-          $scope.dateStart++;
-          console.log( $scope.dateStart);
-        }
-      },500)
+      iconActive();
+
+      $rootScope.$on('$stateChangeSuccess',
+        function(event, toState, toParams, fromState, fromParams){
+          iconActive();
+      })
+
+
+      // setInterval(function () {
+      //   if ($scope.dateStart<2006){
+      //     $scope.dateStart++;
+      //     console.log( $scope.dateStart);
+      //   }
+      // },500)
 
 
       $scope.Go = function (data) {

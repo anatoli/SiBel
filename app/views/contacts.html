@@ -1,6 +1,6 @@
 <div class="row" style="position:relative; height: auto">
   <div class="col-md-6 col-sm-6 contacts-bg  ">
-    <h1 class="rubric">Контакты</h1>
+    <h1 class="rubric">{{Contacts_Title | translate}}</h1>
     <div class="row  contacts contactsForm">
       <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block ">
         <div class="row dop-margin-email">
@@ -45,7 +45,7 @@
       </div>
     </div>
     <div class="col-md-1 col-sm-1 col-xs-1 pull-right btn-back">
-      <i title="Скрыть карту" ng-show="map" ng-click="mapVisible()" class="glyphicon glyphicon-arrow-left"><span class="narrow">Назад</span></i>
+      <i title={{Contacts_Tooltip}} ng-show="map" ng-click="mapVisible()" class="glyphicon glyphicon-arrow-left"><span class="narrow">{{Contacts_Back| translate}}</span></i>
     </div>
   </div>
   <div class="col-md-6 col-sm-6 contacts-map "  >
@@ -55,10 +55,10 @@
     <leaflet ng-if="map" lf-center="center" controls="controls" event-broadcast="events" markers="markers" height="100%" width="100%"></leaflet>
     <div class="row contacts-btn" ng-init="!map"  ng-if="!map"  >
       <div class="col-md-5 col-sm-5 col-xs-5">
-        <button class="form-control btn-full-orange" ng-click="mapVisible()">На карте</button>
+        <button class="form-control btn-full-orange" ng-click="mapVisible()">{{Contacts_Btn_1 | translate}}</button>
       </div>
       <div class="col-md-5 col-sm-5 col-xs-5">
-        <button class="form-control btn-orange" ng-click="openModal('query')">Оставить запрос</button>
+        <button class="form-control btn-orange" ng-click="openModal('query')">{{Contacts_Btn_2 | translate}}</button>
       </div>
     </div>
   </div>

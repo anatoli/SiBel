@@ -78,69 +78,28 @@ angular.module('siBelApp')
       }
 
     $rootScope.$on('$translateChangeSuccess', function () {
-      $translate('SecondPage.Slider.Title').then(function (translation) {
-        $scope.SecondPage_Slider_Title = translation;
-      });
-      $translate('SecondPage.Slider.Text').then(function (translation) {
-        $scope.SecondPage_Slider_Text = translation;
-      });
-      $translate('SecondPage.Slider.Btn_1').then(function (translation) {
-        $scope.SecondPage_Slider_Btn_1 = translation;
-      });
-      $translate('SecondPage.Slider.Btn_2').then(function (translation) {
-        $scope.SecondPage_Slider_Btn_2 = translation;
-      });
 
-      $translate('SecondPage.Icons.Title').then(function (translation) {
-        $scope.SecondPage_Icons_Title = translation;
-      });
-      $translate('SecondPage.Icons.Header_ICO_1').then(function (translation) {
-        $scope.SecondPage_Icons_Header_ICO_1 = translation;
-      });
-      $translate('SecondPage.Icons.Header_ICO_2').then(function (translation) {
-        $scope.SecondPage_Icons_Header_ICO_2 = translation;
-      });
-      $translate('SecondPage.Icons.Header_ICO_3').then(function (translation) {
-        $scope.SecondPage_Icons_Header_ICO_3 = translation;
-      });
-      $translate('SecondPage.Icons.Text_ICO_1').then(function (translation) {
-        $scope.SecondPage_Icons_Text_ICO_1 = translation;
-      });
-      $translate('SecondPage.Icons.Text_ICO_2').then(function (translation) {
-        $scope.SecondPage_Icons_Text_ICO_2 = translation;
-      });
-      $translate('SecondPage.Icons.Text_ICO_3').then(function (translation) {
-        $scope.SecondPage_Icons_Text_ICO_3 = translation;
-      });
-      $translate('SecondPage.Icons.Btn_ICO_1').then(function (translation) {
-        $scope.SecondPage_Icons_Btn_ICO_1 = translation;
-      });
-      $translate('SecondPage.Icons.Btn_ICO_2').then(function (translation) {
-        $scope.SecondPage_Icons_Btn_ICO_2 = translation;
-      });
-      $translate('SecondPage.Icons.Btn_ICO_3').then(function (translation) {
-        $scope.SecondPage_Icons_Btn_ICO_3 = translation;
-      });
-      $translate('SecondPage.Comments.Title').then(function (translation) {
-        $scope.SecondPage_Comments_Title = translation;
-      });
-      $translate('SecondPage.Comments.Descriptions').then(function (translation) {
-        $scope.SecondPage_Comments_Descriptions = translation;
-      });
-      $translate('SecondPage.Comments.Text').then(function (translation) {
-        $scope.SecondPage_Comments_Text = translation;
-      });
-      $translate('SecondPage.Comments.Btn_1').then(function (translation) {
-        $scope.SecondPage_Comments_Btn_1 = translation;
-      });
-      $translate('SecondPage.Comments.Btn_2').then(function (translation) {
-        $scope.SecondPage_Comments_Btn_2 = translation;
-      });
       $translate('Error.Address_1').then(function (translation) {
         $scope.Error_Address_1 = translation;
       });
       $translate('Error.Address_2').then(function (translation) {
         $scope.Error_Address_2 = translation;
+      });
+
+      $translate('Contacts.Title').then(function (translation) {
+        $scope.Contacts_Title = translation;
+      });
+      $translate('Contacts.Btn_1').then(function (translation) {
+        $scope.Contacts_Btn_1 = translation;
+      });
+      $translate('Contacts.Btn_2').then(function (translation) {
+        $scope.Contacts_Btn_2 = translation;
+      });
+      $translate('Contacts.Back').then(function (translation) {
+        $scope.Contacts_Back = translation;
+      });
+      $translate('Contacts.Tooltip').then(function (translation) {
+        $scope.Contacts_Tooltip = translation;
       });
 
     });
