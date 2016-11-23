@@ -13,6 +13,9 @@
       <div class="modal-title float-left left-header-div" ng-if="mod=='comment'">
         {{Modal_Header_4 |translate}}
       </div>
+      <div class="modal-title float-left left-header-div" ng-if="mod=='congratulation'">
+        {{Modal_Header_5 |translate}}
+      </div>
       <div class="pull-right">
         <button type="button " ng-click="cancel()" class="btn btn-full-orange btn-radius glyphicon glyphicon-remove btn-top">
         </button>
@@ -24,6 +27,7 @@
       <h4 ng-if="mod=='summary'">{{Modal_Title_21 |translate}}</br>{{Modal_Title_22 |translate}}</br>{{Modal_Title_23 |translate}} </h4>
       <h4  ng-if="mod=='query'">{{Modal_Title_31 |translate}}</br>{{Modal_Title_32 |translate}} </h4>
       <h4  ng-if="mod=='comment'">{{Modal_Title_41 |translate}}</br>{{Modal_Title_42 |translate}} </h4>
+      <h4  ng-if="mod=='congratulation'">{{Modal_Title_51 |translate}}</br>{{Modal_Title_52 |translate}} </h4>
 
     <input  ng-model="name" class="form-control font-modal-input" placeholder="{{Modal_Name_plh |translate}}">
 

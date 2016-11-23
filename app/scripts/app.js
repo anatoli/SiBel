@@ -409,7 +409,8 @@ angular.module('siBelApp', [
         1:'Запрос',
         2:'Резюме',
         3:'Заказать звонок',
-        4:'Отзыв'
+        4:'Отзыв',
+        5:'Поздравить'
       },
       Title:{
         11:'Заполните форму, отправьте, ',
@@ -420,7 +421,9 @@ angular.module('siBelApp', [
         31:'Заполните форму, отправьте, ',
         32:'и мы свяжемся с вами для консультации',
         41:'Заполните форму, чтобы оставить отзыв о «СиБел».',
-        42:'Мы очень ценим ваше мнение. Спасибо за участие!'
+        42:'Мы очень ценим ваше мнение. Спасибо за участие!',
+        51:'Заполнив форму, вы разделите с «СиБел» радость ',
+        52:'знаменательного события. Спасибо за участие!'
       },
       Btn_file:'Прикрепить файл',
       Btn_push:'Отправить',
@@ -430,7 +433,7 @@ angular.module('siBelApp', [
       Phone_plh:"Телефон*",
       Datetime_plh:"Время и дата*",
       Company_plh:"Организация, должность",
-      Area_plh:"Интересующее решение или услуга",
+      Area_plh:"Сообщение",
       Select:{
         Title:"-Выберите, направление-",
         1:"Разработка мобильных приложений",
@@ -462,7 +465,7 @@ angular.module('siBelApp', [
         Text_ICO_1:' 10 лет работы для достижения отличного результата и высокого качества работ',
         Btn_ICO_1:'О компании',
         Header_ICO_2:"Рост команды",
-        Text_ICO_2:'Высококвалифицированные и мотивированные специалисты вливаются в наши ряды',
+        Text_ICO_2:'Лучшие специалисты вливаются в наши ряды',
         Btn_ICO_2:'Ценности',
         Header_ICO_3:"Кейсы",
         Text_ICO_3:'Составляют наш опыт и знания сферы высоких технологий для бизнес-решений',
@@ -626,7 +629,8 @@ angular.module('siBelApp', [
           1:'Запрос',
           2:'Рэзюмэ',
           3:'Заказаць званок',
-          4:'Водгук'
+          4:'Водгук',
+          5:'Павіншаваць'
         },
         Title:{
           11:'Запоўніце форму, адпраўце, ',
@@ -637,7 +641,9 @@ angular.module('siBelApp', [
           31:'Запоўніце форму, адпраўце, ',
           32:"і мы звязуемся з вамі ў зручны для вас час",
           41:'Запоўніце форму, каб пакінуць водгук пра «СиБел».',
-          42:'Мы вельмі цэнім ваша меркаванне. Дзякуй за ўдзел!'
+          42:'Мы вельмі цэнім ваша меркаванне. Дзякуй за ўдзел!',
+          51:'Запоўніўшы форму, вы падзеліце з «СиБел» радасць ',
+          52:'выдатнай падзеі. Дзякуй за ўдзел!'
         },
         Btn_file:'Дадаць файл',
         Btn_push:'Адправіць',
@@ -647,7 +653,7 @@ angular.module('siBelApp', [
         Phone_plh:"Тэлефон*",
         Datetime_plh:"Час і дата*",
         Company_plh:"Кампанія, пасада",
-        Area_plh:"Рашэнне ці паслуга, якія цікавяць",
+        Area_plh:"Паведамленне",
         Select:{
           Title:"-Адзначце накірунак-",
           1:"Распрацоўка мабільных прыкладанняў",
@@ -844,6 +850,7 @@ angular.module('siBelApp', [
         2:'Resume',
         3:'Request a call',
         4:'Comments',
+        5:'Congratulations'
       },
       Title:{
         11:'Fill in the form and send it ',
@@ -854,7 +861,10 @@ angular.module('siBelApp', [
         31:'Fill in the form and send it  ',
           32:'and we will contact you for a consultation',
         41:'Fill in the form to leave a review of "Sibel".',
-        42:'We really appreciate your feedback. Thank you for participating!'
+        42:'We really appreciate your feedback. Thank you for participating!',
+        51:'After filling the form, you share with "Sibel" joy',
+        52:'outstanding event. Thank you for participating!'
+
       },
       Btn_file:'Attach file',
       Btn_push:'Send',
@@ -864,7 +874,7 @@ angular.module('siBelApp', [
       Phone_plh:"Phone number*",
       Datetime_plh:"Time and date*",
       Company_plh:"Organization, position",
-      Area_plh:"Interested in the solution or service",
+      Area_plh:"Message",
       Select:{
       Title:"-Select direction-",
         1:"Developing Mobile Applications",

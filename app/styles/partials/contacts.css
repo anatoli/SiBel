@@ -64,7 +64,7 @@
 .btn-back{
   position: relative;
   margin-bottom: 10px;
-  margin-right: 30px;
+  /*margin-right: 30px;*/
   cursor: pointer;
   height: 15px;
 }

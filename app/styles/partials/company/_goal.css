@@ -195,3 +195,31 @@ ul.orange-marker li{
   padding-top: 30px;
   padding-left: 30px;
 }
+.icons_descriptions{
+  height: 49px;
+  overflow: hidden;
+}
+.calendar{
+  position: absolute;
+  top:40px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #398be3;
+  left: 44%
+}
+.teame{
+  position: absolute;
+  margin-top: -3%;
+  font-size: 26px;
+  font-weight: bold;
+  color: #398be3;
+  left: 55%;
+}
+.case{
+  position: absolute;
+  top:12px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #398be3;
+  left: 45.5%;
+}

@@ -92,6 +92,9 @@ angular.module('siBelApp')
       $translate('Modal.Header.4').then(function (translation) {
         $scope.Modal_Header_4 = translation;
       });
+      $translate('Modal.Header.5').then(function (translation) {
+        $scope.Modal_Header_5 = translation;
+      });
       $translate('Modal.Title.11').then(function (translation) {
         $scope.Modal_Title_11 = translation;
       });
@@ -119,6 +122,12 @@ angular.module('siBelApp')
       });
       $translate('Modal.Title.42').then(function (translation) {
         $scope.Modal_Title_42 = translation;
+      });
+      $translate('Modal.Title.51').then(function (translation) {
+        $scope.Modal_Title_51 = translation;
+      });
+      $translate('Modal.Title.52').then(function (translation) {
+        $scope.Modal_Title_52 = translation;
       });
 
       $translate('Modal.Btn_file').then(function (translation) {
