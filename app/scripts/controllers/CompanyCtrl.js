@@ -14,9 +14,9 @@ angular.module('siBelApp')
       function iconActive() {
         var arr = $location.$$path.split('/');
         var n = arr.length-1;
-        if(arr[n]== 'company'){
+        if(arr[n]=== 'company'){
           $state.go('root.company.about');
-          $scope.state='.about'
+          $scope.state='.about';
         }else {
           $scope.state = "."+arr[n];
         }
@@ -25,9 +25,9 @@ angular.module('siBelApp')
       iconActive();
 
       $rootScope.$on('$stateChangeSuccess',
-        function(event, toState, toParams, fromState, fromParams){
+        function(){
           iconActive();
-      })
+      });
 
 
       // setInterval(function () {
@@ -41,7 +41,7 @@ angular.module('siBelApp')
       $scope.Go = function (data) {
         $state.go('root.company'+data);
         $scope.state = data;
-      }
+      };
 
      $rootScope.$on('$translateChangeSuccess', function () {
       $translate('SecondPage.Slider.Title').then(function (translation) {

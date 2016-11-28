@@ -212,5 +212,5 @@ angular.module('siBelApp')
     };
     $scope.OpenState = function (data) {
       $state.go('root'+data);
-    }
+    };
   }]);

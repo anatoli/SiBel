@@ -6,28 +6,28 @@
  * Created by Anatoli on 16.09.2016.
  */
 angular.module('siBelApp')
-  .controller('CompanyReviewsCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$location',
-    function ($scope, $uibModal, $state, $translate, $rootScope, $location) {
+  .controller('CompanyReviewsCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope',
+    function ($scope, $uibModal, $state, $translate, $rootScope) {
 
 
 
     $scope.Go = function (data) {
       $state.go('root.company'+data);
       $scope.state = data;
-    }
+    };
 
      $scope.DetailsOpen = function (data) {
        $scope.first= false;
        $scope.second= false;
        $scope.third = false;
-       if(data=='first'){
+       if(data==='first'){
          $scope.first= !$scope.first;
-       }else if(data=='second'){
+       }else if(data==='second'){
          $scope.second= !$scope.second;
-       }else if(data=='third') {
+       }else if(data==='third') {
          $scope.third = !$scope.third;
        }
-     }
+     };
 
       $scope.openModal = function (data) {
         $uibModal.open({

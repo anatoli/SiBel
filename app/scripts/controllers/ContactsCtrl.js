@@ -6,13 +6,13 @@
  * Created by Anatoli on 16.09.2016.
  */
 angular.module('siBelApp')
-  .controller('ContactsCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope', '$location',
-    function ($scope, $uibModal, $state, $translate, $rootScope, $location) {
+  .controller('ContactsCtrl', ['$scope', '$uibModal', '$state', '$translate', '$rootScope',
+    function ($scope, $uibModal, $state, $translate, $rootScope) {
 
     $scope.Go = function (data) {
       $state.go('root.company'+data);
       $scope.state = data;
-    }
+    };
 
       $scope.openModal = function (data) {
         $uibModal.open({
@@ -40,7 +40,7 @@ angular.module('siBelApp')
           iconAnchor:   [54, 74],
 
         }
-      }
+      };
 
       var mainMarker = {
         lat: 53.905902508833165,
@@ -75,7 +75,7 @@ angular.module('siBelApp')
 
       $scope.mapVisible = function () {
         $scope.map=!$scope.map;
-      }
+      };
 
     $rootScope.$on('$translateChangeSuccess', function () {
 

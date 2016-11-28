@@ -58,27 +58,27 @@ angular.module('siBelApp')
       // $scope.tabActive = data;
     };
 
-    function iconActive() {
-      var arr = $location.$$path.split('/');
-      var n = arr.length-1;
-      if(arr[n]== 'company'){
-        $state.go('root.company.about');
-        $scope.state='.about'
-      }else {
-        $scope.state = "."+arr[n];
-      }
-    }
+    // function iconActive() {
+    //   var arr = $location.$$path.split('/');
+    //   var n = arr.length-1;
+    //   if(arr[n]=== 'company'){
+    //     $state.go('root.company.about');
+    //     $scope.state='.about';
+    //   }else {
+    //     $scope.state = "."+arr[n];
+    //   }
+    // }
 
     $rootScope.$on('$stateChangeSuccess',
-      function(event, toState, toParams, fromState, fromParams){
-        $scope.tabActive = $state.current.name
-      })
+      function(){
+        $scope.tabActive = $state.current.name;
+      });
 
     $scope.MouseOut = function () {
-      $scope.opened1=false
+      $scope.opened1=false;
     };
     $scope.MouseOver = function () {
-      $scope.opened1=true
-    }
+      $scope.opened1=true;
+    };
 
   }]);

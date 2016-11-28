@@ -13,6 +13,8 @@
   font-family: SegoeUIRegular;
 }
 .comment-white-margin{
+  padding-top: 10px;
+  padding-bottom: 5%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -28,8 +30,12 @@
 .panel-heading, .panel-body{
   padding-left: 9%;
 }
+.panel-body>.comment-white{
+  background-color: rgba(255,255,255, 0.5);
+
+}
 .panel-body{
-  background-image:  url(../../../images/service/evening_tao.jpg);
+  background-image:  url(../../../images/service/fantastic_blue_sky.jpg);
   margin-left: 0;
 }
 .olli{
@@ -50,7 +56,16 @@
   font-size: 18px;
   line-height: 1em;
 }
-.accordion-toggle:hover{
+.accordion-bgw{
+  padding-left: 24px;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 6.2%;
+}
+.accordion-toggle:hover, .accordion-toggle:focus{
   text-decoration: none;
   cursor: default;
+}
+.comment-white-margin h3{
+  color:#04314D
 }

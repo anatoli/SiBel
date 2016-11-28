@@ -1,6 +1,7 @@
 /**
  * Created by Anatoliy Arinovich on 25.10.2016.
  */
+'use strict';
 angular.module('siBelApp')
   .controller('EmailPushCtrl',[
     '$scope',
@@ -8,10 +9,7 @@ angular.module('siBelApp')
     'dataModal',
     '$rootScope',
     '$translate',
-    '$http',
-    'FileUploader',
-    '$uibModal',
-    function ($scope, $uibModalInstance, dataModal, $rootScope, $translate, $http, FileUploader, $uibModal) {
+    function ($scope, $uibModalInstance, dataModal, $rootScope, $translate) {
       $scope.title = dataModal.data;
       $rootScope.$on('$translateChangeSuccess', function () {
         $translate('Modal.Alert_True').then(function (translation) {
@@ -29,5 +27,5 @@ angular.module('siBelApp')
       $translate.use(dataModal.lang).then(function () {});
     setTimeout(function () {
       $uibModalInstance.dismiss('cancel');
-    }, 2500)
-    }])
+    }, 2500);
+    }]);

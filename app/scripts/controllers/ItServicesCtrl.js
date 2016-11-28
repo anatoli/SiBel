@@ -1,6 +1,7 @@
 /**
  * Created by Anatoliy Arinovich on 18.11.2016.
  */
+'use strict';
 angular.module('siBelApp')
   .controller('ItServicesCtrl',[ '$scope', '$rootScope', '$translate', function ($scope, $rootScope, $translate) {
     $rootScope.$on('$translateChangeSuccess', function () {

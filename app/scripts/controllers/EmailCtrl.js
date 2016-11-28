@@ -35,7 +35,7 @@ angular.module('siBelApp')
           },
           headers : {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function( res ) {
-          $scope.phone = '',
+          $scope.phone = '';
           $scope.name = '';
           $scope.message = '';
           $scope.email = '';
@@ -48,11 +48,11 @@ angular.module('siBelApp')
           // alert('Сообщение отправлено');
           $scope.cancel();
         }).error(function(err){
-          openModal(err.error)
+          openModal(err.error);
         });
       }
 
-      }
+      };
       function openModal (data) {
         $uibModal.open({
           backdropClass: 'backdrop',
@@ -199,7 +199,7 @@ angular.module('siBelApp')
 
       uploader.filters.push({
         name: 'customFilter',
-        fn: function(item /*{File|FileLikeObject}*/, options) {
+        fn: function() {
           return this.queue.length < 10;
         }
       });
