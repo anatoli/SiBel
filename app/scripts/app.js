@@ -9,7 +9,8 @@ angular.module('siBelApp', [
     'pascalprecht.translate',
     'angularFileUpload',
     'file-model',
-    'leaflet-directive'
+    'leaflet-directive',
+    'ncy-angular-breadcrumb',
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     "use strict";
@@ -45,6 +46,10 @@ angular.module('siBelApp', [
       })
       .state('root.main',{
         url: '/',
+        ncyBreadcrumb: {
+          label: "Главная",
+          parent:'root'
+        },
         views: {
           'container@': {
             templateUrl: 'views/home.html',
@@ -64,6 +69,11 @@ angular.module('siBelApp', [
       })
       .state('root.company.about', {
         url: '/about',
+        ncyBreadcrumb: {
+              label: "О компании",
+              parent:'root.main'
+
+            },
         views: {
           'company@root.company': {
             templateUrl: '/views/partials/company/_about.html',
@@ -73,6 +83,10 @@ angular.module('siBelApp', [
       })
       .state('root.company.value', {
         url: '/value',
+        ncyBreadcrumb: {
+          label: "Ценности",
+          parent: 'root.main'
+        },
         views: {
           'company@root.company': {
             templateUrl: '/views/partials/company/_value.html',
@@ -82,6 +96,10 @@ angular.module('siBelApp', [
       })
       .state('root.company.team', {
         url: '/team',
+        ncyBreadcrumb: {
+          label: "Команда",
+          parent: 'root.main',
+        },
         views: {
           'company@root.company': {
             templateUrl: '/views/partials/company/_team.html',
@@ -91,6 +109,10 @@ angular.module('siBelApp', [
       })
       .state('root.company.reviews', {
         url: '/reviews',
+        ncyBreadcrumb: {
+          label: "Отзывы",
+          parent: 'root.main'
+        },
         views: {
           'container@': {
             templateUrl: '/views/partials/company/_reviews.html',
@@ -127,9 +149,52 @@ angular.module('siBelApp', [
       })
       .state('root.service.it', {
         url: '/it',
+        ncyBreadcrumb: {
+          label: "ИТ",
+          parent: 'root.main'
+        },
         views: {
           'service@root.service': {
             templateUrl: '/views/partials/service/it.html',
+            controller: 'ItServicesCtrl'
+          }
+        }
+      })
+        .state('root.service.it.audit', {
+        url: '/audit',
+          ncyBreadcrumb: {
+            label: "ИТ-аудит",
+            parent: 'root.main'
+          },
+        views: {
+          'it@root.service.it': {
+            templateUrl: '/views/partials/service/it/audit/audit.html',
+            controller:  'ItServicesCtrl'
+          }
+        }
+      })
+      .state('root.service.it.infra', {
+        url: '/infra',
+        ncyBreadcrumb: {
+          label: "ИТ-инфраструктура",
+          parent: 'root.main'
+        },
+        views: {
+          'it@root.service.it': {
+            templateUrl: '/views/partials/service/it/infra/infra.html',
+            controller:  'ItServicesCtrl'
+          }
+        }
+      })
+      .state('root.service.it.engineer', {
+        url: '/engineer',
+        ncyBreadcrumb: {
+          label: "Инженерная инфраструктура",
+          parent: 'root.main'
+        },
+        views: {
+          'it@root.service.it': {
+            templateUrl: '/views/partials/service/it/engineer/engineer.html',
             controller:  'ItServicesCtrl'
           }
         }
@@ -208,11 +273,6 @@ angular.module('siBelApp', [
           }
         }
       })
-
-
-
-
-
       .state('root.contacts', {
         url: '/contacts',
         views: {
@@ -316,6 +376,21 @@ angular.module('siBelApp', [
 
 
   })
+
+  .config(function($breadcrumbProvider) {
+    $breadcrumbProvider.setOptions({
+      template:
+      '<ul class="breadcrumb">'+
+        '<li ng-repeat="step in steps" ng-switch="$last || !!step.abstract" ng-class="{active: $last}">'+
+            '<a ng-switch-when="false" href="{{step.ncyBreadcrumbLink}}">{{step.ncyBreadcrumbLabel}}</a>'+
+            '<span ng-switch-when="true">{{step.ncyBreadcrumbLabel}}</span>'+
+            '<span class="divider" ng-hide="$last"></span>'+
+        '</li>'+
+      '</ul>'
+
+    });
+  })
+
   .config(function ($translateProvider) {
 
     "use strict";

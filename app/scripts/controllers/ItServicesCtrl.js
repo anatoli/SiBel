@@ -3,7 +3,14 @@
  */
 'use strict';
 angular.module('siBelApp')
-  .controller('ItServicesCtrl',[ '$scope', '$rootScope', '$translate', function ($scope, $rootScope, $translate) {
+  .controller('ItServicesCtrl',[
+    '$scope',
+    '$uibModal',
+    '$state',
+    '$translate',
+    '$rootScope',
+    '$location',
+    function ($scope, $uibModal, $state, $translate, $rootScope, $location) {
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('Error.Title_1').then(function (translation) {
         $scope.Error_Title_1 = translation;
@@ -31,4 +38,28 @@ angular.module('siBelApp')
       });
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
+
+      function iconActive() {
+        var arr = $location.$$path.split('/');
+        var n = arr.length-1;
+        if(arr[n]=== 'it'){
+          $state.go('root.service.it.audit');
+          $scope.state='.audit';
+        }else {
+          $scope.state = "."+arr[n];
+        }
+      }
+
+      iconActive();
+
+      $rootScope.$on('$stateChangeSuccess',
+        function(){
+          iconActive();
+        });
+
+      $scope.Go = function (data) {
+        $state.go('root.service.it'+data);
+        $scope.state = data;
+      };
+
   }]);

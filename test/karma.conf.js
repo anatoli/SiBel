@@ -40,6 +40,7 @@ module.exports = function(config) {
       'app/components/bower_components/angular-file-upload/dist/angular-file-upload.min.js',
       'app/components/bower_components/leaflet/leaflet.js',
       'app/components/bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js',
+      'app/components/bower_components/angular-breadcrumb/release/angular-breadcrumb.js',
       'app/components/bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
