@@ -54,6 +54,8 @@ angular.module('siBelApp')
     $scope.stateGo = function (data) {
       if(data !=='#/'){
         $state.go(data);
+        event.stopPropagation();
+
       }
       // $scope.tabActive = data;
     };

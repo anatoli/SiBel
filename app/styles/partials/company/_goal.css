@@ -38,10 +38,17 @@ ul.orange-marker li{
   background-repeat: no-repeat !important;
   background-position: 48%;
 }
-.comment-white{
-  padding: 3%;
+.comment-white-implementations{
+  padding-bottom: 3%;
   background-color: rgba(255, 255, 255, 0.78);
-  /*margin-left: 7.2%;*/
+  margin-left: 0;
+  margin-right: 0;
+
+}
+.comment-white{
+padding: 3%;
+background-color: rgba(255, 255, 255, 0.78);
+/*margin-left: 7.2%;*/
   padding-left: 2%;
   margin-right: 7.2%;
 }
@@ -190,6 +197,9 @@ ul.orange-marker li{
 }
 .padding-top-30{
   padding-top: 30px;
+}
+.padding-bottom-30{
+  padding-bottom: 30px;
 }
 .padding-tl-30{
   padding-top: 30px;

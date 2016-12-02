@@ -60,6 +60,10 @@ angular.module('siBelApp', [
 
       .state('root.company', {
         url: '/company',
+        ncyBreadcrumb: {
+          label: "Компания",
+          parent:'root.main'
+        },
         views: {
           'container@': {
             templateUrl: '/views/company.html',
@@ -71,7 +75,7 @@ angular.module('siBelApp', [
         url: '/about',
         ncyBreadcrumb: {
               label: "О компании",
-              parent:'root.main'
+              parent:'root.company'
 
             },
         views: {
@@ -85,7 +89,7 @@ angular.module('siBelApp', [
         url: '/value',
         ncyBreadcrumb: {
           label: "Ценности",
-          parent: 'root.main'
+          parent: 'root.company'
         },
         views: {
           'company@root.company': {
@@ -98,7 +102,7 @@ angular.module('siBelApp', [
         url: '/team',
         ncyBreadcrumb: {
           label: "Команда",
-          parent: 'root.main',
+          parent: 'root.company',
         },
         views: {
           'company@root.company': {
@@ -111,7 +115,7 @@ angular.module('siBelApp', [
         url: '/reviews',
         ncyBreadcrumb: {
           label: "Отзывы",
-          parent: 'root.main'
+          parent: 'root.company'
         },
         views: {
           'container@': {
@@ -122,6 +126,10 @@ angular.module('siBelApp', [
       })
       .state('root.service', {
         url: '/service',
+        ncyBreadcrumb: {
+          label: "Решения и услуги",
+          parent: 'root.main'
+        },
         views: {
           'container@': {
             templateUrl: '/views/partials/service/service.html',
@@ -150,8 +158,8 @@ angular.module('siBelApp', [
       .state('root.service.it', {
         url: '/it',
         ncyBreadcrumb: {
-          label: "ИТ",
-          parent: 'root.main'
+          label: "ИТ-услуги",
+          parent: 'root.service'
         },
         views: {
           'service@root.service': {
@@ -164,7 +172,7 @@ angular.module('siBelApp', [
         url: '/audit',
           ncyBreadcrumb: {
             label: "ИТ-аудит",
-            parent: 'root.main'
+            parent: 'root.service.it'
           },
         views: {
           'it@root.service.it': {
@@ -177,7 +185,7 @@ angular.module('siBelApp', [
         url: '/infra',
         ncyBreadcrumb: {
           label: "ИТ-инфраструктура",
-          parent: 'root.main'
+          parent: 'root.service.it'
         },
         views: {
           'it@root.service.it': {
@@ -190,12 +198,25 @@ angular.module('siBelApp', [
         url: '/engineer',
         ncyBreadcrumb: {
           label: "Инженерная инфраструктура",
-          parent: 'root.main'
+          parent: 'root.service.it'
         },
         views: {
           'it@root.service.it': {
             templateUrl: '/views/partials/service/it/engineer/engineer.html',
             controller:  'ItServicesCtrl'
+          }
+        }
+      })
+      .state('root.service.implementation', {
+        url: '/implementation',
+        ncyBreadcrumb: {
+          label: "Реализации",
+          parent: 'root.service'
+        },
+        views: {
+          'service@root.service': {
+            templateUrl: '/views/partials/service/implementation.html',
+            controller:  'ImplementationCtrl'
           }
         }
       })
@@ -378,6 +399,7 @@ angular.module('siBelApp', [
   })
 
   .config(function($breadcrumbProvider) {
+    "use strict";
     $breadcrumbProvider.setOptions({
       template:
       '<ul class="breadcrumb">'+
@@ -605,6 +627,10 @@ angular.module('siBelApp', [
         Text_21:'В 2013 году наши компании сплотил запуск электронной системы оплаты за проезд по дорогам Республики Беларусь — Beltoll. Создание центра обработки данных, необходимого для ее функционирования, логично увенчалось заключением долгосрочного контракта с авторитетной аутсорсинговой компанией — «СиБел». Обслуживание и поддержку ИТ-инфраструктуры (телекоммуникаций, серверного оборудования, операционной системы), а также сервис инженерных систем центра данных (электроснабжения, кондиционирования и т. д.) проводит отдел системной интеграции.',
         Text_22:'«СиБел» действительно отлично выполняет свою работу — контроль системы осуществляется в режиме 24/7, а подробные отчеты службы мониторинга отражают уровни доступности сервисов и подсистем, определяя качество предоставляемых услуг. ',
         Text_23:'Весомое преимущество «СиБел» в том, что компания не боится обязательств, гарантируя работоспособность ИТ-системы двусторонним SLA-соглашением.',
+        Title_3:'Сергей Козел',
+        Descriptions_31:'Заместитель директора',
+        Descriptions_32:'ООО «АСД-техника»',
+        Text_31:'Уже более двух лет «СиБел» предоставляет услуги ИТ-аутсорсинга нашей компании. За длительный период сотрудничества очевидно главное: все работы специалисты «СиБел» выполняют в срок и качественно, консультируют по любым вопросам, обеспечили бесперебойную работу в «сложных» условиях переезда офиса и производства.',
         Btn_1:'Подробнее',
         Btn_2:'Оставить отзыв',
         Btn_3:'Все отзывы'
@@ -823,6 +849,11 @@ angular.module('siBelApp', [
           Text_21:'У 2013 годзе нашы кампаніі згуртавала рэалізацыя электроннай сістэмы аплаты за праезд па дарогах Рэспублікі Беларусь — Beltoll. Сварэнне цэнтра апрацоўкі дадзеных, які неабходны для яе функцыянавання, лагічна завершылася ўчыненнем доўгатэрміновага кантракта з аўтарытэтнай аўтсорсінгавай кампаніяй — «СіБел». Абслугоўванне і падтрымку ІТ-інфраструктуры (тэлекамунікацый, сервернага абсталявання, аперацыйнай сістэмы), а таксама сэрвіс інжынерных сістэм цэнтра дадзеных (электразабеспячэння, кандыцыяніравання і г. д.) здзяйсняе адзел сістэмнай інтэграцыі.',
           Text_22:'«СіБел» сапраўды выдатна выконвае сваю работу — кантроль сістэмы ажыццяўляецца ў рэжыме 24/7, а падрабязныя справаздачы службы маніторынга адлюстроўваюць узроўні даступнасці сэрвісаў і падсістэм, вызначаючы якасць паслуг. ',
           Text_23:'Важкай перавагай «СіБел» з’яўляецца тое, што кампанія не баіцца абавязацельстваў і гарантуе працаздольнасць ІТ-сістэмы двухбаковым SLA-пагадненнем.',
+          Title_3:'Сяргей Козел',
+          Descriptions_31:'Намеснік дырэктара',
+          Descriptions_32:'ТАА «АСД-Тэхніка»',
+          Text_31:'Болей за два гады «СіБел» пастаўляе паслугі ІТ-аўтсорсінга нашай кампаніі. За працяглы час супрацоўніцтва відавочна галоўнае: усе спецыялісты «СіБел» выконваюць працу тэрмінова і якасна, кансультуюць па разнастайных пытаннях, забяспечылі стабільную работу ў «складаных» умовах пераезду офіса і вытворчасці.',
+
           Btn_1:'Падрабязней',
           Btn_2:'Пакінуць водгук',
           Btn_3:'Усе водгукі'

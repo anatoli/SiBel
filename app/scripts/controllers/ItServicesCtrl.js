@@ -42,12 +42,7 @@ angular.module('siBelApp')
       function iconActive() {
         var arr = $location.$$path.split('/');
         var n = arr.length-1;
-        if(arr[n]=== 'it'){
-          $state.go('root.service.it.audit');
-          $scope.state='.audit';
-        }else {
-          $scope.state = "."+arr[n];
-        }
+        $scope.state = "."+arr[n];
       }
 
       iconActive();

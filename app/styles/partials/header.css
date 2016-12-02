@@ -165,9 +165,12 @@ header{
 .nav > li.dropdown.open .dropdown-menu {
   display:table;
   width: 100%;
-  text-align: center;
+  text-align: left;
   left:0;
   right:0;
+}
+.dropdown-menu > li > a {
+  padding-left: 0;
 }
 .dropdown-menu>li {
   display: table-cell;
@@ -192,3 +195,20 @@ header{
   border-bottom: 2px solid #ed5623;
 }
 
+.submenu-ul{
+  margin-top:5px;
+  margin-bottom: 20px;
+}
+.submenu-ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.submenu-ul li{
+  display: block;
+  /*margin-left: 30%;*/
+  list-style: circle;
+  color: #fff;
+}
+.submenu-ul li:hover, .submenu-ul li.subActive{
+  color: #ed5623;
+}

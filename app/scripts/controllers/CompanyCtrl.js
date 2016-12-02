@@ -14,12 +14,12 @@ angular.module('siBelApp')
       function iconActive() {
         var arr = $location.$$path.split('/');
         var n = arr.length-1;
-        if(arr[n]=== 'company'){
-          $state.go('root.company.about');
-          $scope.state='.about';
-        }else {
+        // if(arr[n]=== 'company'){
+        //   $state.go('root.company.about');
+        //   $scope.state='.about';
+        // }else {
           $scope.state = "."+arr[n];
-        }
+        // }
       }
 
       iconActive();

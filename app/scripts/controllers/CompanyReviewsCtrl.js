@@ -131,6 +131,18 @@ angular.module('siBelApp')
       $translate('SecondPage.Comments.Text_23').then(function (translation) {
         $scope.SecondPage_Comments_Text_23 = translation;
       });
+      $translate('SecondPage.Comments.Title_3').then(function (translation) {
+        $scope.SecondPage_Comments_Title_3 = translation;
+      });
+      $translate('SecondPage.Comments.Descriptions_31').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_31 = translation;
+      });
+      $translate('SecondPage.Comments.Descriptions_32').then(function (translation) {
+        $scope.SecondPage_Comments_Descriptions_32 = translation;
+      });
+      $translate('SecondPage.Comments.Text_31').then(function (translation) {
+        $scope.SecondPage_Comments_Text_31 = translation;
+      });
       $translate('SecondPage.Comments.Btn_1').then(function (translation) {
         $scope.SecondPage_Comments_Btn_1 = translation;
       });
