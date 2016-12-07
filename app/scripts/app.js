@@ -11,6 +11,7 @@ angular.module('siBelApp', [
     'file-model',
     'leaflet-directive',
     'ncy-angular-breadcrumb',
+    'echarts-ng',
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     "use strict";
@@ -148,6 +149,10 @@ angular.module('siBelApp', [
       })
       .state('root.service.mobile', {
         url: '/mobile',
+        ncyBreadcrumb: {
+          label: "Телеком",
+          parent: 'root.service'
+        },
         views: {
           'service@root.service': {
             templateUrl: '/views/partials/service/mobile.html',
@@ -155,6 +160,50 @@ angular.module('siBelApp', [
           }
         }
       })
+      //////////////////////////////////////////////
+
+      .state('root.service.mobile.audit', {
+        url: '/audit',
+        ncyBreadcrumb: {
+          label: "Аудит и контроль полноты данных",
+          parent: 'root.service.mobile'
+        },
+        views: {
+          'mobile@root.service.mobile': {
+            templateUrl: '/views/partials/service/mobile/audit/audit.html',
+            controller:  'SoftForMobileCtrl'
+          }
+        }
+      })
+      .state('root.service.mobile.cdr', {
+        url: '/cdr',
+        ncyBreadcrumb: {
+          label: "Длительное хранение CDR",
+          parent: 'root.service.mobile'
+        },
+        views: {
+          'mobile@root.service.mobile': {
+            templateUrl: '/views/partials/service/mobile/cdr/cdr.html',
+            controller:  'SoftForMobileCtrl'
+          }
+        }
+      })
+      .state('root.service.mobile.session', {
+        url: '/session',
+        ncyBreadcrumb: {
+          label: "Агрегация длинных сессий",
+          parent: 'root.service.mobile'
+        },
+        views: {
+          'mobile@root.service.mobile': {
+            templateUrl: '/views/partials/service/mobile/session/session.html',
+            controller:  'SoftForMobileCtrl'
+          }
+        }
+      })
+
+      //////////////////////////////////////
+
       .state('root.service.it', {
         url: '/it',
         ncyBreadcrumb: {

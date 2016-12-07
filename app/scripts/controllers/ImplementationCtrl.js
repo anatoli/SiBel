@@ -82,6 +82,10 @@ angular.module('siBelApp')
         $scope.second= false;
         $scope.third = false;
         $scope.fourth = false;
+        $scope.fifth = false;
+        $scope.sixth = false;
+        $scope.seventh = false;
+        $scope.eighth = false;
         if(data==='first'){
           $scope.first= !$scope.first;
         }else if(data==='second'){
@@ -90,6 +94,14 @@ angular.module('siBelApp')
           $scope.third = !$scope.third;
         }else if(data==='fourth') {
           $scope.fourth = !$scope.fourth;
+        }else if(data==='fifth') {
+          $scope.fifth = !$scope.fifth;
+        }else if(data==='sixth') {
+          $scope.sixth = !$scope.sixth;
+        }else if(data==='seventh') {
+          $scope.seventh = !$scope.seventh;
+        }else if(data==='eighth') {
+          $scope.eighth = !$scope.eighth;
         }
       };
 

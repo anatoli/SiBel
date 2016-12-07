@@ -40,8 +40,16 @@
         <ul class="dropdown-menu">
           <li><a href=""></a></li>
           <li style="min-width: 220px;" ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.business'}" ng-click="stateGo('root.service.business')"><a href="">Программные решения ></a></li>
-          <li style="min-width: 190px;" ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.mobile'}" ng-click="stateGo('root.service.mobile')"><a href="">Телекоммуникации ></a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.it' || tabActive=='root.service.it.audit'|| tabActive=='root.service.it.infra'|| tabActive=='root.service.it.engineer'}" ng-click="stateGo('root.service.it')"><a href="">ИТ-услуги ></a>
+          <li style="min-width: 190px;  margin-left: 10px;   margin-right: 10px;" ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.mobile'|| tabActive=='root.service.mobile.audit'|| tabActive=='root.service.mobile.cdr'|| tabActive=='root.service.mobile.session'}" ng-click="stateGo('root.service.mobile')">
+            <a href="">Телекоммуникации ></a>
+            <ul class="classic submenu-ul">
+              <li ng-class="{'subActive': tabActive=='root.service.mobile.cdr'}" ng-click="stateGo('root.service.mobile.cdr')"><a href="">Длительное хранение CDR</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.mobile.session'}" ng-click="stateGo('root.service.mobile.session')"><a href="">Агрегация длинных сессий</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.mobile.audit'}" ng-click="stateGo('root.service.mobile.audit')"><a href="">Аудит и контроль полноты данных</a></li>
+            </ul>
+          </li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.it' || tabActive=='root.service.it.audit'|| tabActive=='root.service.it.infra'|| tabActive=='root.service.it.engineer'}" ng-click="stateGo('root.service.it')">
+            <a href="">ИТ-услуги ></a>
             <ul class="classic submenu-ul">
               <li ng-class="{'subActive': tabActive=='root.service.it.audit'}" ng-click="stateGo('root.service.it.audit')"><a href="">ИТ-аудит</a></li>
               <li ng-class="{'subActive': tabActive=='root.service.it.infra'}" ng-click="stateGo('root.service.it.infra')"><a href="">ИТ-инфраструктура</a></li>

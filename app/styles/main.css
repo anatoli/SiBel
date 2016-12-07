@@ -389,3 +389,14 @@ ul li {
   color: #ccc;
   content: ">\00a0";
 }
+.graph-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.graph {
+  position: relative;
+  width: calc(100% - 100px); /* ширина области построения графика */
+  height: 600px; /* высота области построения графика */
+}

@@ -41,6 +41,7 @@ module.exports = function(config) {
       'app/components/bower_components/leaflet/leaflet.js',
       'app/components/bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js',
       'app/components/bower_components/angular-breadcrumb/release/angular-breadcrumb.js',
+      'app/components/bower_components/echarts-ng/dist/echarts-ng.js',
       'app/components/bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
