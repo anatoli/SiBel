@@ -46,16 +46,36 @@
   font-family: SegoeUIRegular;
 
 }
-.olli p{
-  line-height: 0.3;
+
+.ulli{
+  padding-left: 2%;
 }
-.olli span{
+.ulli li{
+  display: block;
+}
+.ulli p{
+  line-height: 0.3;
+  display: inline;
+}
+.ulli p span{
   color: #04314D;
   font-weight: 100;
   font-style: initial;
   font-size: 18px;
   line-height: 1em;
 }
+.ulli-num{
+  float: inherit;
+  color: #ed5623;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: SegoeUIRegular;
+  top: 9px;
+  position: relative;
+  left: -10px;
+}
+
 .accordion-bgw{
   padding-left: 24px;
   margin-left: 0;

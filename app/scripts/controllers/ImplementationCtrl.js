@@ -86,6 +86,7 @@ angular.module('siBelApp')
         $scope.sixth = false;
         $scope.seventh = false;
         $scope.eighth = false;
+        $scope.ninth = false;
         if(data==='first'){
           $scope.first= !$scope.first;
         }else if(data==='second'){
@@ -102,6 +103,8 @@ angular.module('siBelApp')
           $scope.seventh = !$scope.seventh;
         }else if(data==='eighth') {
           $scope.eighth = !$scope.eighth;
+        }else if(data==='ninth') {
+          $scope.ninth = !$scope.ninth;
         }
       };
 

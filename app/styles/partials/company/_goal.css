@@ -87,13 +87,16 @@ background-color: rgba(255, 255, 255, 0.78);
   text-align: center;
   background-image: url(../../../images/company/blue.png);
   position: absolute;
-  width: 96%;
-  height: 244.6px;
+  width: 98%;
+  height: 246px;
   opacity: 0;
   color: #fff;
 }
+.grey img{
+  width: 100%;
+}
 .grey{
-  height: 200px;
+  height: 187px
 }
 .slide-1-block-background-company{
   margin-bottom: 3%;
@@ -116,8 +119,11 @@ background-color: rgba(255, 255, 255, 0.78);
 }
 .generatecssdotcom_arrow {
   position:relative;
-
 }
+.padding-icon {
+  margin-bottom: 15px;
+}
+
 .act>.generatecssdotcom_arrow:after, .active>.generatecssdotcom_arrow:before /*.generatecssdotcom_arrow:focus:after, .generatecssdotcom_arrow:focus:before */{
   top:100%;
   left:50%;

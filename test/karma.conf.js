@@ -21,6 +21,7 @@ module.exports = function(config) {
     files: [
       // bower:js
       'app/components/bower_components/jquery/dist/jquery.js',
+      'app/components/bower_components/jquery-migrate/jquery-migrate.js',
       'app/components/bower_components/angular/angular.js',
       'app/components/bower_components/bootstrap/dist/js/bootstrap.js',
       'app/components/bower_components/angular-animate/angular-animate.js',
@@ -32,7 +33,6 @@ module.exports = function(config) {
       'app/components/bower_components/lightslider/dist/js/lightslider.min.js',
       'app/components/bower_components/angular-ui-router/release/angular-ui-router.js',
       'app/components/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-      'app/components/bower_components/jquery-migrate/jquery-migrate.js',
       'app/components/bower_components/angular-translate/angular-translate.js',
       'app/components/bower_components/angular-translate-loader-url/angular-translate-loader-url.js',
       'app/components/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js',
