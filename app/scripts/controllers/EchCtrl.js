@@ -7,7 +7,7 @@ angular.module('siBelApp')
     function($scope, $timeout, $interval, $echarts) {
 
       function numToString(num) {
-        if (num < 0) {return ""};
+        if (num < 0) {return "";}
         var result = (num < 10 ) ? "0" + num : "" + num;
         return result;
       }
@@ -226,7 +226,7 @@ angular.module('siBelApp')
   };
 
   /* наполнение графика первичными данными */
-  var grf = generationFirstData(graphConfig.qtItem, graphConfig.interval, graphConfig.lineName.length);
+  // var grf = generationFirstData(graphConfig.qtItem, graphConfig.interval, graphConfig.lineName.length);
   graphConfig.data = grf;
   var toEchart = dataToEhart(grf, graphConfig.lineName);
   $scope.chart.config.xAxis.data = angular.copy(toEchart.xAxisData);

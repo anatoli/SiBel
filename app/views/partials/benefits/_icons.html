@@ -1,0 +1,21 @@
+<div class="row block-default none-row">
+  <h4 class="rubric it-title">Наши преимущества{{SecondPage_Icons_Title | translate}}</h4>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.employees'}">
+    <img id="first-icon" class="icons animated center" src='../../images/icons/cogwheel.png'>
+    <h3><b>Профессионализм{{SecondPage_Icons_Header_ICO_1 | translate}}</b></h3>
+    <p style="font-size: 16px;">Богатый опыт сотрудников при реализации проектов различного масштаба и сложности{{SecondPage_Icons_Text_ICO_1 | translate}}</p>
+    <div ng-click="Go('.employees')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">Сотрудники{{SecondPage_Icons_Btn_ICO_1|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class="col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.innovations'}">
+    <img id="second-icon" class="icons animated center" src='../../images/icons/networking.png'>
+    <h3><b>Развитие компетенций{{SecondPage_Icons_Header_ICO_2 | translate}}</b></h3>
+    <p style="font-size: 16px;">Инвестируем в развитие технологических компетенций для разработки ПО{{SecondPage_Icons_Text_ICO_2 | translate}}</p>
+    <div ng-click="Go('.innovations')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico"> Инновации{{SecondPage_Icons_Btn_ICO_2|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon " ng-class="{'act':state=='.standards'}">
+    <img id="third-icon" class="icons animated center" src='../../images/icons/analysis.png'>
+    <h3><b>Открытый бизнес{{SecondPage_Icons_Header_ICO_3 | translate}}</b></h3>
+    <p style="font-size: 16px;">Предоставляем гарантии безопасности программных продуктов и качества предоставляемых ИТ-услуг{{SecondPage_Icons_Text_ICO_3 | translate}}</p>
+    <div ng-click="Go('.standards')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">Стандарты и бизнес-процессы{{SecondPage_Icons_Btn_ICO_3|translate}}</div>
+  </div>
+</div>

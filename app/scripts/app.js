@@ -300,6 +300,10 @@ angular.module('siBelApp', [
 
       .state('root.benefits', {
         url: '/benefits',
+        ncyBreadcrumb: {
+          label: "Перимущества",
+          parent: 'root'
+        },
         views: {
           'container@': {
             templateUrl: '/views/partials/benefits/benefits.html',
@@ -309,6 +313,10 @@ angular.module('siBelApp', [
       })
       .state('root.benefits.employees', {
         url: '/employees',
+        ncyBreadcrumb: {
+          label: "Сотрудники",
+          parent: 'root.benefits'
+        },
         views: {
           'benefits@root.benefits': {
             templateUrl: '/views/partials/benefits/employees.html',
@@ -318,6 +326,10 @@ angular.module('siBelApp', [
       })
       .state('root.benefits.innovations', {
         url: '/innovations',
+        ncyBreadcrumb: {
+          label: "Инновации",
+          parent: 'root.benefits'
+        },
         views: {
           'benefits@root.benefits': {
             templateUrl: '/views/partials/benefits/innovations.html',
@@ -327,6 +339,10 @@ angular.module('siBelApp', [
       })
       .state('root.benefits.standards', {
         url: '/standards',
+        ncyBreadcrumb: {
+          label: "Стандарты и бизнес-процессы",
+          parent: 'root.benefits'
+        },
         views: {
           'benefits@root.benefits': {
             templateUrl: '/views/partials/benefits/standards.html',
@@ -336,6 +352,10 @@ angular.module('siBelApp', [
       })
       .state('root.benefits.guarantees', {
         url: '/guarantees',
+        ncyBreadcrumb: {
+          label: "Гарантии",
+          parent: 'root.benefits'
+        },
         views: {
           'benefits@root.benefits': {
             templateUrl: '/views/partials/benefits/guarantees.html',
