@@ -55,7 +55,7 @@ angular.module('siBelApp')
       //   // }
       // }
 
-      $scope.state = 'all';
+
 
       // iconActive();
 
@@ -68,6 +68,7 @@ angular.module('siBelApp')
         $state.go('root.service'+data);
 
       };
+      $scope.state = 'all';
 
       $scope.Filter = function (data) {
         if( $scope.state === data){
