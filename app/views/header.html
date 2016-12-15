@@ -59,15 +59,15 @@
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.implementation'}" ng-click="stateGo('root.service.implementation')"><a href="">Реализация</a></li>
         </ul>
       </li>
-      <li class="dropdown" ng-class="{'activeHeader' : tabActive=='root.cases.project'||tabActive=='root.cases.ideas'}">
+      <li class="dropdown" ng-click="stateGo('root.cases')" ng-class="{'activeHeader' : tabActive=='root.cases'}">
         <a class="navHover" href="">Кейсы</a>
-        <ul class="dropdown-menu">
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.cases.project'}" ng-click="stateGo('root.cases.project')"><a href="">Проекты</a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.cases.ideas'}" ng-click="stateGo('root.cases.ideas')"><a href="">Идеи</a></li>
-        </ul>
+        <!--<ul class="dropdown-menu">-->
+          <!--<li><a href=""></a></li>-->
+          <!--<li><a href=""></a></li>-->
+          <!--<li><a href=""></a></li>-->
+          <!--<li ng-class="{'activeHeaderSubMenu' : tabActive=='root.cases.project'}" ng-click="stateGo('root.cases.project')"><a href="">Проекты</a></li>-->
+          <!--<li ng-class="{'activeHeaderSubMenu' : tabActive=='root.cases.ideas'}" ng-click="stateGo('root.cases.ideas')"><a href="">Идеи</a></li>-->
+        <!--</ul>-->
       </li>
       <li class="dropdown" ng-class="{'activeHeader' : tabActive=='root.benefits.employees'||tabActive=='root.benefits.innovations'||tabActive=='root.benefits.standards'||tabActive=='root.benefits.guarantees'}">
         <a class="navHover" href="">Преимущества</a>

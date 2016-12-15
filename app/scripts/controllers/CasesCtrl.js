@@ -3,7 +3,7 @@
  */
 'use strict';
 angular.module('siBelApp')
-  .controller('CasesCtrl',[ '$scope', '$rootScope', '$translate', function ($scope, $rootScope, $translate) {
+  .controller('CasesCtrl',[ '$scope', '$rootScope', '$translate', '$http', function ($scope, $rootScope, $translate, $http) {
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('Error.Title_1').then(function (translation) {
         $scope.Error_Title_1 = translation;
@@ -31,4 +31,9 @@ angular.module('siBelApp')
       });
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
+
+    $http.get('cases.json').then(function (res) {
+        $scope.items = res.data;
+        console.log($scope.items)
+    })
   }]);

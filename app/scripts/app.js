@@ -279,24 +279,15 @@ angular.module('siBelApp', [
           }
         }
       })
-      .state('root.cases.project', {
-        url: '/business',
-        views: {
-          'cases@root.cases': {
-            templateUrl: '/views/partials/cases/project.html',
-            controller:  'ProjectCtrl'
-          }
-        }
-      })
-      .state('root.cases.ideas', {
-        url: '/mobile',
-        views: {
-          'cases@root.cases': {
-            templateUrl: '/views/partials/cases/ideas.html',
-            controller:  'IdeasCtrl'
-          }
-        }
-      })
+      // .state('root.cases.details', {
+      //   url: '/details',
+      //   views: {
+      //     'cases@root.cases': {
+      //       templateUrl: '/views/partials/cases/project.html',
+      //       controller:  'ProjectCtrl'
+      //     }
+      //   }
+      // })
 
       .state('root.benefits', {
         url: '/benefits',
@@ -381,90 +372,6 @@ angular.module('siBelApp', [
           }
         }
       });
-      // .state('root.profile.users', {
-      //   url: '/users',
-      //   ncyBreadcrumb: {
-      //     label: "Пользователи",
-      //     skip: true
-      //   },
-      //   views: {
-      //     'container@': {
-      //       templateUrl: '/views/users.html',
-      //       controller:  'UsersCtrl'
-      //     }
-      //   }
-      // })
-      //
-      // .state('root.paintings', {
-      //   url: '/paintings',
-      //   ncyBreadcrumb: {
-      //     label: "Материалы-полотна",
-      //     skip: true
-      //   },
-      //   views: {
-      //     'container@': {
-      //       templateUrl: '/views/paintings.html',
-      //       controller:  'PaintingsCtrl'
-      //     }
-      //   }
-      // })
-      //
-      // .state('root.accessories', {
-      //   url: '/accessories',
-      //   ncyBreadcrumb: {
-      //     label: "Материалы-комплектующие",
-      //     skip: true
-      //   },
-      //   views: {
-      //     'container@': {
-      //       templateUrl: '/views/accessories.html',
-      //       controller:  'AccessoriesCtrl'
-      //     }
-      //   }
-      // })
-      //
-      // .state('root.dealers', {
-      //   url: '/dealers',
-      //   ncyBreadcrumb: {
-      //     label: "Дилеры",
-      //     skip: true
-      //   },
-      //   views: {
-      //     'container@': {
-      //       templateUrl: '/views/dealers.html',
-      //       controller:  'DealersCtrl'
-      //     }
-      //   }
-      // })
-      //
-      // .state('root.materialAdd', {
-      //   url: '/materialAdd',
-      //   ncyBreadcrumb: {
-      //     label: "Добавить новый материал",
-      //     skip: true
-      //   },
-      //   views: {
-      //     'container@': {
-      //       templateUrl: '/views/materialAdd.html',
-      //       controller:  'MaterialCtrl'
-      //     }
-      //   }
-      // })
-      // .state('root.info', {
-      //   url: '/info',
-      //   ncyBreadcrumb: {
-      //     label: "Полезная информация",
-      //     skip: true
-      //   },
-      //   views: {
-      //     'container@': {
-      //       templateUrl: '/views/info.html',
-      //       controller:  'InfoCtrl'
-      //     }
-      //   }
-      // })
-
-
   })
 
   .config(function($breadcrumbProvider) {
