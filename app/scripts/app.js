@@ -140,9 +140,52 @@ angular.module('siBelApp', [
       })
       .state('root.service.business', {
         url: '/business',
+        ncyBreadcrumb: {
+          label: "Программные решения ",
+          parent: 'root.service'
+        },
         views: {
           'service@root.service': {
             templateUrl: '/views/partials/service/business.html',
+            controller:  'SoftForBusinessCtrl'
+          }
+        }
+      })
+      .state('root.service.business.automatisation', {
+        url: '/automatisation',
+        ncyBreadcrumb: {
+          label: "Автоматизация процессов организации",
+          parent: 'root.service.business'
+        },
+        views: {
+          'business@root.service.business': {
+            templateUrl: '/views/partials/service/business/automatisation/automatisation.html',
+            controller:  'SoftForBusinessCtrl'
+          }
+        }
+      })
+      .state('root.service.business.complex', {
+        url: '/complex',
+        ncyBreadcrumb: {
+          label: "Комплексные решения",
+          parent: 'root.service.business'
+        },
+        views: {
+          'business@root.service.business': {
+            templateUrl: '/views/partials/service/business/complex/complex.html',
+            controller:  'SoftForBusinessCtrl'
+          }
+        }
+      })
+      .state('root.service.business.elDoc', {
+        url: '/elDoc',
+        ncyBreadcrumb: {
+          label: "Электронный документооборот",
+          parent: 'root.service.business'
+        },
+        views: {
+          'business@root.service.business': {
+            templateUrl: '/views/partials/service/business/elDoc/elDoc.html',
             controller:  'SoftForBusinessCtrl'
           }
         }

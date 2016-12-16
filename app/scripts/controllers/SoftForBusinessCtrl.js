@@ -3,7 +3,7 @@
  */
 'use strict';
 angular.module('siBelApp')
-  .controller('SoftForBusinessCtrl',[ '$scope', '$rootScope', '$translate', function ($scope, $rootScope, $translate) {
+  .controller('SoftForBusinessCtrl',[ '$scope', '$rootScope', '$translate', '$state','$location', function ($scope, $rootScope, $translate, $state, $location) {
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('Error.Title_1').then(function (translation) {
         $scope.Error_Title_1 = translation;
@@ -31,4 +31,24 @@ angular.module('siBelApp')
       });
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
+
+    function iconActive() {
+      var arr = $location.$$path.split('/');
+      var n = arr.length-1;
+      $scope.state = "."+arr[n];
+    }
+
+    iconActive();
+
+    $rootScope.$on('$stateChangeSuccess',
+      function(){
+        iconActive();
+      });
+
+
+
+    $scope.Go = function (data) {
+      $state.go('root.service.business'+data);
+      $scope.state = data;
+    };
   }]);

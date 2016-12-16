@@ -28,9 +28,22 @@
     </div>
   </div>
 </div>
+<div id="details">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <img ng-src="../../../images/cases/{{details.src}}">
+    </div>
+    <div class="col-md-8 col-sm-8 col-xs-12" >
+      <h3>{{details.title}}</h3>
+      <p>{{details.text}}</p>
+    </div>
+  </div>
+
+</div>
+
 <div class="row">
-  <div class="col-sm-4" ng-repeat="item in items" ng-click="map(item)">
-    <div class="widget">
+  <div class="col-sm-4" ng-repeat="item in items" ng-if="item!=details" ng-click="map(item)">
+    <div class="widget" ng-click="Active(item)"  ng-class="{'active' : active == item.id}">
       <div class="coupon-block equal">
         <div class="coupon-value" content="40%">{{item.title}}</div>
         <a class="coupon-image bg-image" href="" title="" data-image-src="http://placehold.it/300x200" style="background: url(../../../images/cases/{{item.src}}) center center / cover no-repeat;"></a>
@@ -41,7 +54,7 @@
           </p>
         </div>
         <div class="action-block" ng-click="openDetails(item.text)">
-          <button class="form-control btn-full-orange">Подробнее</button>
+          <button class="form-control btn-blue">Подробнее</button>
         </div>
       </div>
     </div>

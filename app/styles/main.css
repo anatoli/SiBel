@@ -604,9 +604,13 @@ label {
 
 .widget {
   margin-bottom: 30px;
+  margin-top: 30px;
   -webkit-transition: all .4s;
   transition: all .4s;
   background: #fff;
+
+}
+.widget.active{
   box-shadow: 0 1px 2px #d9dadb;
 }
 
@@ -1059,8 +1063,8 @@ label {
 }
 
 .coupon-block .action-block {
-  max-width: 80%;
-  margin: 0 auto 15px;
+  /*max-width: 80%;*/
+  /*margin: 0 auto 15px;*/
   text-align: center;
 }
 
