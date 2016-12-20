@@ -83,4 +83,7 @@ angular.module('siBelApp')
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
 
+
+    $scope.first_blue = false;
+
   }]);

@@ -12,10 +12,6 @@
     <link rel="icon" type="image/png" href="images/favicon_96.png" sizes="96x96">
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel='stylesheet' href='components/bower_components/bootstrap/dist/css/bootstrap.css' />
-    <link rel='stylesheet' href='components/bower_components/lightslider/dist/css/lightslider.min.css' />
-    <link rel='stylesheet' href='components/bower_components/animate.css/animate.css' />
-    <link rel='stylesheet' href='components/bower_components/leaflet/leaflet.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -35,11 +31,14 @@
     <link rel="stylesheet" href="styles/partials/service/it.css">
     <link rel="stylesheet" href="styles/partials/benefits.css">
     <link rel="stylesheet" href="styles/partials/cases.css">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-
     <!-- endbuild -->
+    <link rel='stylesheet' href='components/bower_components/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='components/bower_components/lightslider/dist/css/lightslider.min.css' />
+    <link rel='stylesheet' href='components/bower_components/animate.css/animate.css' />
+    <link rel='stylesheet' href='components/bower_components/leaflet/leaflet.css' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <lin rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"></lin>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body ng-app="siBelApp">
@@ -68,38 +67,60 @@
     <script src='components/bower_components/echarts/dist/echarts.min.js'></script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src='components/bower_components/jquery/dist/jquery.js'></script>
-    <script src='components/bower_components/jquery-migrate/jquery-migrate.js'></script>
-    <script src='components/bower_components/angular/angular.js'></script>
-    <script src='components/bower_components/bootstrap/dist/js/bootstrap.js'></script>
-    <script src='components/bower_components/angular-animate/angular-animate.js'></script>
-    <script src='components/bower_components/angular-cookies/angular-cookies.js'></script>
-    <script src='components/bower_components/angular-resource/angular-resource.js'></script>
-    <script src='components/bower_components/angular-route/angular-route.js'></script>
-    <script src='components/bower_components/angular-sanitize/angular-sanitize.js'></script>
-    <script src='components/bower_components/angular-touch/angular-touch.js'></script>
-    <script src='components/bower_components/lightslider/dist/js/lightslider.min.js'></script>
-    <script src='components/bower_components/angular-ui-router/release/angular-ui-router.js'></script>
-    <script src='components/bower_components/angular-bootstrap/ui-bootstrap-tpls.js'></script>
-    <script src='components/bower_components/angular-translate/angular-translate.js'></script>
-    <script src='components/bower_components/angular-translate-loader-url/angular-translate-loader-url.js'></script>
-    <script src='components/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js'></script>
-    <script src='components/bower_components/bootstrap-carousel-swipe/carousel-swipe.js'></script>
-    <script src='components/bower_components/angular-file-upload/dist/angular-file-upload.min.js'></script>
-    <script src='components/bower_components/leaflet/leaflet.js'></script>
-    <script src='components/bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js'></script>
-    <script src='components/bower_components/angular-breadcrumb/release/angular-breadcrumb.js'></script>
-    <script src='components/bower_components/echarts-ng/dist/echarts-ng.js'></script>
+    <script src="components/bower_components/jquery/dist/jquery.js"></script>
+    <script src="components/bower_components/jquery-migrate/jquery-migrate.js"></script>
+    <script src="components/bower_components/angular/angular.js"></script>
+    <script src="components/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="components/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="components/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="components/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="components/bower_components/angular-route/angular-route.js"></script>
+    <script src="components/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="components/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="components/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="components/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="components/bower_components/angular-translate/angular-translate.js"></script>
+    <script src="components/bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+    <script src="components/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+    <script src="components/bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+    <script src="components/bower_components/leaflet/leaflet.js"></script>
+    <script src="components/bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script src="components/bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js'></script>
 
 
+    <!--<script-->
+      <!--src="https://code.jquery.com/jquery-2.2.4.js"-->
+      <!--integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="-->
+      <!--crossorigin="anonymous"></script>-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-      <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js'></script>
-      <script src='https://rawgit.com/ghostbar/angular-file-model/master/angular-file-model.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-cookies.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-touch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.1/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.1/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-leaflet-directive/0.10.0/angular-leaflet-directive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-breadcrumb/0.5.0/angular-breadcrumb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.13.1/angular-translate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.13.1/angular-translate-loader-url/angular-translate-loader-url.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-file-upload/2.4.0/angular-file-upload.min.js"></script>
+    <script src='https://rawgit.com/ghostbar/angular-file-model/master/angular-file-model.js'></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+
+
+    <script src='components/bower_components/echarts-ng/dist/echarts-ng.js'></script>
+    <script src='components/bower_components/bootstrap-carousel-swipe/carousel-swipe.js'></script>
+    <script src='components/bower_components/lightslider/dist/js/lightslider.min.js'></script>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/HomeCtrl.js"></script>
         <script src="scripts/controllers/EmailCtrl.js"></script>
@@ -176,8 +197,7 @@
       })(document, window, "yandex_metrika_callbacks");
   </script>
 
-    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
 
     <noscript><div><img src="https://mc.yandex.ru/watch/40309365" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->

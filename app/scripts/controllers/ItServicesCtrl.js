@@ -57,4 +57,9 @@ angular.module('siBelApp')
         $scope.state = data;
       };
 
+      $scope.DopStateGo = function (data) {
+        $state.go('root.service'+data);
+        $scope.state = data;
+      }
+
   }]);

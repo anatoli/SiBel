@@ -62,17 +62,18 @@ background-color: rgba(255, 255, 255, 0.78);
   text-align: center;
   width: 100%;
   background-color: gray;
-  padding: 2%;
+  padding-top: 2%;
   color: #fff;
   font-size: 18px;
+  height: 45px;
 }
 .overflov-h{
   overflow: hidden;
 }
 
-.blue:hover{
-  opacity: 1;
-}
+/*.blue:hover{*/
+  /*opacity: 1;*/
+/*}*/
 .blue h3{
   font-weight: bold;
 }
@@ -87,16 +88,25 @@ background-color: rgba(255, 255, 255, 0.78);
   text-align: center;
   background-image: url(../../../images/company/blue.png);
   position: absolute;
-  width: 98%;
+  width: 100%;
   height: 246px;
-  opacity: 0;
+  /*opacity: 0;*/
   color: #fff;
+  display: none;
 }
 .grey img{
   width: 100%;
 }
 .grey{
-  height: 187px
+  height: 201px;
+}
+
+.grey-block{
+  text-align: center;
+  width: 100%;
+  height: 246px;
+  color: #fff;
+  position: relative;
 }
 .slide-1-block-background-company{
   margin-bottom: 3%;
@@ -238,4 +248,81 @@ background-color: rgba(255, 255, 255, 0.78);
   font-weight: bold;
   color: #398be3;
   left: 45.5%;
+}
+
+
+
+/*hover animate*/
+.none-hover-1{
+  display: block;
+}
+.hover-1{
+  display: none;
+}
+.grey-block:hover .hover-1{
+  display: block;
+}
+.grey-block:hover .none-hover-1{
+  display: none;
+}
+
+.none-hover-2{
+  display: block;
+}
+.hover-2{
+  display: none;
+}
+.grey-block:hover .hover-2{
+  display: block;
+}
+.grey-block:hover .none-hover-2{
+  display: none;
+}
+.none-hover-3{
+  display: block;
+}
+.hover-3{
+  display: none;
+}
+.grey-block:hover .hover-3{
+  display: block;
+}
+.grey-block:hover .none-hover-3{
+  display: none;
+}
+.none-hover-4{
+  display: block;
+}
+.hover-4{
+  display: none;
+}
+.grey-block:hover .hover-4{
+  display: block;
+}
+.grey-block:hover .none-hover-4{
+  display: none;
+}
+.none-hover-5{
+  display: block;
+}
+.hover-5{
+  display: none;
+}
+.grey-block:hover .hover-5{
+  display: block;
+}
+.grey-block:hover .none-hover-5{
+  display: none;
+}
+.none-hover-6{
+  display: block;
+}
+.hover-6{
+  display: none;
+}
+.grey-block:hover .hover-6{
+  display: block;
+}
+.grey-block:hover .none-hover-6{
+  display: none;
 }
