@@ -1,105 +1,70 @@
-
-
-
   <div class="navbar fontCustoms">
-
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-
       </button>
       <a class="navbar-brand" rel="home" href="#/" title="Homepage"><img src="images/logo.png" style="height:58px; margin-top: -7%"></a>
-
     </div>
-    <!--<div class=" row col-ld-3 col-md-2  col-sm-3  col-xs-3 langRow col-xxs pull-right ">-->
-      <!--<ul class="lang-ul pointer ">-->
-        <!--<li ng-click="changeLanguage('by')" class="language lang "><a ng-class="{'press': by }" class="lang">BY</a></li>-->
-        <!--<li ng-click="changeLanguage('ru')" class="language borderLeftLeng "><a ng-class="{'press': ru}" class="lang" >RU</a></li>-->
-        <!--<li ng-click="changeLanguage('en')" class="language borderLeftLeng "><a ng-class="{'press': en} " class="lang" >EN</a></li>-->
-      <!--</ul>-->
-    <!--</div>-->
-
   <div class="collapse navbar-collapse navbar-ex1-collapse">
-
     <ul class="nav navbar-nav">
       <li  class="dropdown"  ng-class="{'activeHeader' : tabActive=='root.company.about'||tabActive=='root.company.value'||tabActive=='root.company.team'||tabActive=='root.company.reviews'}">
         <a class="navHover" href="">Компания</a>
-        <ul class="dropdown-menu">
+        <ol class="dropdown-menu">
           <li><a href=""></a></li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.about'}" ng-click="stateGo('root.company.about')"><a href="">О компании</a></li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.value'}" ng-click="stateGo('root.company.value')"><a href="">Ценности</a></li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.team'}" ng-click="stateGo('root.company.team')"><a href="">Команда</a></li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.reviews'}" ng-click="stateGo('root.company.reviews')"><a href="">Отзывы</a></li>
-        </ul>
+        </ol>
       </li>
       <li class="dropdown"  ng-class="{'activeHeader' : tabActive=='root.service.business'||tabActive=='root.service.mobile'||tabActive=='root.service.it'}">
         <a class="navHover" href="">Решения и услуги</a>
-        <ul class="dropdown-menu">
+        <ol class="dropdown-menu">
           <li><a href=""></a></li>
           <li style="min-width: 220px;" ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.business' ||  tabActive=='root.service.business.complex'||  tabActive=='root.service.business.automatisation'||  tabActive=='root.service.business.elDoc' }" ng-click="stateGo('root.service.business')">
             <a href="">Программные решения ></a>
-            <ul class="classic submenu-ul">
+            <ol class="classic submenu-ul">
               <li ng-class="{'subActive': tabActive=='root.service.business.complex'}" ng-click="stateGo('root.service.business.complex')"><a href="">Комплексные решения</a></li>
               <li ng-class="{'subActive': tabActive=='root.service.business.automatisation'}" ng-click="stateGo('root.service.business.automatisation')"><a href="">Автоматизация процессов организации</a></li>
               <li ng-class="{'subActive': tabActive=='root.service.business.elDoc'}" ng-click="stateGo('root.service.business.elDoc')"><a href="">Электронный документооборот</a></li>
-            </ul>
-          </li>
+            </ol>
           </li>
           <li style="min-width: 190px;  margin-left: 10px;   margin-right: 10px;" ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.mobile'|| tabActive=='root.service.mobile.audit'|| tabActive=='root.service.mobile.cdr'|| tabActive=='root.service.mobile.session'}" ng-click="stateGo('root.service.mobile')">
             <a href="">Телекоммуникации ></a>
-            <ul class="classic submenu-ul">
+            <ol class="classic submenu-ul">
               <li ng-class="{'subActive': tabActive=='root.service.mobile.cdr'}" ng-click="stateGo('root.service.mobile.cdr')"><a href="">Длительное хранение CDR</a></li>
               <li ng-class="{'subActive': tabActive=='root.service.mobile.session'}" ng-click="stateGo('root.service.mobile.session')"><a href="">Агрегация длинных сессий</a></li>
               <li ng-class="{'subActive': tabActive=='root.service.mobile.audit'}" ng-click="stateGo('root.service.mobile.audit')"><a href="">Аудит и контроль полноты данных</a></li>
-            </ul>
+            </ol>
           </li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.it' || tabActive=='root.service.it.audit'|| tabActive=='root.service.it.infra'|| tabActive=='root.service.it.engineer'}" ng-click="stateGo('root.service.it')">
             <a href="">ИТ-услуги ></a>
-            <ul class="classic submenu-ul">
+            <ol class="classic submenu-ul">
               <li ng-class="{'subActive': tabActive=='root.service.it.audit'}" ng-click="stateGo('root.service.it.audit')"><a href="">ИТ-аудит</a></li>
               <li ng-class="{'subActive': tabActive=='root.service.it.infra'}" ng-click="stateGo('root.service.it.infra')"><a href="">ИТ-инфраструктура</a></li>
               <li ng-class="{'subActive': tabActive=='root.service.it.engineer'}" ng-click="stateGo('root.service.it.engineer')"><a href="">Инженерная инфраструктура</a></li>
-            </ul>
+            </ol>
           </li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.implementation'}" ng-click="stateGo('root.service.implementation')"><a href="">Реализация</a></li>
-        </ul>
+        </ol>
       </li>
-      <li class="dropdown" ng-click="stateGo('root.cases')" ng-class="{'activeHeader' : tabActive=='root.cases'}">
+      <li ng-click="stateGo('root.cases')" ng-class="{'activeHeader' : tabActive=='root.cases'}">
         <a class="navHover" href="">Кейсы</a>
-        <!--<ul class="dropdown-menu">-->
-          <!--<li><a href=""></a></li>-->
-          <!--<li><a href=""></a></li>-->
-          <!--<li><a href=""></a></li>-->
-          <!--<li ng-class="{'activeHeaderSubMenu' : tabActive=='root.cases.project'}" ng-click="stateGo('root.cases.project')"><a href="">Проекты</a></li>-->
-          <!--<li ng-class="{'activeHeaderSubMenu' : tabActive=='root.cases.ideas'}" ng-click="stateGo('root.cases.ideas')"><a href="">Идеи</a></li>-->
-        <!--</ul>-->
       </li>
       <li class="dropdown" ng-class="{'activeHeader' : tabActive=='root.benefits.employees'||tabActive=='root.benefits.innovations'||tabActive=='root.benefits.standards'||tabActive=='root.benefits.guarantees'}">
         <a class="navHover" href="">Преимущества</a>
-        <ul class="dropdown-menu">
+        <ol class="dropdown-menu">
           <li><a href=""></a></li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.employees'}" ng-click="stateGo('root.benefits.employees')"><a href="">Сотрудники</a></li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.innovations'}" ng-click="stateGo('root.benefits.innovations')"><a href="">Инновации</a></li>
           <li style="min-width: 270px" ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.standards'}" ng-click="stateGo('root.benefits.standards')"><a href="">Бизнес-процессы и стандарты</a></li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.guarantees'}" ng-click="stateGo('root.benefits.guarantees')"><a href="">Гарантии</a></li>
-        </ul>
+        </ol>
       </li>
       <li ng-click="stateGo('root.contacts')" class="" ng-class="{'activeHeader' : tabActive=='root.contacts'}"><a class="navHover" href="">Контакты</a></li>
-      <!--<li>-->
-          <!--<ul class="lang-ul">-->
-            <!--<li ng-click="changeLanguage('by')" class=" lang"><a ng-class="{'press': by }" class="lang">BY</a></li>-->
-            <!--<li ng-click="changeLanguage('ru')" class=" borderLeftLeng"><a ng-class="{'press': ru}" class="lang" >RU</a></li>-->
-            <!--<li ng-click="changeLanguage('en')" class=" borderLeftLeng"><a ng-class="{'press': en} " class="lang" >EN</a></li>-->
-          <!--</ul>-->
-      <!--</li>-->
-      <!--<li>-->
-        <!--<div class="lang-ul">-->
-          <!--<a class="" type="submit"><i class="glyphicon glyphicon-search"></i></a>-->
-        <!--</div>-->
-      <!--</li>-->
     </ul>
     <div class=" row col-ld-3 col-md-2  col-sm-3  col-xs-3 langRow col-xxs pull-right ">
       <ul class="lang-ul pointer ">
@@ -117,29 +82,6 @@
 
 </div>
 
-<script>
-  $('ul.nav li.dropdown').hover(function() {
-    var obj = $(this);
-    $(this).find('.dropdown-menu').stop(true, true).delay(80,function () {
-      obj.addClass('open');
-    });
-  }, function() {
-    var obj = $(this);
-    $(this).find('.dropdown-menu').stop(true, true).delay(90).fadeOut(90, function () {
-      obj.removeClass('open');
-    });
+<script src="components/plugin/header.js">
 
-  });
-  $('ul.nav li.dropdown').hover(function() {
-    var obj = $(this);
-    $(this).find('.dropdown-menu').stop(true, true).delay(80,function () {
-      obj.addClass('open');
-    });
-  }, function() {
-    var obj = $(this);
-    $(this).find('.dropdown-menu').stop(true, true).delay(90).fadeOut(90, function () {
-      obj.removeClass('open');
-    });
-
-  });
 </script>
