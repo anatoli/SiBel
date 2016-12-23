@@ -7,6 +7,6 @@ angular.module('siBelApp')
 
     $scope.Go = function (data) {
       $state.go(data);
-    }
+    };
 
   }]);

@@ -34,6 +34,25 @@ angular.module('siBelApp')
       $scope.state = data;
     };
 
+      $scope.Email = function (data) {
+        $uibModal.open({
+          backdropClass: 'backdrop',
+          backdrop: 'static',
+          animation: false,
+          size: 'dialog',
+          templateUrl: 'views/modals/email.html',
+          resolve: {
+            dataModal: function () {
+              return {
+                data: data,
+                lang: $translate.proposedLanguage()
+              };
+            }
+          },
+          controller: 'EmailCtrl'
+        });
+      };
+
 
     $scope.openModal = function (data) {
       $uibModal.open({

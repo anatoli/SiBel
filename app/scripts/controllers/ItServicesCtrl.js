@@ -10,7 +10,7 @@ angular.module('siBelApp')
     '$translate',
     '$rootScope',
     '$location',
-    function ($scope, $uibModal, $state, $translate, $rootScope, $location) {
+    function ($scope, $uibModal, $state, $translate, $rootScope, $location ) {
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('Error.Title_1').then(function (translation) {
         $scope.Error_Title_1 = translation;
@@ -60,6 +60,25 @@ angular.module('siBelApp')
       $scope.DopStateGo = function (data) {
         $state.go('root.service'+data);
         $scope.state = data;
-      }
+      };
+
+      $scope.Email = function (data) {
+        $uibModal.open({
+          backdropClass: 'backdrop',
+          backdrop: 'static',
+          animation: false,
+          size: 'dialog',
+          templateUrl: 'views/modals/email.html',
+          resolve: {
+            dataModal: function () {
+              return {
+                data: data,
+                lang: $translate.proposedLanguage()
+              };
+            }
+          },
+          controller: 'EmailCtrl'
+        });
+      };
 
   }]);

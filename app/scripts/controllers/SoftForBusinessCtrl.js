@@ -3,7 +3,7 @@
  */
 'use strict';
 angular.module('siBelApp')
-  .controller('SoftForBusinessCtrl',[ '$scope', '$rootScope', '$translate', '$state','$location', function ($scope, $rootScope, $translate, $state, $location) {
+  .controller('SoftForBusinessCtrl',[ '$scope', '$rootScope', '$translate', '$state','$location', '$uibModal', function ($scope, $rootScope, $translate, $state, $location, $uibModal) {
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('Error.Title_1').then(function (translation) {
         $scope.Error_Title_1 = translation;
@@ -51,4 +51,24 @@ angular.module('siBelApp')
       $state.go('root.service.business'+data);
       $scope.state = data;
     };
+
+    $scope.Email = function (data) {
+      $uibModal.open({
+        backdropClass: 'backdrop',
+        backdrop: 'static',
+        animation: false,
+        size: 'dialog',
+        templateUrl: 'views/modals/email.html',
+        resolve: {
+          dataModal: function () {
+            return {
+              data: data,
+              lang: $translate.proposedLanguage()
+            };
+          }
+        },
+        controller: 'EmailCtrl'
+      });
+    };
+
   }]);

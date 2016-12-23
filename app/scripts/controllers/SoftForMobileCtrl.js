@@ -6,8 +6,8 @@
  */
 'use strict';
 angular.module('siBelApp')
-  .controller('SoftForMobileCtrl',[ '$scope', '$rootScope', '$translate','$location', '$state',
-    function ($scope, $rootScope, $translate, $location, $state) {
+  .controller('SoftForMobileCtrl',[ '$scope', '$rootScope', '$translate','$location', '$state', '$uibModal',
+    function ($scope, $rootScope, $translate, $location, $state, $uibModal) {
     $rootScope.$on('$translateChangeSuccess', function () {
       $translate('Error.Title_1').then(function (translation) {
         $scope.Error_Title_1 = translation;
@@ -54,6 +54,24 @@ angular.module('siBelApp')
       $scope.state = data;
     };
 
+      $scope.Email = function (data) {
+        $uibModal.open({
+          backdropClass: 'backdrop',
+          backdrop: 'static',
+          animation: false,
+          size: 'dialog',
+          templateUrl: 'views/modals/email.html',
+          resolve: {
+            dataModal: function () {
+              return {
+                data: data,
+                lang: $translate.proposedLanguage()
+              };
+            }
+          },
+          controller: 'EmailCtrl'
+        });
+      };
 
 
   // //  TODO Работа с графииками
