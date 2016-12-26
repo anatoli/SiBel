@@ -26,55 +26,53 @@
 <div class="row block-default none-row">
   <h4 class="rubric it-title">{{SecondPage_Icons_Title | translate}}</h4>
   <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center" ng-class="{'act':state=='business'}">
-    <div ng-click="Filter('business')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">Программные рещение{{SecondPage_Icons_Btn_ICO_1|translate}}</div>
+    <div ng-click="Filter('business')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Implementation_Filter_btn_1|translate}}</div>
   </div>
   <div ng-click="openDetails()" class="col-md-4 col-sm-4 col-xs-10 pointer text-center" ng-class="{'act':state=='mobile'}">
-    <div ng-click="Filter('mobile')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">Телекоммуникации{{SecondPage_Icons_Btn_ICO_2|translate}}</div>
+    <div ng-click="Filter('mobile')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Implementation_Filter_btn_2|translate}}</div>
   </div>
   <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center " ng-class="{'act':state=='it'}">
-    <div ng-click="Filter('it')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">ИТ-услуги{{SecondPage_Icons_Btn_ICO_3|translate}}</div>
+    <div ng-click="Filter('it')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Implementation_Filter_btn_3|translate}}</div>
   </div>
 </div>
 <div class="none-row block-default company" >
   <div ng-show='state=="all" || state=="it" ' class=" block-comment">
-    <h3 class="title-h">Модернизация ИТ-инфраструктуры ОАО «Технобанк»</h3>
+    <h3 class="title-h">{{Implementation_Project_1_Title_1|translate}}</h3>
     <div class="row rubric comment-white-implementations">
       <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
           <img src="images/service/tehno-bank.jpg" style="height: 220px; width: 100%">
           <div class="img-footer-implementation" >
-            <h5 class="ideas segoe-regular"><span class="narrow" style="color: #fff">{{Ideas_imgHeader_1}}:</span> {{Ideas_imgHeader_2}}</h5>
+            <h5 class="ideas segoe-regular"><span class="narrow" style="color: #fff">{{Implementation_Filter_btn_1|translate}}</span> </h5>
           </div>
       </div>
       <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': first, 'box-implementation':!first }">
             <img class="img-relative" src="images/company/chevron.png">
-            <p class="goal-p"><b>Клиент:</b> ОАО «Технобанк»{{SecondPage_Comments_Text_21 |translate}}</p></br></br>
-            <p class="goal-p">Начавшая развитие с основания банка ИТ-инфраструктура перестала соответствовать современным требованиям. Устаревшая и неоднородная, она оказывала влияние на работу всей организации,
-              вызывая потери в качестве услуг и увеличение временных затрат на проведение операций из-за сбоев и поломок.{{SecondPage_Comments_Text_22 |translate}}</p></br></br>
-            <p class="goal-p"><b>Цель</b></p></br></br>
-            <p class="goal-p">Оптимизировать работу банка, снизить ИТ-издержки.</p></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b> {{Implementation_Project_1_Client|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_1|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_2|translate}}</p></br>
             </br>
-            <p class="goal-p"><b>Задачи</b> «СиБел»</p></br></br>
-            <p class="goal-p">Провести за 6 месяцев работы по модернизации ИТ-инфраструктуры без вмешательства в регламент банка  — в выходные дни и ночное время.</p></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b>  {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_3|translate}}</p></br>
             </br>
-            <p class="goal-p"><b>Результат</b></p></br></br>
-            <p class="goal-p">Обновленное оборудование и реконструированная отказоустойчивая ИТ-инфраструктура, дополненные резервным каналом связи, призваны
-              обеспечить эффективную работу банка в соответствии с текущими потребностями бизнеса.</p></br></br>
-            <p class="goal-p"><b>Этапы работ</b></p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_4|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
 
             <p class="goal-p">
               <ul class="ulli">
-                <li><span class="ulli-num">1</span><p><span>Проведение ИТ-аудита информационной системы предприятия: оценка и обследование существующей инфраструктуры и информационных сервисов</span></p></li>
-                <li><span class="ulli-num">2</span><p><span>Подготовка документированного отчета — обоснования для проведения реконструкции ИТ-инфраструктуры</span></p></li>
-                <li><span class="ulli-num">3</span><p><span>Разработка и согласование технического проекта</span></p></li>
-                <li><span class="ulli-num">4</span><p><span>Установка и настройка оборудования, создание отказоустойчивой инфраструктуры в соответствии с рекомендациями</span></p></li>
-                <li><span class="ulli-num">5</span><p><span>Реализация комплексной системы мониторинга ИТ-инфраструктуры с разработкой и согласованием перечня оборудования, контролируемых параметров на базе программного продукта ZABBIX (продукт open source) на серверных мощностях клиента</span></p></li>
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_1_li_1|translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_1_li_2|translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_1_li_3|translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_1_li_4|translate}}</span></p></li>
+                <li><span class="ulli-num">5</span><p><span>{{Implementation_Project_1_li_5|translate}}</span></p></li>
               </ul>
             </p>
           </div>
           <div class=" col-lg-5 col-md-5 col-sm-5">
-            <button class="form-control btn-blue " ng-show="!first" ng-click="DetailsOpen('first')">{{SecondPage_Comments_Btn_1|translate}}</button>
+            <button class="form-control btn-blue " ng-show="!first" ng-click="DetailsOpen('first')">{{Ideas_Btn_1|translate}}</button>
           </div>
         </div>
 
@@ -90,48 +88,45 @@
     <!--</div>-->
   </div>
   <div ng-show='state=="all" || state=="it"' class=" block-comment">
-    <h3 class="title-h">Услуги ИТ-аутсорсинга для «АСД-Техника»</h3>
+    <h3 class="title-h">{{Implementation_Project_2_Title_1|translate}}</h3>
     <div class="row rubric comment-white-implementations">
       <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
           <img src="images/service/asd.jpg" style="height: 220px; width: 100%">
           <div class="img-footer-implementation" >
-            <h5 class="ideas segoe-regular"><span class="narrow" style="color: #fff">{{Ideas_imgHeader_1}}:</span> {{Ideas_imgHeader_2}}</h5>
+            <h5 class="ideas segoe-regular"><span class="narrow" style="color: #fff">{{Implementation_Filter_btn_1|translate}}</span></h5>
           </div>
       </div>
       <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': second, 'box-implementation':!second }">
             <img class="img-relative" src="../../../images/company/chevron.png">
-            <p class="goal-p"><b>Клиент:</b>«АСД-Техника»{{SecondPage_Comments_Text_21 |translate}}</p></br></br>
-            <p class="goal-p">Компания, специализирующаяся на разработке технологий и производстве оборудования в области дозации,
-              смешения и изготовления изделий из полимерных материалов. {{SecondPage_Comments_Text_22 |translate}}</p></br></br>
-            <p class="goal-p"><b>Цель</b></p></br></br>
-            <p class="goal-p">Стабильная и эффективная работа предприятия независимо от смены сотрудника на должности системного администратора; передача работ по поддержке,
-              обслуживанию и модернизации ИТ-инфраструктуры авторитетной компании на долгосрочный период.</p></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b>{{Implementation_Project_2_Client|translate}}:</p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_1|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_2|translate}}</p></br>
             </br>
-            <p class="goal-p"><b>Задачи</b> «СиБел»</p></br></br>
-            <p class="goal-p">Оказание услуг по технологическому сопровождению ПО,
-              вычислительной и офисной технике — аутсорсинг ИТ-функций.</p></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_3|translate}}</p></br>
             </br>
-            <p class="goal-p"><b>Результат</b></p></br></br>
-            <p class="goal-p">Налаженная работа ИТ-инфраструктуры предприятия, мониторинг ее состояния,
-              подтверждаемый ежемесячными отчетами специалистов.</p></br></br>
-            <p class="goal-p"><b>Этапы работ</b></p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_4|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
 
             <p class="goal-p">
               <ul class="ulli">
-                <li><span class="ulli-num">1</span><p><span>Модернизация и техническое сопровождение средств вычислительной техники</span></p></li>
-                <li><span class="ulli-num">2</span><p><span>Резервное копирование информации</span></p></li>
-                <li><span class="ulli-num">3</span><p><span>Настройка и сопровождение оборудования и программного обеспечения на рабочих  местах</span></p></li>
-                <li><span class="ulli-num">4</span><p><span>Консультация пользователей по вопросам функционирования средств вычислительной техники</span></p></li>
-                <li><span class="ulli-num">5</span><p><span>Мониторинг и устранение неисправностей ИТ-инфраструктуры предприятия</span></p></li>
-                <li><span class="ulli-num">6</span><p><span>Подготовка ежемесячных актов сдачи / приемки работ / услуг</span></p></li>
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_2_li_1|translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_2_li_2|translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_2_li_3|translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_2_li_4|translate}}</span></p></li>
+                <li><span class="ulli-num">5</span><p><span>{{Implementation_Project_2_li_5|translate}}</span></p></li>
+                <li><span class="ulli-num">6</span><p><span>{{Implementation_Project_2_li_6|translate}}</span></p></li>
+
               </ul>
             </p>
 
           </div>
           <div class=" col-lg-5 col-md-5 col-sm-5">
-            <button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>
+            <button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{Ideas_Btn_1|translate}}</button>
           </div>
         </div>
 

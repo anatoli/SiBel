@@ -15,30 +15,115 @@ angular.module('siBelApp')
     '$location',
     function ($scope, $uibModal, $state, $translate, $rootScope) {
       $rootScope.$on('$translateChangeSuccess', function () {
-        $translate('Error.Title_1').then(function (translation) {
-          $scope.Error_Title_1 = translation;
+
+        /////// filter  //////////////
+        $translate('Implementation.Filter_btn_1').then(function (translation) {
+          $scope.Implementation_Filter_btn_1 = translation;
         });
-        $translate('Error.Title_2').then(function (translation) {
-          $scope.Error_Title_2 = translation;
+        $translate('Implementation.Filter_btn_2').then(function (translation) {
+          $scope.Implementation_Filter_btn_2 = translation;
         });
-        $translate('Error.Title_Color').then(function (translation) {
-          $scope.Error_Title_Color = translation;
+        $translate('Implementation.Filter_btn_3').then(function (translation) {
+          $scope.Implementation_Filter_btn_3 = translation;
         });
-        $translate('Error.Descriptions_1').then(function (translation) {
-          $scope.Error_Descriptions_1 = translation;
+
+
+        ////// All  ////////////////
+
+        $translate('Ideas.Btn_1').then(function (translation) {
+          $scope.Ideas_Btn_1 = translation;
         });
-        $translate('Error.Descriptions_2').then(function (translation) {
-          $scope.Error_Descriptions_2 = translation;
+        $translate('Implementation.All.Title_1').then(function (translation) {
+          $scope.Implementation_All_Title_1 = translation;
         });
-        $translate('Error.Btn').then(function (translation) {
-          $scope.Error_Btn = translation;
+        $translate('Implementation.All.Title_2').then(function (translation) {
+          $scope.Implementation_All_Title_2 = translation;
         });
-        $translate('Error.Address_1').then(function (translation) {
-          $scope.Error_Address_1 = translation;
+        $translate('Implementation.All.Title_3_1').then(function (translation) {
+          $scope.Implementation_All_Title_3_1 = translation;
         });
-        $translate('Error.Address_2').then(function (translation) {
-          $scope.Error_Address_2 = translation;
+        $translate('Implementation.All.Title_3_2').then(function (translation) {
+          $scope.Implementation_All_Title_3_2 = translation;
         });
+        $translate('Implementation.All.Title_4').then(function (translation) {
+          $scope.Implementation_All_Title_4 = translation;
+        });
+        $translate('Implementation.All.Title_5').then(function (translation) {
+          $scope.Implementation_All_Title_5 = translation;
+        });
+
+        //////// Project_1 ///////
+        $translate('Implementation.Project_1.Title_1').then(function (translation) {
+          $scope.Implementation_Project_1_Title_1 = translation;
+        });
+        $translate('Implementation.Project_1.Client').then(function (translation) {
+          $scope.Implementation_Project_1_Client = translation;
+        });
+        $translate('Implementation.Project_1.Description_1').then(function (translation) {
+          $scope.Implementation_Project_1_Description_1 = translation;
+        });
+        $translate('Implementation.Project_1.Description_2').then(function (translation) {
+          $scope.Implementation_Project_1_Description_2 = translation;
+        });
+        $translate('Implementation.Project_1.Description_3').then(function (translation) {
+          $scope.Implementation_Project_1_Description_3 = translation;
+        });
+        $translate('Implementation.Project_1.Description_4').then(function (translation) {
+          $scope.Implementation_Project_1_Description_4 = translation;
+        });
+        $translate('Implementation.Project_1.li_1').then(function (translation) {
+          $scope.Implementation_Project_1_li_1 = translation;
+        });
+        $translate('Implementation.Project_1.li_2').then(function (translation) {
+          $scope.Implementation_Project_1_li_2 = translation;
+        });
+        $translate('Implementation.Project_1.li_3').then(function (translation) {
+          $scope.Implementation_Project_1_li_3 = translation;
+        });
+        $translate('Implementation.Project_1.li_4').then(function (translation) {
+          $scope.Implementation_Project_1_li_4 = translation;
+        });
+        $translate('Implementation.Project_1.li_5').then(function (translation) {
+          $scope.Implementation_Project_1_li_5 = translation;
+        });
+        //////// Project_2 ///////
+        $translate('Implementation.Project_2.Title_1').then(function (translation) {
+          $scope.Implementation_Project_2_Title_1 = translation;
+        });
+        $translate('Implementation.Project_2.Client').then(function (translation) {
+          $scope.Implementation_Project_2_Client = translation;
+        });
+        $translate('Implementation.Project_2.Description_1').then(function (translation) {
+          $scope.Implementation_Project_2_Description_1 = translation;
+        });
+        $translate('Implementation.Project_2.Description_2').then(function (translation) {
+          $scope.Implementation_Project_2_Description_2 = translation;
+        });
+        $translate('Implementation.Project_2.Description_3').then(function (translation) {
+          $scope.Implementation_Project_2_Description_3 = translation;
+        });
+        $translate('Implementation.Project_2.Description_4').then(function (translation) {
+          $scope.Implementation_Project_2_Description_4 = translation;
+        });
+        $translate('Implementation.Project_2.li_1').then(function (translation) {
+          $scope.Implementation_Project_2_li_1 = translation;
+        });
+        $translate('Implementation.Project_2.li_2').then(function (translation) {
+          $scope.Implementation_Project_2_li_2 = translation;
+        });
+        $translate('Implementation.Project_2.li_3').then(function (translation) {
+          $scope.Implementation_Project_2_li_3 = translation;
+        });
+        $translate('Implementation.Project_2.li_4').then(function (translation) {
+          $scope.Implementation_Project_2_li_4 = translation;
+        });
+        $translate('Implementation.Project_2.li_5').then(function (translation) {
+          $scope.Implementation_Project_2_li_5 = translation;
+        });
+        $translate('Implementation.Project_2.li_6').then(function (translation) {
+          $scope.Implementation_Project_2_li_6 = translation;
+        });
+
       });
       $translate.use($translate.proposedLanguage()).then(function () {});
 
