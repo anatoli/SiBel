@@ -35,13 +35,91 @@ angular.module('siBelApp')
     //
     // };
     $rootScope.$on('$translateChangeSuccess', function () {
-      // $translate('HOME').then(function (translation) {
-      //   $scope.HOME = translation;
-      // });
-      // $translate('FOO').then(function (translation) {
-      //   $scope.FOO = translation;
-      // });
+      $translate('Header.nav_1').then(function (translation) {
+        $scope.Header_nav_1 = translation;
+      });
+      $translate('Header.nav_1_1').then(function (translation) {
+        $scope.Header_nav_1_1 = translation;
+      });
+      $translate('Header.nav_1_2').then(function (translation) {
+        $scope.Header_nav_1_2 = translation;
+      });
+      $translate('Header.nav_1_3').then(function (translation) {
+        $scope.Header_nav_1_3 = translation;
+      });
+      $translate('Header.nav_1_4').then(function (translation) {
+        $scope.Header_nav_1_4 = translation;
+      });
+      $translate('Header.nav_1_5').then(function (translation) {
+        $scope.Header_nav_1_5 = translation;
+      });
+      $translate('Header.nav_2').then(function (translation) {
+        $scope.Header_nav_2 = translation;
+      });
+      $translate('Header.nav_2_1').then(function (translation) {
+        $scope.Header_nav_2_1 = translation;
+      });
+      $translate('Header.nav_2_1_1').then(function (translation) {
+        $scope.Header_nav_2_1_1 = translation;
+      });
+      $translate('Header.nav_2_1_2').then(function (translation) {
+        $scope.Header_nav_2_1_2 = translation;
+      });
+      $translate('Header.nav_2_1_3').then(function (translation) {
+        $scope.Header_nav_2_1_3 = translation;
+      });
+      $translate('Header.nav_2_2').then(function (translation) {
+        $scope.Header_nav_2_2 = translation;
+      });
+      $translate('Header.nav_2_2_1').then(function (translation) {
+        $scope.Header_nav_2_2_1 = translation;
+      });
+      $translate('Header.nav_2_2_2').then(function (translation) {
+        $scope.Header_nav_2_2_2 = translation;
+      });
+      $translate('Header.nav_2_2_3').then(function (translation) {
+        $scope.Header_nav_2_2_3 = translation;
+      });
+      $translate('Header.nav_2_3').then(function (translation) {
+        $scope.Header_nav_2_3 = translation;
+      });
+      $translate('Header.nav_2_3_1').then(function (translation) {
+        $scope.Header_nav_2_3_1 = translation;
+      });
+      $translate('Header.nav_2_3_2').then(function (translation) {
+        $scope.Header_nav_2_3_2 = translation;
+      });
+      $translate('Header.nav_2_3_3').then(function (translation) {
+        $scope.Header_nav_2_3_3 = translation;
+      });
+      $translate('Header.nav_2_4').then(function (translation) {
+        $scope.Header_nav_2_4 = translation;
+      });
+      $translate('Header.nav_3').then(function (translation) {
+        $scope.Header_nav_3 = translation;
+      });
+      $translate('Header.nav_4').then(function (translation) {
+        $scope.Header_nav_4 = translation;
+      });
+      $translate('Header.nav_4_1').then(function (translation) {
+        $scope.Header_nav_4_1 = translation;
+      });
+      $translate('Header.nav_4_2').then(function (translation) {
+        $scope.Header_nav_4_2 = translation;
+      });
+      $translate('Header.nav_4_3').then(function (translation) {
+        $scope.Header_nav_4_3 = translation;
+      });
+      $translate('Header.nav_4_4').then(function (translation) {
+        $scope.Header_nav_4_4 = translation;
+      });
+
+      $translate('Header.nav_5').then(function (translation) {
+        $scope.Header_nav_5 = translation;
+      });
     });
+    $translate.use($translate.proposedLanguage()).then(function () {});
+
 
     // $scope.Start = function(data){
     //

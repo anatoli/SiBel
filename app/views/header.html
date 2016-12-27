@@ -11,60 +11,62 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
       <li  class="dropdown"  ng-class="{'activeHeader' : tabActive=='root.company.about'||tabActive=='root.company.value'||tabActive=='root.company.team'||tabActive=='root.company.reviews'}">
-        <a class="navHover" href="">Компания</a>
+        <a class="navHover" href="">{{Header_nav_1 | translate}}</a>
         <ol class="dropdown-menu">
           <li><a href=""></a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.about'}" ng-click="stateGo('root.company.about')"><a href="">О компании</a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.value'}" ng-click="stateGo('root.company.value')"><a href="">Ценности</a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.team'}" ng-click="stateGo('root.company.team')"><a href="">Команда</a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.reviews'}" ng-click="stateGo('root.company.reviews')"><a href="">Отзывы</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.about'}" ng-click="stateGo('root.company.about')"><a href="">{{Header_nav_1_1 | translate}}</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.value'}" ng-click="stateGo('root.company.value')"><a href="">{{Header_nav_1_2 | translate}}</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.team'}" ng-click="stateGo('root.company.team')"><a href="">{{Header_nav_1_3 | translate}}</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.company.reviews'}" ng-click="stateGo('root.company.reviews')"><a href="">{{Header_nav_1_4 | translate}}</a></li>
         </ol>
       </li>
-      <li class="dropdown"  ng-class="{'activeHeader' : tabActive=='root.service.business'||tabActive=='root.service.mobile'||tabActive=='root.service.it'}">
-        <a class="navHover" href="">Решения и услуги</a>
+      <li class="dropdown"  ng-class="{'activeHeader' : tabActive=='root.service.business'||tabActive=='root.service.mobile'||tabActive=='root.service.it' ||
+       tabActive=='root.service.business.complex'||  tabActive=='root.service.business.automation'||  tabActive=='root.service.business.elDoc' || tabActive=='root.service.mobile.audit'|| tabActive=='root.service.mobile.cdr'||
+        tabActive=='root.service.mobile.session' || tabActive=='root.service.it.audit'|| tabActive=='root.service.it.infra'|| tabActive=='root.service.it.engineer' }">
+        <a class="navHover" href="">{{Header_nav_2 | translate}}</a>
         <ol class="dropdown-menu">
           <li><a href=""></a></li>
           <li style="min-width: 220px;" ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.business' ||  tabActive=='root.service.business.complex'||  tabActive=='root.service.business.automation'||  tabActive=='root.service.business.elDoc' }" ng-click="stateGo('root.service.business')">
-            <a href="">Программные решения ></a>
+            <a href="">{{Header_nav_2_1 | translate}} ></a>
             <ol class="classic submenu-ul">
-              <li ng-class="{'subActive': tabActive=='root.service.business.complex'}" ng-click="stateGo('root.service.business.complex')"><a href="">Комплексные решения</a></li>
-              <li ng-class="{'subActive': tabActive=='root.service.business.automation'}" ng-click="stateGo('root.service.business.automation')"><a href="">Автоматизация процессов организации</a></li>
-              <li ng-class="{'subActive': tabActive=='root.service.business.elDoc'}" ng-click="stateGo('root.service.business.elDoc')"><a href="">Электронный документооборот</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.business.complex'}" ng-click="stateGo('root.service.business.complex')"><a href="">{{Header_nav_2_1_1 | translate}}</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.business.automation'}" ng-click="stateGo('root.service.business.automation')"><a href="">{{Header_nav_2_1_2 | translate}}</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.business.elDoc'}" ng-click="stateGo('root.service.business.elDoc')"><a href="">{{Header_nav_2_1_3 | translate}}</a></li>
             </ol>
           </li>
           <li style="min-width: 190px;  margin-left: 10px;   margin-right: 10px;" ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.mobile'|| tabActive=='root.service.mobile.audit'|| tabActive=='root.service.mobile.cdr'|| tabActive=='root.service.mobile.session'}" ng-click="stateGo('root.service.mobile')">
-            <a href="">Телекоммуникации ></a>
+            <a href="">{{Header_nav_2_2 | translate}} ></a>
             <ol class="classic submenu-ul">
-              <li ng-class="{'subActive': tabActive=='root.service.mobile.cdr'}" ng-click="stateGo('root.service.mobile.cdr')"><a href="">Длительное хранение CDR</a></li>
-              <li ng-class="{'subActive': tabActive=='root.service.mobile.session'}" ng-click="stateGo('root.service.mobile.session')"><a href="">Агрегация длинных сессий</a></li>
-              <li ng-class="{'subActive': tabActive=='root.service.mobile.audit'}" ng-click="stateGo('root.service.mobile.audit')"><a href="">Аудит и контроль полноты данных</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.mobile.cdr'}" ng-click="stateGo('root.service.mobile.cdr')"><a href="">{{Header_nav_2_2_1 | translate}}</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.mobile.session'}" ng-click="stateGo('root.service.mobile.session')"><a href="">{{Header_nav_2_2_2 | translate}}</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.mobile.audit'}" ng-click="stateGo('root.service.mobile.audit')"><a href="">{{Header_nav_2_2_3 | translate}}</a></li>
             </ol>
           </li>
           <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.it' || tabActive=='root.service.it.audit'|| tabActive=='root.service.it.infra'|| tabActive=='root.service.it.engineer'}" ng-click="stateGo('root.service.it')">
-            <a href="">ИТ-услуги ></a>
+            <a href="">{{Header_nav_2_3 | translate}} ></a>
             <ol class="classic submenu-ul">
-              <li ng-class="{'subActive': tabActive=='root.service.it.audit'}" ng-click="stateGo('root.service.it.audit')"><a href="">ИТ-аудит</a></li>
-              <li ng-class="{'subActive': tabActive=='root.service.it.infra'}" ng-click="stateGo('root.service.it.infra')"><a href="">ИТ-инфраструктура</a></li>
-              <li ng-class="{'subActive': tabActive=='root.service.it.engineer'}" ng-click="stateGo('root.service.it.engineer')"><a href="">Инженерная инфраструктура</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.it.audit'}" ng-click="stateGo('root.service.it.audit')"><a href="">{{Header_nav_2_3_1 | translate}}</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.it.infra'}" ng-click="stateGo('root.service.it.infra')"><a href="">{{Header_nav_2_3_2 | translate}}</a></li>
+              <li ng-class="{'subActive': tabActive=='root.service.it.engineer'}" ng-click="stateGo('root.service.it.engineer')"><a href="">{{Header_nav_2_3_3 | translate}}</a></li>
             </ol>
           </li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.implementation'}" ng-click="stateGo('root.service.implementation')"><a href="">Реализация</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.service.implementation'}" ng-click="stateGo('root.service.implementation')"><a href="">{{Header_nav_2_4 | translate}}</a></li>
         </ol>
       </li>
       <li ng-click="stateGo('root.cases')" ng-class="{'activeHeader' : tabActive=='root.cases'}">
-        <a class="navHover" href="">Кейсы</a>
+        <a class="navHover" href="">{{Header_nav_3 | translate}}</a>
       </li>
       <li class="dropdown" ng-class="{'activeHeader' : tabActive=='root.benefits.employees'||tabActive=='root.benefits.innovations'||tabActive=='root.benefits.standards'||tabActive=='root.benefits.guarantees'}">
-        <a class="navHover" href="">Преимущества</a>
+        <a class="navHover" href="">{{Header_nav_4 | translate}}</a>
         <ol class="dropdown-menu">
           <li><a href=""></a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.employees'}" ng-click="stateGo('root.benefits.employees')"><a href="">Сотрудники</a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.innovations'}" ng-click="stateGo('root.benefits.innovations')"><a href="">Инновации</a></li>
-          <li style="min-width: 270px" ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.standards'}" ng-click="stateGo('root.benefits.standards')"><a href="">Бизнес-процессы и стандарты</a></li>
-          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.guarantees'}" ng-click="stateGo('root.benefits.guarantees')"><a href="">Гарантии</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.employees'}" ng-click="stateGo('root.benefits.employees')"><a href="">{{Header_nav_4_1 | translate}}</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.innovations'}" ng-click="stateGo('root.benefits.innovations')"><a href="">{{Header_nav_4_2 | translate}}</a></li>
+          <li style="min-width: 270px" ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.standards'}" ng-click="stateGo('root.benefits.standards')"><a href="">{{Header_nav_4_3 | translate}}</a></li>
+          <li ng-class="{'activeHeaderSubMenu' : tabActive=='root.benefits.guarantees'}" ng-click="stateGo('root.benefits.guarantees')"><a href="">{{Header_nav_4_4 | translate}}</a></li>
         </ol>
       </li>
-      <li ng-click="stateGo('root.contacts')" class="" ng-class="{'activeHeader' : tabActive=='root.contacts'}"><a class="navHover" href="">Контакты</a></li>
+      <li ng-click="stateGo('root.contacts')" class="" ng-class="{'activeHeader' : tabActive=='root.contacts'}"><a class="navHover" href="">{{Header_nav_5 | translate}}</a></li>
     </ul>
     <div class=" row col-ld-3 col-md-2  col-sm-3  col-xs-3 langRow col-xxs pull-right ">
       <ul class="lang-ul pointer ">

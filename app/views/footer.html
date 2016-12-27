@@ -8,14 +8,14 @@
         <div class=" col-xxs col-md-2 col-sm-2 col-xs-2 col-footer footer-company">
           <div class="bottom-menu">
             <div ng-click="Go('root.company')" class="footer-block-header">
-              КОМПАНИЯ
+              {{Footer_nav_1 | translate}}
             </div>
             <ul class="ul-footer">
-              <li ng-click="Go('root.company.about')"><a class="menu-link" href="">О компании</a></li>
-              <li ng-click="Go('root.company.value')"><a class="menu-link" href="">Ценности</a></li>
-              <li ng-click="Go('root.company.team')"><a class="menu-link" href="">Команда</a></li>
-              <li ng-click="Go('root.company.about')"><a class="menu-link" href="">Вакансии</a></li>
-              <li ng-click="Go('root.company.reviews')"><a class="menu-link" href="">Отзывы</a></li>
+              <li ng-click="Go('root.company.about')"><a class="menu-link" href="">{{Header_nav_1_1 | translate}}</a></li>
+              <li ng-click="Go('root.company.value')"><a class="menu-link" href="">{{Header_nav_1_2 | translate}}</a></li>
+              <li ng-click="Go('root.company.team')"><a class="menu-link" href="">{{Header_nav_1_3 | translate}}</a></li>
+              <li ng-click="openModal('summary')"><a class="menu-link" href="">{{Header_nav_1_4 | translate}}</a></li>
+              <li ng-click="Go('root.company.reviews')"><a class="menu-link" href="">{{Header_nav_1_5 | translate}}</a></li>
               <!--<li ng-click="Go('root.company.about')"><a class="menu-link" href="">Вендоры</a></li>-->
             </ul>
           </div>
@@ -23,20 +23,20 @@
         <div class=" col-xxs col-md-2 col-sm-2 col-xs-2 col-footer">
           <div class="bottom-menu">
             <div class="footer-block-header">
-             РЕШЕНИЯ И УСЛУГИ
+              {{Footer_nav_2 | translate}}
             </div>
             <ul class="ul-footer">
-              <li ng-click="Go('root.service.business')"><a class="menu-link" href="">Программные решения</a></li>
-              <li ng-click="Go('root.service.mobile')"><a class="menu-link" href="">Телекоммуникации</a></li>
-              <li ng-click="Go('root.service.it')"><a class="menu-link" href="">ИТ-услуги</a></li>
-              <li ng-click="Go('root.service.implementation')"><a class="menu-link" href="">Реализации</a></li>
+              <li ng-click="Go('root.service.business')"><a class="menu-link" href="">{{Header_nav_2_1 | translate}}</a></li>
+              <li ng-click="Go('root.service.mobile')"><a class="menu-link" href="">{{Header_nav_2_2 | translate}}</a></li>
+              <li ng-click="Go('root.service.it')"><a class="menu-link" href="">{{Header_nav_2_3 | translate}}</a></li>
+              <li ng-click="Go('root.service.implementation')"><a class="menu-link" href="">{{Header_nav_2_4 | translate}}</a></li>
             </ul>
           </div>
         </div>
         <div class=" col-xxs col-md-2 col-sm-2 col-xs-1 col-footer ">
           <div class="bottom-menu">
             <div class="footer-block-header"  ng-click="Go('root.cases')">
-             КЕЙСЫ
+              {{Footer_nav_3 | translate}}
             </div>
             <!--<ul class="ul-footer">-->
               <!--<li><a class="menu-link" href="">Разработки</a></li>-->
@@ -48,21 +48,21 @@
         <div class=" col-xxs col-md-2 col-sm-2 col-xs-2 col-footer">
           <div class="bottom-menu">
             <div class="footer-block-header">
-              ПРЕИМУЩЕСТВА
+              {{Footer_nav_4 | translate}}
             </div>
             <ul class="ul-footer">
-              <li ng-click="Go('root.benefits.employees')"><a class="menu-link" href="">Сотрудники</a></li>
+              <li ng-click="Go('root.benefits.employees')"><a class="menu-link" href="">{{Header_nav_4_1 | translate}}</a></li>
               <!--<li><a class="menu-link" href="">Стандарты</a></li>-->
-              <li ng-click="Go('root.benefits.innovations')"><a class="menu-link" href="">Бизнес-процессы и стандарты </a></li>
-              <li ng-click="Go('root.benefits.standards')"><a class="menu-link" href="">Инновации</a></li>
-              <li ng-click="Go('root.benefits.guarantees')"><a class="menu-link" href="">Гарантии</a></li>
+              <li ng-click="Go('root.benefits.innovations')"><a class="menu-link" href="">{{Header_nav_4_2 | translate}} </a></li>
+              <li ng-click="Go('root.benefits.standards')"><a class="menu-link" href="">{{Header_nav_4_3 | translate}}</a></li>
+              <li ng-click="Go('root.benefits.guarantees')"><a class="menu-link" href="">{{Header_nav_4_4 | translate}}</a></li>
             </ul>
           </div>
         </div>
         <div class=" col-xxs col-md-2 col-sm-2 col-xs-1 col-footer">
           <div class="bottom-menu">
             <div ng-click="Go('root.contacts')" class="footer-block-header">
-              КОНТАКТЫ
+              {{Footer_nav_5 | translate}}
             </div>
             <ul class="ul-footer">
             </ul>

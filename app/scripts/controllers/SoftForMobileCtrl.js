@@ -1,38 +1,270 @@
 /**
  * Created by Anatoliy Arinovich on 18.11.2016.
  */
-/**
- * Created by Anatoliy Arinovich on 18.11.2016.
- */
 'use strict';
 angular.module('siBelApp')
   .controller('SoftForMobileCtrl',[ '$scope', '$rootScope', '$translate','$location', '$state', '$uibModal',
     function ($scope, $rootScope, $translate, $location, $state, $uibModal) {
     $rootScope.$on('$translateChangeSuccess', function () {
-      $translate('Error.Title_1').then(function (translation) {
-        $scope.Error_Title_1 = translation;
+
+      ////// Slider /////////
+      $translate('SLIDER.BTN_2').then(function (translation) {
+        $scope.SLIDER_BTN_2 = translation;
       });
-      $translate('Error.Title_2').then(function (translation) {
-        $scope.Error_Title_2 = translation;
+      $translate('Mobile.Slider.Title').then(function (translation) {
+        $scope.Mobile_Slider_Title = translation;
       });
-      $translate('Error.Title_Color').then(function (translation) {
-        $scope.Error_Title_Color = translation;
+      $translate('Mobile.Slider.Description').then(function (translation) {
+        $scope.Mobile_Slider_Description = translation;
       });
-      $translate('Error.Descriptions_1').then(function (translation) {
-        $scope.Error_Descriptions_1 = translation;
+
+      ///////// icons /////////
+      $translate('Mobile.Icon.Title').then(function (translation) {
+        $scope.Mobile_Icon_Title = translation;
       });
-      $translate('Error.Descriptions_2').then(function (translation) {
-        $scope.Error_Descriptions_2 = translation;
+      $translate('Mobile.Icon.icon_1_title').then(function (translation) {
+        $scope.Mobile_Icon_icon_1_title = translation;
       });
-      $translate('Error.Btn').then(function (translation) {
-        $scope.Error_Btn = translation;
+      $translate('Mobile.Icon.icon_1_description').then(function (translation) {
+        $scope.Mobile_Icon_icon_1_description = translation;
       });
-      $translate('Error.Address_1').then(function (translation) {
-        $scope.Error_Address_1 = translation;
+      $translate('Mobile.Icon.icon_1_btn').then(function (translation) {
+        $scope.Mobile_Icon_icon_1_btn = translation;
       });
-      $translate('Error.Address_2').then(function (translation) {
-        $scope.Error_Address_2 = translation;
+      $translate('Mobile.Icon.icon_2_title').then(function (translation) {
+        $scope.Mobile_Icon_icon_2_title = translation;
       });
+      $translate('Mobile.Icon.icon_2_description').then(function (translation) {
+        $scope.Mobile_Icon_icon_2_description = translation;
+      });
+      $translate('Mobile.Icon.icon_2_btn').then(function (translation) {
+        $scope.Mobile_Icon_icon_2_btn = translation;
+      });
+      $translate('Mobile.Icon.icon_3_title').then(function (translation) {
+        $scope.Mobile_Icon_icon_3_title = translation;
+      });
+      $translate('Mobile.Icon.icon_3_description').then(function (translation) {
+        $scope.Mobile_Icon_icon_3_description = translation;
+      });
+      $translate('Mobile.Icon.icon_3_btn').then(function (translation) {
+        $scope.Mobile_Icon_icon_3_btn = translation;
+      });
+
+      ////// audit //////////
+      $translate('Mobile.Audit.Blue.Title').then(function (translation) {
+        $scope.Mobile_Audit_Blue_Title = translation;
+      });
+      $translate('Mobile.Audit.Blue.Description_1').then(function (translation) {
+        $scope.Mobile_Audit_Blue_Description_1 = translation;
+      });
+      $translate('Mobile.Audit.Blue.Description_2').then(function (translation) {
+        $scope.Mobile_Audit_Blue_Description_2 = translation;
+      });
+      $translate('Mobile.Audit.Blue.Description_3').then(function (translation) {
+        $scope.Mobile_Audit_Blue_Description_3 = translation;
+      });
+
+      $translate('Mobile.Audit.White.Title').then(function (translation) {
+        $scope.Mobile_Audit_White_Title = translation;
+      });
+      $translate('Mobile.Audit.White.Description_1').then(function (translation) {
+        $scope.Mobile_Audit_White_Description_1 = translation;
+      });
+      $translate('Mobile.Audit.White.Description_2_1').then(function (translation) {
+        $scope.Mobile_Audit_White_Description_2_1 = translation;
+      });
+      $translate('Mobile.Audit.White.Description_2_2').then(function (translation) {
+        $scope.Mobile_Audit_White_Description_2_2 = translation;
+      });
+
+      ////// Cdr //////////
+      $translate('Mobile.Cdr.Blue.Title_1').then(function (translation) {
+        $scope.Mobile_Cdr_Blue_Title_1 = translation;
+      });
+      $translate('Mobile.Cdr.Blue.Title_2').then(function (translation) {
+        $scope.Mobile_Cdr_Blue_Title_2 = translation;
+      });
+      $translate('Mobile.Cdr.Blue.Description_1').then(function (translation) {
+        $scope.Mobile_Cdr_Blue_Description_1 = translation;
+      });
+      $translate('Mobile.Cdr.White.Description_1_1').then(function (translation) {
+        $scope.Mobile_Cdr_White_Description_1_1 = translation;
+      });
+      $translate('Mobile.Cdr.White.Description_1_2').then(function (translation) {
+        $scope.Mobile_Cdr_White_Description_1_2 = translation;
+      });
+      $translate('Mobile.Cdr.White.li_1').then(function (translation) {
+        $scope.Mobile_Cdr_White_li_1 = translation;
+      });
+      $translate('Mobile.Cdr.White.li_2').then(function (translation) {
+        $scope.Mobile_Cdr_White_li_2= translation;
+      });
+      $translate('Mobile.Cdr.White.li_3').then(function (translation) {
+        $scope.Mobile_Cdr_White_li_3 = translation;
+      });
+      $translate('Mobile.Cdr.White.li_4').then(function (translation) {
+        $scope.Mobile_Cdr_White_li_4 = translation;
+      });
+
+        ////// Session //////////
+      $translate('Mobile.Session.Blue.Title').then(function (translation) {
+        $scope.Mobile_Session_Blue_Title = translation;
+      });
+      $translate('Mobile.Session.Blue.Description_2').then(function (translation) {
+        $scope.Mobile_Session_Blue_Description_2 = translation;
+      });
+      $translate('Mobile.Session.Blue.Description_1').then(function (translation) {
+        $scope.Mobile_Session_Blue_Description_1 = translation;
+      });
+      $translate('Mobile.Session.White.Description_1_1').then(function (translation) {
+        $scope.Mobile_Session_White_Description_1_1 = translation;
+      });
+      $translate('Mobile.Session.White.Description_1_2').then(function (translation) {
+        $scope.Mobile_Session_White_Description_1_2 = translation;
+      });
+      $translate('Mobile.Session.White.Description_1_3').then(function (translation) {
+        $scope.Mobile_Session_White_Description_1_3 = translation;
+      });
+      $translate('Mobile.Session.White.Description_2').then(function (translation) {
+        $scope.Mobile_Session_White_Description_2 = translation;
+      });
+
+
+      /////// accordion /////////
+      $translate('Mobile.Audit.Accordion.Title').then(function (translation) {
+        $scope.Mobile_Audit_Accordion_Title = translation;
+      });
+      $translate('Mobile.Cdr.Accordion.Title').then(function (translation) {
+        $scope.Mobile_Cdr_Accordion_Title = translation;
+      });
+      $translate('Mobile.Session.Accordion.Title').then(function (translation) {
+        $scope.Mobile_Session_Accordion_Title = translation;
+      });
+      ////// All  ////////////////
+
+      $translate('Ideas.Btn_1').then(function (translation) {
+        $scope.Ideas_Btn_1 = translation;
+      });
+      $translate('Implementation.All.Title_1').then(function (translation) {
+        $scope.Implementation_All_Title_1 = translation;
+      });
+      $translate('Implementation.All.Title_2').then(function (translation) {
+        $scope.Implementation_All_Title_2 = translation;
+      });
+      $translate('Implementation.All.Title_3_1').then(function (translation) {
+        $scope.Implementation_All_Title_3_1 = translation;
+      });
+      $translate('Implementation.All.Title_3_2').then(function (translation) {
+        $scope.Implementation_All_Title_3_2 = translation;
+      });
+      $translate('Implementation.All.Title_4').then(function (translation) {
+        $scope.Implementation_All_Title_4 = translation;
+      });
+      $translate('Implementation.All.Title_5').then(function (translation) {
+        $scope.Implementation_All_Title_5 = translation;
+      });
+
+      //////// Project_7 ///////
+      $translate('Implementation.Project_7.Title_1').then(function (translation) {
+        $scope.Implementation_Project_7_Title_1 = translation;
+      });
+      $translate('Implementation.Project_7.Client').then(function (translation) {
+        $scope.Implementation_Project_7_Client = translation;
+      });
+      $translate('Implementation.Project_7.Description_1').then(function (translation) {
+        $scope.Implementation_Project_7_Description_1 = translation;
+      });
+      $translate('Implementation.Project_7.Description_2').then(function (translation) {
+        $scope.Implementation_Project_7_Description_2 = translation;
+      });
+      $translate('Implementation.Project_7.Description_3').then(function (translation) {
+        $scope.Implementation_Project_7_Description_3 = translation;
+      });
+      $translate('Implementation.Project_7.Description_4').then(function (translation) {
+        $scope.Implementation_Project_7_Description_4 = translation;
+      });
+      $translate('Implementation.Project_7.li_1').then(function (translation) {
+        $scope.Implementation_Project_7_li_1 = translation;
+      });
+      $translate('Implementation.Project_7.li_2').then(function (translation) {
+        $scope.Implementation_Project_7_li_2 = translation;
+      });
+      $translate('Implementation.Project_7.li_3').then(function (translation) {
+        $scope.Implementation_Project_7_li_3 = translation;
+      });
+      $translate('Implementation.Project_7.li_4').then(function (translation) {
+        $scope.Implementation_Project_7_li_4 = translation;
+      });
+      $translate('IT.Implementation.OrangeTitle_1').then(function (translation) {
+        $scope.IT_Implementation_OrangeTitle_1 = translation;
+      });
+      //////// Project_5 ///////
+      $translate('Implementation.Project_5.Title_1').then(function (translation) {
+        $scope.Implementation_Project_5_Title_1 = translation;
+      });
+      $translate('Implementation.Project_5.Client').then(function (translation) {
+        $scope.Implementation_Project_5_Client = translation;
+      });
+      $translate('Implementation.Project_5.Description_1').then(function (translation) {
+        $scope.Implementation_Project_5_Description_1 = translation;
+      });
+      $translate('Implementation.Project_5.Description_2').then(function (translation) {
+        $scope.Implementation_Project_5_Description_2 = translation;
+      });
+      $translate('Implementation.Project_5.Description_3').then(function (translation) {
+        $scope.Implementation_Project_5_Description_3 = translation;
+      });
+      $translate('Implementation.Project_5.Description_4').then(function (translation) {
+        $scope.Implementation_Project_5_Description_4 = translation;
+      });
+      $translate('Implementation.Project_5.li_1').then(function (translation) {
+        $scope.Implementation_Project_5_li_1 = translation;
+      });
+      $translate('Implementation.Project_5.li_2').then(function (translation) {
+        $scope.Implementation_Project_5_li_2 = translation;
+      });
+      $translate('Implementation.Project_5.li_3').then(function (translation) {
+        $scope.Implementation_Project_5_li_3 = translation;
+      });
+      $translate('Implementation.Project_5.li_4').then(function (translation) {
+        $scope.Implementation_Project_5_li_4 = translation;
+      });
+      //////// Project_6 ///////
+      $translate('Implementation.Project_6.Title_1').then(function (translation) {
+        $scope.Implementation_Project_6_Title_1 = translation;
+      });
+      $translate('Implementation.Project_6.Client').then(function (translation) {
+        $scope.Implementation_Project_6_Client = translation;
+      });
+      $translate('Implementation.Project_6.Description_1').then(function (translation) {
+        $scope.Implementation_Project_6_Description_1 = translation;
+      });
+      $translate('Implementation.Project_6.Description_2').then(function (translation) {
+        $scope.Implementation_Project_6_Description_2 = translation;
+      });
+      $translate('Implementation.Project_6.Description_3').then(function (translation) {
+        $scope.Implementation_Project_6_Description_3 = translation;
+      });
+      $translate('Implementation.Project_6.Description_4').then(function (translation) {
+        $scope.Implementation_Project_6_Description_4 = translation;
+      });
+      $translate('Implementation.Project_6.li_1').then(function (translation) {
+        $scope.Implementation_Project_6_li_1 = translation;
+      });
+      $translate('Implementation.Project_6.li_2').then(function (translation) {
+        $scope.Implementation_Project_6_li_2 = translation;
+      });
+      $translate('Implementation.Project_6.li_3').then(function (translation) {
+        $scope.Implementation_Project_6_li_3 = translation;
+      });
+      $translate('Implementation.Project_6.li_4').then(function (translation) {
+        $scope.Implementation_Project_6_li_4 = translation;
+      });
+      $translate('Implementation.Project_6.li_5').then(function (translation) {
+        $scope.Implementation_Project_6_li_5 = translation;
+      });
+
+
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
 

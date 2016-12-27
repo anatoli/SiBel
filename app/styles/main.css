@@ -289,12 +289,14 @@ ul li {
   color: #ed5623;
   border: 1px solid #ed5623 ;
   border-radius: 0;
+
 }
 .btn-orange-ico{
   color: #ed5623;
   border: 1px solid #ed5623 ;
   border-radius: 0;
 }
+
 .btn-orange-ico:hover, .btn-orange-ico:focus {
   color: #fff;
   border-radius: 0;
