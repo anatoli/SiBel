@@ -17,15 +17,15 @@ angular.module('siBelApp')
       $translate('SLIDER.BTN_2').then(function (translation) {
         $scope.SLIDER_BTN_2 = translation;
       });
-
+      var lang = $translate.proposedLanguage();
+      $http.get('cases_'+lang+'.json').then(function (res) {
+        $scope.items = res.data;
+        console.log($scope.items);
+      });
 
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
 
-    $http.get('cases.json').then(function (res) {
-        $scope.items = res.data;
-        console.log($scope.items);
-    });
     $scope.Active = function (data) {
       $scope.active = data.id;
       $scope.details = data;
@@ -50,4 +50,5 @@ angular.module('siBelApp')
         controller: 'EmailCtrl'
       });
     };
+
   }]);

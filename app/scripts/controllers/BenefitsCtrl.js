@@ -67,6 +67,12 @@ angular.module('siBelApp')
       $translate('Benefits.Employees.Blue.Description_2').then(function (translation) {
         $scope.Benefits_Employees_Blue_Description_2 = translation;
       });
+      $translate('Benefits.Employees.Blue.Description_2_2').then(function (translation) {
+        $scope.Benefits_Employees_Blue_Description_2_2 = translation;
+      });
+      $translate('Benefits.Employees.Blue.Description_2_3').then(function (translation) {
+        $scope.Benefits_Employees_Blue_Description_2_3 = translation;
+      });
       $translate('Benefits.Employees.Blue.Description_3').then(function (translation) {
         $scope.Benefits_Employees_Blue_Description_3 = translation;
       });
@@ -220,16 +226,8 @@ angular.module('siBelApp')
             };
           }
         },
-        controller: function ($scope, $uibModalInstance, dataModal) {
-           if(dataModal.lang === 'by'|| dataModal.lang ==='ru'){
-             $scope.name_src = 'images/certificate_ru.png';
-           }else{
-             $scope.name_src = 'images/certificate_en.png';
-           }
-          $scope.cancel = function () {
-            $uibModalInstance.dismiss('cancel');
-          };
-        }
+        controller: 'CertificateCtrl',
       });
     };
   }]);
+

@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title":"IT services 24/7/365",
+    "src":"case_calendar.jpg",
+    "text":"Many services are commonly perceived by consumers as “always available”. All-day shops and all-night drugstores, cab services and ambulance, railway and airline services are working 24 hours a day, 7 days a week, without holidays and weekends. Such a working schedule is in demand and is implemented by service providers for the reasons of effectiveness, security and reliability of business processes. The 24/7/365 formula has been used by SiBel company for providing IT services since 2013. A long-term agreement with FLLC “Kapsch Telematic Services”, a BelToll system operator, set conditions of delivering services and maintaining information systems (telecommunications, server equipment, operating systems, etc.) in 24/7 mode.",
+    "status":"Project "
+  },{
+  "id": 2,
+  "title":"Fraud protection for telecommunication operators ",
+  "src":"case_manMoney.jpg",
+  "text":" Illegal schemes of voice messaging including those for outgoing international traffic are becoming more and more disposable for common users due to open access on the Internet, on theme-based web sites, in social media and in special equipment shops. International voice traffic passed over telecommunication operators’ switchboards or the use of Voice over IP service in a manner not sanctioned by law result in financial losses of mobile operators and penalties for those who try to reduce their expenses or gain profit in such a manner. The common measure against this type of fraud is deployment and implementation of analytical violation detection systems. Such systems are integrated with clearing systems, network management systems and other telecommunication operator’s systems and let detect wrongful acts and block the initiator. In accordance with an agreement with НР Enterprises CIS, an international company specializing in the sphere of business processes automation including services for mobile operators, SiBel developed and implemented traffic monitoring software solutions for mobile operators, integrated HP Revenue Leakage Control system and HP Fraud Management System for the biggest CIS mobile operators.",
+  "status":"Project "
+},{
+  "id": 3,
+  "title":"Training users to operate unified information system (UIS) of notariat ",
+  "src":"case_PC.jpg",
+  "text":" Organization of trainings in unified information system operation for client’s specialists solves many tasks. SiBel’s experience in implementing automated information system of notariat of Belarus shows that efforts of specialists to tweak the system and adapt its functional to user needs do not guarantee successful operation. The stage of training users to operate the system’s functions serves to reduce the time required for familiarization with the system. SiBel’s specialists conducted training courses hosted by BelHard’s IT academy training centre to teach notaries to operate UIS of notariat. The work was carried out in groups of 8–11 people, which allowed to establish team work combined with an individual approach to each trainee. The combination of theoretical classes on system operation and study of concrete cases from the notaries’ practice reduced the level of discomfort caused by the need to change the habitual way of carrying out everyday duties: inputting documents into the system, document processing, various types of analytical work conducted by system means, report generation, etc. Such methods as testing, questionnaire survey and certification were used to evaluate the level of knowledge acquired by users and their readiness to operate UIS on their own within their functions and authorities.",
+  "status":"Project "
+},{
+  "id": 4,
+  "title":"DPC comprehensive maintenance ",
+  "src":"case_switch.jpg",
+  "text":" Modern data processing centres (DPC) place especially high demands on engineering infrastructure maintenance that enables the work of computer equipment and data storage systems. If DPC stops working even for a few minutes, it may cause significant material losses and damage the functioning of company’s business processes, as statistics and manifold examples from worldwide practice show. SiBel’s system integration department provides comprehensive DPC maintenance services. FLLC “Kapsch Telematic Services” is our long-term client for providing IT infrastructure services and our cooperation started at the stage of DPC design and construction, which allowed taking into account all the object’s specifics. SiBel monitoring tools make it possible to control remotely the basic parameters of DPC work in real time.",
+  "status":"Project "
+},{
+  "id": 5,
+  "title":"“Shturman”: telematic service ",
+  "src":"case_shturman.jpg",
+  "text":"Visual disturbances make people dependent on others for help. Developing solutions in the sphere of mobile devices made it possible to render help “from a distance”. SiBel company is developing hardware and software system that allows to transmit video in real time and to provide connection between visually impaired people and people ready to provide assistance through an operator. We are sure that “Shturman” will help people with special needs to broaden the range of activities they perform without being accompanied and enhance communication possibilities of visually challenged people. SiBel team is ready to promote the development of barrier-free environment and social integration of people with disabilities. The use of open source software allows to avoid the purchase of expensive licenses and makes the service available for general use. There are no other solutions of the kind on CIS territory.",
+  "status":" Idea"
+},{
+  "id": 6,
+  "title":"Interaction: UIS and external systems ",
+  "src":"case_train.jpg",
+  "text":"Ensuring interaction between UIS and other information systems for effective business process to interact with: • State Information Resources (SIR) 'population register'; • GAD 'information objects\" passport \"automated system; • SIR \"Unified State Register of Legal Entities and Individual Entrepreneurs\"; • SIR \"State register of immovable property, rights and deals with it\"; • SIR \"State information resource on securities, rights to retention of title clauses which are limited\"; SIR \"Database automated information system\" of Traffic Center; •  SIR \"State Register of payers (other obliged persons)\"; • DFM system (creating, sending and receiving documents receipt, registration and storage of documents and receipts); • MTL system; • UIS VIP; • database of disabled persons; • Database of the Supreme Court obliged persons; • Database executive committees, the guardianship authorities (Department of Education); The Belarusian Chamber of Notaries external portal.  ",
+  "status":"Project"
+}
+]

@@ -3,7 +3,9 @@ ul.orange-marker span{
   margin-left: 5px;
 }
 ul.orange-marker li{
-  color: #ed5623;;
+  color: #ed5623;
+  display: list-item;
+  list-style-type: disc;
 }
 .goal-title{
   font-size: 30px;
@@ -260,10 +262,10 @@ background-color: rgba(255, 255, 255, 0.78);
 .hover-1{
   display: none;
 }
-.grey-block:hover .hover-1{
+.grey-block:hover .hover-1,.grey-block:focus .hover-1{
   display: block;
 }
-.grey-block:hover .none-hover-1{
+.grey-block:hover .none-hover-1, .grey-block:focus .none-hover-1{
   display: none;
 }
 
@@ -273,10 +275,10 @@ background-color: rgba(255, 255, 255, 0.78);
 .hover-2{
   display: none;
 }
-.grey-block:hover .hover-2{
+.grey-block:hover .hover-2,.grey-block:focus .hover-2{
   display: block;
 }
-.grey-block:hover .none-hover-2{
+.grey-block:hover .none-hover-2,.grey-block:focus .none-hover-2{
   display: none;
 }
 .none-hover-3{
@@ -285,10 +287,10 @@ background-color: rgba(255, 255, 255, 0.78);
 .hover-3{
   display: none;
 }
-.grey-block:hover .hover-3{
+.grey-block:hover .hover-3,.grey-block:focus .hover-3{
   display: block;
 }
-.grey-block:hover .none-hover-3{
+.grey-block:hover .none-hover-3,.grey-block:focus .none-hover-3{
   display: none;
 }
 .none-hover-4{
@@ -297,10 +299,10 @@ background-color: rgba(255, 255, 255, 0.78);
 .hover-4{
   display: none;
 }
-.grey-block:hover .hover-4{
+.grey-block:hover .hover-4, .grey-block:focus .hover-4{
   display: block;
 }
-.grey-block:hover .none-hover-4{
+.grey-block:hover .none-hover-4, .grey-block:focus .none-hover-4{
   display: none;
 }
 .none-hover-5{
@@ -309,10 +311,10 @@ background-color: rgba(255, 255, 255, 0.78);
 .hover-5{
   display: none;
 }
-.grey-block:hover .hover-5{
+.grey-block:hover .hover-5, .grey-block:focus .hover-5{
   display: block;
 }
-.grey-block:hover .none-hover-5{
+.grey-block:hover .none-hover-5, .grey-block:focus .none-hover-5{
   display: none;
 }
 .none-hover-6{
@@ -321,9 +323,9 @@ background-color: rgba(255, 255, 255, 0.78);
 .hover-6{
   display: none;
 }
-.grey-block:hover .hover-6{
+.grey-block:hover .hover-6, .grey-block:focus .hover-6{
   display: block;
 }
-.grey-block:hover .none-hover-6{
+.grey-block:hover .none-hover-6, .grey-block:focus .none-hover-6{
   display: none;
 }

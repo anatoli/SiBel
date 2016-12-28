@@ -75,7 +75,7 @@ body{
   padding: 2% 0 !important;
   font-family: SegoeUIRegular;
   max-width: 1440px;
-  min-width: 768px;
+  min-width: 700px;
 }
 .form-control:focus {
  border-color: RGBA(255,255,255,0.4) ;
@@ -808,7 +808,7 @@ ul li {
 
 .coupon-block .coupon-text p{
   font-size: 18px;
-  font-family: SegoeUI;
+  font-family: SegoeUIRegular;
   line-height: 1;
   margin: 0px 0 0;
   padding: 6px;

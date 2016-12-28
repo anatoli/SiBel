@@ -51,3 +51,23 @@ footer {
 footer .row{
   width: 100%;
 }
+.footer-none{
+  display: block;
+}
+.copy-footer{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .footer-none{
+    display: none;
+  }
+  .copy-footer{
+    display: block;
+  }
+  .padding-icon {
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 8%;
+    padding: 1% 0;
+  }
+}

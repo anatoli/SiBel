@@ -15,6 +15,16 @@ angular.module('siBelApp')
     '$location',
     function ($scope, $uibModal, $state, $translate, $rootScope) {
       $rootScope.$on('$translateChangeSuccess', function () {
+        /////// slider //////////
+        $translate('Implementation.Slider.Title').then(function (translation) {
+          $scope.Implementation_Slider_Title = translation;
+        });
+        $translate('Implementation.Slider.Description').then(function (translation) {
+          $scope.Implementation_Slider_Description = translation;
+        });
+        $translate('SLIDER.BTN_2').then(function (translation) {
+          $scope.SLIDER_BTN_2 = translation;
+        });
 
         /////// filter  //////////////
         $translate('Implementation.Filter_btn_1').then(function (translation) {
@@ -376,8 +386,6 @@ angular.module('siBelApp')
       });
       $translate.use($translate.proposedLanguage()).then(function () {});
 
-
-
       // function iconActive() {
       //   var arr = $location.$$path.split('/');
       //   var n = arr.length-1;
@@ -404,6 +412,8 @@ angular.module('siBelApp')
       };
       $scope.state = 'all';
 
+
+
       $scope.Filter = function (data) {
         if( $scope.state === data){
           $scope.state = 'all';
@@ -411,6 +421,10 @@ angular.module('siBelApp')
           $scope.state = data;
         }
       };
+
+      if($state.params.param === 'business'){
+        $scope.Filter($state.params.param);
+      }
 
       $scope.DetailsOpen = function (data) {
         $scope.first= false;
