@@ -7,6 +7,10 @@ angular.module('siBelApp')
     function ($scope, $rootScope, $translate, $location, $state, $uibModal) {
     $rootScope.$on('$translateChangeSuccess', function () {
 
+      $translate('Ideas.Btn_1').then(function (translation) {
+        $scope.Ideas_Btn_1 = translation;
+      });
+
       /// slider ///////
       $translate('SLIDER.BTN_2').then(function (translation) {
         $scope.SLIDER_BTN_2 = translation;
@@ -50,6 +54,113 @@ angular.module('siBelApp')
         $scope.Benefits_Icon_icon_3_btn = translation;
       });
 
+      /////// Employees /////////////
+      $translate('Benefits.Employees.Blue.Title').then(function (translation) {
+        $scope.Benefits_Employees_Blue_Title = translation;
+      });
+      $translate('Benefits.Employees.White.Title').then(function (translation) {
+        $scope.Benefits_Employees_White_Title = translation;
+      });
+      $translate('Benefits.Employees.Blue.Description_1').then(function (translation) {
+        $scope.Benefits_Employees_Blue_Description_1 = translation;
+      });
+      $translate('Benefits.Employees.Blue.Description_2').then(function (translation) {
+        $scope.Benefits_Employees_Blue_Description_2 = translation;
+      });
+      $translate('Benefits.Employees.Blue.Description_3').then(function (translation) {
+        $scope.Benefits_Employees_Blue_Description_3 = translation;
+      });
+      $translate('Benefits.Employees.Orange.Title_1').then(function (translation) {
+        $scope.Benefits_Employees_Orange_Title_1 = translation;
+      });
+      $translate('Benefits.Employees.Orange.Title_2').then(function (translation) {
+        $scope.Benefits_Employees_Orange_Title_2 = translation;
+      });
+      $translate('Benefits.Employees.Orange.Description_1').then(function (translation) {
+        $scope.Benefits_Employees_Orange_Description_1 = translation;
+      });
+      /////// innovations /////////////
+      $translate('Benefits.Innovations.Blue.Title').then(function (translation) {
+        $scope.Benefits_Innovations_Blue_Title = translation;
+      });
+      $translate('Benefits.Innovations.White.Title').then(function (translation) {
+        $scope.Benefits_Innovations_White_Title = translation;
+      });
+      $translate('Benefits.Innovations.Blue.Description_1').then(function (translation) {
+        $scope.Benefits_Innovations_Blue_Description_1 = translation;
+      });
+      $translate('Benefits.Innovations.Blue.Description_2').then(function (translation) {
+        $scope.Benefits_Innovations_Blue_Description_2 = translation;
+      });
+      $translate('Benefits.Innovations.Blue.Description_3').then(function (translation) {
+        $scope.Benefits_Innovations_Blue_Description_3 = translation;
+      });
+      $translate('Benefits.Innovations.Orange.Title_1').then(function (translation) {
+        $scope.Benefits_Innovations_Orange_Title_1 = translation;
+      });
+      $translate('Benefits.Innovations.Orange.Title_2').then(function (translation) {
+        $scope.Benefits_Innovations_Orange_Title_2 = translation;
+      });
+      $translate('Benefits.Innovations.Orange.Description_1').then(function (translation) {
+        $scope.Benefits_Innovations_Orange_Description_1 = translation;
+      });
+      $translate('Benefits.Innovations.Orange.Description_2').then(function (translation) {
+        $scope.Benefits_Innovations_Orange_Description_2 = translation;
+      });
+
+      $translate('Benefits.Innovations.White.Description_1').then(function (translation) {
+        $scope.Benefits_Innovations_White_Description_1 = translation;
+      });
+      $translate('Benefits.Innovations.White.Description_2').then(function (translation) {
+        $scope.Benefits_Innovations_White_Description_2 = translation;
+      });
+      $translate('Benefits.Innovations.White.li_1').then(function (translation) {
+        $scope.Benefits_Innovations_White_li_1 = translation;
+      });
+      $translate('Benefits.Innovations.White.li_2').then(function (translation) {
+        $scope.Benefits_Innovations_White_li_2 = translation;
+      });
+      $translate('Benefits.Innovations.White.li_3').then(function (translation) {
+        $scope.Benefits_Innovations_White_li_3 = translation;
+      });
+      /////// standards /////////////
+      $translate('Benefits.Standards.Blue.Title').then(function (translation) {
+        $scope.Benefits_Standards_Blue_Title = translation;
+      });
+      $translate('Benefits.Standards.White.Title').then(function (translation) {
+        $scope.Benefits_Standards_White_Title = translation;
+      });
+      $translate('Benefits.Standards.Blue.Description_1').then(function (translation) {
+        $scope.Benefits_Standards_Blue_Description_1 = translation;
+      });
+      $translate('Benefits.Standards.Blue.Description_2').then(function (translation) {
+        $scope.Benefits_Standards_Blue_Description_2 = translation;
+      });
+      $translate('Benefits.Standards.Blue.Description_3').then(function (translation) {
+        $scope.Benefits_Standards_Blue_Description_3 = translation;
+      });
+      $translate('Benefits.Standards.Blue.btn_1').then(function (translation) {
+        $scope.Benefits_Standards_Blue_btn_1 = translation;
+      });
+      $translate('Benefits.Standards.Orange.Title_1').then(function (translation) {
+        $scope.Benefits_Standards_Orange_Title_1 = translation;
+      });
+      $translate('Benefits.Standards.Orange.Title_2').then(function (translation) {
+        $scope.Benefits_Standards_Orange_Title_2 = translation;
+      });
+      $translate('Benefits.Standards.Orange.Description_1').then(function (translation) {
+        $scope.Benefits_Standards_Orange_Description_1 = translation;
+      });
+
+      $translate('Benefits.Standards.White.Description_1').then(function (translation) {
+        $scope.Benefits_Standards_White_Description_1 = translation;
+      });
+      $translate('Benefits.Standards.White.Description_2').then(function (translation) {
+        $scope.Benefits_Standards_White_Description_2 = translation;
+      });
+      $translate('Benefits.Standards.White.Description_3').then(function (translation) {
+        $scope.Benefits_Standards_White_Description_3 = translation;
+      });
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
 

@@ -5,9 +5,98 @@
 angular.module('siBelApp')
   .controller('GuaranteesCtrl',[ '$scope', '$rootScope', '$translate', '$uibModal', function ($scope, $rootScope, $translate, $uibModal) {
     $rootScope.$on('$translateChangeSuccess', function () {
-      // $translate('Error.Title_1').then(function (translation) {
-      //   $scope.Error_Title_1 = translation;
-      // });
+      $translate('Ideas.Btn_1').then(function (translation) {
+        $scope.Ideas_Btn_1 = translation;
+      });
+      //// slider ///////
+      $translate('Guarantees.Slider.Title').then(function (translation) {
+        $scope.Guarantees_Slider_Title = translation;
+      });
+      $translate('Guarantees.Slider.Description').then(function (translation) {
+        $scope.Guarantees_Slider_Description = translation;
+      });
+
+      ////// Guarantee_1///////
+      $translate('Guarantees.Guarantee_1.Title_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_Title_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_1.Title_2').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_Title_2 = translation;
+      });
+      $translate('Guarantees.Guarantee_1.Description').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_Description = translation;
+      });
+      $translate('Guarantees.Guarantee_1.li_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_li_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_1.li_2').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_li_2 = translation;
+      })
+      ;$translate('Guarantees.Guarantee_1.li_3').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_li_3 = translation;
+      });
+      $translate('Guarantees.Guarantee_1.li_4').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_li_4 = translation;
+      });
+      $translate('Guarantees.Guarantee_1.li_5').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_li_5 = translation;
+      });
+      $translate('Guarantees.Guarantee_1.li_6').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_li_6 = translation;
+      });
+      $translate('Guarantees.Guarantee_1.li_7').then(function (translation) {
+        $scope.Guarantees_Guarantee_1_li_7 = translation;
+      });
+
+      ////// Guarantee_2///////
+      $translate('Guarantees.Guarantee_2.Title_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_2_Title_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_2.Description_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_2_Description_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_2.Description_2').then(function (translation) {
+        $scope.Guarantees_Guarantee_2_Description_2 = translation;
+      });
+      $translate('Guarantees.Guarantee_2.Description_3').then(function (translation) {
+        $scope.Guarantees_Guarantee_2_Description_3 = translation;
+      });
+
+      ////// Guarantee_3///////
+      $translate('Guarantees.Guarantee_3.Title_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_3_Title_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_3.Description_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_3_Description_1 = translation;
+      });
+
+      ////// Guarantee_4///////
+      $translate('Guarantees.Guarantee_4.Title_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Title_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_4.Description_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Description_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_4.Description_2').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Description_2 = translation;
+      });
+      $translate('Guarantees.Guarantee_4.Description_3').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Description_3 = translation;
+      });
+      $translate('Guarantees.Guarantee_4.Description_4_1').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Description_4_1 = translation;
+      });
+      $translate('Guarantees.Guarantee_4.Description_4_2').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Description_4_2 = translation;
+      });
+      $translate('Guarantees.Guarantee_4.Description_5').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Description_5 = translation;
+      });
+      $translate('Guarantees.Guarantee_4.Description_6').then(function (translation) {
+        $scope.Guarantees_Guarantee_4_Description_6 = translation;
+      });
+
+
 
     });
     $translate.use($translate.proposedLanguage()).then(function () {});

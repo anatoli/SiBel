@@ -5,30 +5,20 @@
 angular.module('siBelApp')
   .controller('CasesCtrl',[ '$scope', '$rootScope', '$translate', '$http', '$anchorScroll', '$uibModal', function ($scope, $rootScope, $translate, $http, $anchorScroll, $uibModal) {
     $rootScope.$on('$translateChangeSuccess', function () {
-      $translate('Error.Title_1').then(function (translation) {
-        $scope.Error_Title_1 = translation;
+      $translate('Cases.Slider.Title').then(function (translation) {
+        $scope.Cases_Slider_Title = translation;
       });
-      $translate('Error.Title_2').then(function (translation) {
-        $scope.Error_Title_2 = translation;
+      $translate('Cases.Slider.Description').then(function (translation) {
+        $scope.Cases_Slider_Description = translation;
       });
-      $translate('Error.Title_Color').then(function (translation) {
-        $scope.Error_Title_Color = translation;
+      $translate('Ideas.Btn_1').then(function (translation) {
+        $scope.Ideas_Btn_1 = translation;
       });
-      $translate('Error.Descriptions_1').then(function (translation) {
-        $scope.Error_Descriptions_1 = translation;
+      $translate('SLIDER.BTN_2').then(function (translation) {
+        $scope.SLIDER_BTN_2 = translation;
       });
-      $translate('Error.Descriptions_2').then(function (translation) {
-        $scope.Error_Descriptions_2 = translation;
-      });
-      $translate('Error.Btn').then(function (translation) {
-        $scope.Error_Btn = translation;
-      });
-      $translate('Error.Address_1').then(function (translation) {
-        $scope.Error_Address_1 = translation;
-      });
-      $translate('Error.Address_2').then(function (translation) {
-        $scope.Error_Address_2 = translation;
-      });
+
+
     });
     $translate.use($translate.proposedLanguage()).then(function () {});
 
