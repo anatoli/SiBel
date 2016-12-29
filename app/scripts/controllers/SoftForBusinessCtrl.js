@@ -3,7 +3,7 @@
  */
 'use strict';
 angular.module('siBelApp')
-  .controller('SoftForBusinessCtrl',[ '$scope', '$rootScope', '$translate', '$state','$location', '$uibModal', function ($scope, $rootScope, $translate, $state, $location, $uibModal) {
+  .controller('SoftForBusinessCtrl',[ '$scope', '$rootScope', '$translate', '$state','$location', '$uibModal', '$anchorScroll', function ($scope, $rootScope, $translate, $state, $location, $uibModal,  $anchorScroll) {
     $rootScope.$on('$translateChangeSuccess', function () {
 
       /////////// Slider  ////////////
@@ -291,8 +291,17 @@ angular.module('siBelApp')
       function(){
         iconActive();
       });
+    console.log('business_test');
+    console.log($state.params.param);
 
-
+    if($state.params.param==='business'){
+      setTimeout(function () {
+        $location.hash('business');
+        $anchorScroll();
+        $location.hash(''); // clear url
+      }, 400)
+      $state.params.param = null;
+    }
 
     $scope.Go = function (data) {
       $state.go('root.service.business'+data);

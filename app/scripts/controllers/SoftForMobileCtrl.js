@@ -3,8 +3,8 @@
  */
 'use strict';
 angular.module('siBelApp')
-  .controller('SoftForMobileCtrl',[ '$scope', '$rootScope', '$translate','$location', '$state', '$uibModal',
-    function ($scope, $rootScope, $translate, $location, $state, $uibModal) {
+  .controller('SoftForMobileCtrl',[ '$scope', '$rootScope', '$translate','$location', '$state', '$uibModal', '$anchorScroll',
+    function ($scope, $rootScope, $translate, $location, $state, $uibModal, $anchorScroll) {
     $rootScope.$on('$translateChangeSuccess', function () {
 
       ////// Slider /////////
@@ -276,10 +276,20 @@ angular.module('siBelApp')
 
     iconActive();
 
+
     $rootScope.$on('$stateChangeSuccess',
       function(){
         iconActive();
       });
+      console.log('mobile_test');
+      console.log($state.params.param);
+    if($state.params.param==='mobile'){
+      setTimeout(function () {
+        $location.hash('mobile');
+        $anchorScroll();
+        $location.hash(''); // clear url
+      }, 400)
+    }
 
     $scope.Go = function (data) {
       $state.go('root.service.mobile'+data);

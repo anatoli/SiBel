@@ -10,7 +10,8 @@ angular.module('siBelApp')
     '$translate',
     '$rootScope',
     '$location',
-    function ($scope, $uibModal, $state, $translate, $rootScope, $location ) {
+    '$anchorScroll',
+    function ($scope, $uibModal, $state, $translate, $rootScope, $location, $anchorScroll ) {
     $rootScope.$on('$translateChangeSuccess', function () {
       /////// Slider ////////
       $translate('SLIDER.BTN_2').then(function (translation) {
@@ -374,6 +375,15 @@ angular.module('siBelApp')
         function(){
           iconActive();
         });
+      console.log('it_test');
+      console.log($state.params.param);
+      if($state.params.param==='it'){
+        setTimeout(function () {
+          $location.hash('it');
+          $anchorScroll();
+          $location.hash(''); // clear url
+        }, 400)
+      }
 
       $scope.Go = function (data) {
         $state.go('root.service.it'+data);

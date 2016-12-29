@@ -129,13 +129,15 @@ angular.module('siBelApp')
     // }
 
 
-    $scope.stateGo = function (data, $event) {
+    $scope.stateGo = function (data, stateParams, $event) {
       if(data !=='#/'){
-        $state.go(data);
+        $state.go(data, {param: stateParams});
         if($event){
           $event.stopPropagation();
         }else{
           event.stopPropagation();
+          $event.stopPropagation();
+          $event.preventDefault();
         }
 
       }

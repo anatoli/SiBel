@@ -13,7 +13,8 @@ angular.module('siBelApp')
     '$translate',
     '$rootScope',
     '$location',
-    function ($scope, $uibModal, $state, $translate, $rootScope) {
+    '$anchorScroll',
+    function ($scope, $uibModal, $state, $translate, $rootScope, $location, $anchorScroll) {
       $rootScope.$on('$translateChangeSuccess', function () {
         /////// slider //////////
         $translate('Implementation.Slider.Title').then(function (translation) {
@@ -422,8 +423,11 @@ angular.module('siBelApp')
         }
       };
 
-      if($state.params.param === 'business'){
-        $scope.Filter($state.params.param);
+      var param = $state.params.param;
+      if(param === 'business'){
+        $scope.Filter(param);
+        $location.hash('eis');
+        $anchorScroll();
       }
 
       $scope.DetailsOpen = function (data) {

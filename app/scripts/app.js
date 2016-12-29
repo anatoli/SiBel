@@ -140,6 +140,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.business', {
         url: '/business',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Программные решения ",
           parent: 'root.service'
@@ -153,6 +156,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.business.automation', {
         url: '/automation',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Автоматизация процессов организации",
           parent: 'root.service.business'
@@ -166,6 +172,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.business.complex', {
         url: '/complex',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Комплексные решения",
           parent: 'root.service.business'
@@ -179,6 +188,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.business.elDoc', {
         url: '/elDoc',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Электронный документооборот",
           parent: 'root.service.business'
@@ -192,6 +204,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.mobile', {
         url: '/mobile',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Телеком",
           parent: 'root.service'
@@ -207,6 +222,9 @@ angular.module('siBelApp', [
 
       .state('root.service.mobile.audit', {
         url: '/audit',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Аудит и контроль полноты данных",
           parent: 'root.service.mobile'
@@ -220,6 +238,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.mobile.cdr', {
         url: '/cdr',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Длительное хранение CDR",
           parent: 'root.service.mobile'
@@ -233,6 +254,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.mobile.session', {
         url: '/session',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Агрегация длинных сессий",
           parent: 'root.service.mobile'
@@ -265,6 +289,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.it.audit', {
         url: '/audit',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "ИТ-аудит",
           parent: 'root.service.it'
@@ -278,6 +305,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.it.infra', {
         url: '/infra',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "ИТ-инфраструктура",
           parent: 'root.service.it'
@@ -291,6 +321,9 @@ angular.module('siBelApp', [
       })
       .state('root.service.it.engineer', {
         url: '/engineer',
+        params:{
+          param: null
+        },
         ncyBreadcrumb: {
           label: "Инженерная инфраструктура",
           parent: 'root.service.it'
