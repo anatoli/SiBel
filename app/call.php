@@ -4,7 +4,7 @@ $json = json_decode( $fileData, true);
 
 // пример использования
 $file = $json['href']; // файл
-$mailTo = "Sibel.by@yandex.ru"; // кому
+$mailTo = "info@sibel.by"; // кому
 $from = ($json['email']) ? $json['email']: "anonim@sibel.by" ; // от кого
 $subject = 'Запрос с портала Sibel.by на звонок'; // тема письма
 
